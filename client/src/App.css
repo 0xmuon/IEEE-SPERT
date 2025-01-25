@@ -1,9 +1,12 @@
 .App {
   text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .navbar {
-  background-color: #333;
+  background-color: #1a4c7c;
   padding: 1rem;
   position: relative;
 }
@@ -73,7 +76,7 @@
     top: 100%;
     left: 0;
     right: 0;
-    background-color: #333;
+    background-color: #1a4c7c;
     padding: 1rem;
     gap: 0.5rem;
   }
@@ -95,4 +98,82 @@
 
 .home, .about {
   padding: 2rem;
+}
+
+.conference-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  margin-bottom: 2rem;
+}
+
+.logo-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.conference-logo, .institution-logo {
+  max-width: 200px;
+  height: auto;
+}
+
+.conference-info {
+  flex: 2;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.conference-info h1 {
+  color: #483D8B;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  line-height: 1.3;
+}
+
+.conference-info h2 {
+  color: #4B0082;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.conference-info h3 {
+  color: #666;
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+@media (max-width: 1024px) {
+  .conference-header {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .logo-container {
+    order: 1;
+  }
+
+  .conference-info {
+    order: 2;
+  }
+
+  .conference-info h1 {
+    font-size: 1.5rem;
+  }
+
+  .conference-info h2 {
+    font-size: 1.3rem;
+  }
+
+  .conference-info h3 {
+    font-size: 1.1rem;
+  }
+}
+
+.main-content {
+  flex: 1;
 } 

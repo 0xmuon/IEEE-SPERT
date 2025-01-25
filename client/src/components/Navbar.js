@@ -7,7 +7,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-brand">
-        <Link to="/">SPERT 2025</Link>
+        <Link to="/">IEEE-SPERT 2025</Link>
         <button className="hamburger" onClick={() => setIsOpen(!isOpen)}>
           <span></span>
           <span></span>
@@ -16,7 +16,7 @@ function Navbar() {
       </div>
       <ul className={`navbar-links ${isOpen ? 'active' : ''}`}>
         <li><Link to="/" onClick={() => setIsOpen(false)}>Home</Link></li>
-        <li><Link to="/about" onClick={() => setIsOpen(false)}>About Us</Link></li>
+        <li><a href="https://www.svnit.ac.in/index.php" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)}>About SVNIT</a></li>
         <li><Link to="/authors" onClick={() => setIsOpen(false)}>Authors</Link></li>
         <li><Link to="/committee" onClick={() => setIsOpen(false)}>Committee</Link></li>
         <li><Link to="/speakers" onClick={() => setIsOpen(false)}>Speakers</Link></li>
