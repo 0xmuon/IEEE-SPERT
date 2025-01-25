@@ -1,13 +1,11 @@
 import React from 'react';
-import spertLogo from '../assets/SPERT2025.png';
-import nitLogo from '../assets/NIT_SURAT.svg';
 
 function Home() {
   return (
     <div className="home">
       <div className="conference-header">
         <div className="logo-container left">
-          <img src={spertLogo} alt="SPERT 2025 Logo" className="conference-logo" />
+          <img src="/images/SPERT2025.png" alt="SPERT 2025 Logo" className="conference-logo" />
         </div>
         
         <div className="conference-info">
@@ -18,7 +16,7 @@ function Home() {
         </div>
 
         <div className="logo-container right">
-          <img src={nitLogo} alt="NIT Surat Logo" className="institution-logo" />
+          <img src="/images/NIT_SURAT.svg" alt="NIT Surat Logo" className="institution-logo" />
         </div>
       </div>
     </div>

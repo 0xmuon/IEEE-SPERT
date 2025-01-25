@@ -1,13 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import jaipur from '../assets/jaipur-skyline.svg';
-import './Footer.css';
 
 function Footer() {
   return (
     <footer className="footer">
       <div className="footer-background">
-        <img src={jaipur} alt="Jaipur Skyline" className="skyline-image" />
+        <img src="/images/jaipur-skyline.svg" alt="Jaipur Skyline" className="skyline-image" />
       </div>
       <div className="footer-content">
         <div className="footer-section">
