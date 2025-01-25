@@ -5,7 +5,11 @@ function Home() {
     <div className="home">
       <div className="conference-header">
         <div className="logo-container left">
-          <img src="/images/SPERT2025.png" alt="SPERT 2025 Logo" className="conference-logo" />
+          <img 
+            src={process.env.PUBLIC_URL + '/assets/SPERT2025.png'} 
+            alt="SPERT 2025 Logo" 
+            className="conference-logo" 
+          />
         </div>
         
         <div className="conference-info">
@@ -16,7 +20,11 @@ function Home() {
         </div>
 
         <div className="logo-container right">
-          <img src="/images/NIT_SURAT.svg" alt="NIT Surat Logo" className="institution-logo" />
+          <img 
+            src={process.env.PUBLIC_URL + '/assets/NIT_SURAT.svg'} 
+            alt="NIT Surat Logo" 
+            className="institution-logo" 
+          />
         </div>
       </div>
     </div>

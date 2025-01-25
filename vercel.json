@@ -12,23 +12,27 @@
   "routes": [
     {
       "src": "/static/(.*)",
-      "dest": "/client/static/$1"
+      "dest": "/client/build/static/$1"
     },
     {
-      "src": "/images/(.*)",
-      "dest": "/client/public/images/$1"
+      "src": "/assets/(.*)",
+      "dest": "/client/build/assets/$1"
     },
     {
       "src": "/favicon.ico",
-      "dest": "/client/public/favicon.ico"
+      "dest": "/client/build/favicon.ico"
     },
     {
       "src": "/manifest.json",
-      "dest": "/client/public/manifest.json"
+      "dest": "/client/build/manifest.json"
+    },
+    {
+      "src": "/(.*)\\.(?:png|jpg|jpeg|svg|gif)",
+      "dest": "/client/build/$1"
     },
     {
       "src": "/(.*)",
-      "dest": "/client/index.html"
+      "dest": "/client/build/index.html"
     }
   ]
 } 
