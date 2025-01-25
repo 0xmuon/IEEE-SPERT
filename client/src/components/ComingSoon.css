@@ -1,0 +1,33 @@
+.coming-soon {
+  padding: 4rem 2rem;
+  text-align: center;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.coming-soon h1 {
+  color: #1a4c7c;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.coming-soon-content {
+  background-color: #f5f5f5;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.coming-soon-content h2 {
+  color: #4B0082;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.coming-soon-content p {
+  color: #666;
+  font-size: 1.1rem;
+} 

@@ -1,12 +1,8 @@
 import React from 'react';
+import ComingSoon from './ComingSoon';
 
 function Authors() {
-  return (
-    <div className="authors">
-      <h1>Authors</h1>
-      <p>Information for authors will be available here.</p>
-    </div>
-  );
+  return <ComingSoon pageName="Authors" />;
 }
 
 export default Authors; 

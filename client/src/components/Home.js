@@ -1,5 +1,5 @@
 import React from 'react';
-import spertLogo from '../assets/SPERT2025.svg';
+import spertLogo from '../assets/SPERT2025.png';
 import nitLogo from '../assets/NIT_SURAT.svg';
 
 function Home() {
