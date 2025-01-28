@@ -5,19 +5,12 @@ import './Footer.css';
 function Footer() {
   return (
     <footer className="footer">
-      <div className="footer-background">
-        <img 
-          src={process.env.PUBLIC_URL + '/assets/jaipur-skyline.svg'} 
-          alt="Jaipur Skyline" 
-          className="skyline-image" 
-        />
-      </div>
       <div className="footer-content">
         <div className="footer-section">
           <h3>Quick Links</h3>
           <ul>
             <li><Link to="/">Home</Link></li>
-            <li><a href="https://www.svnit.ac.in/index.php" target="_blank" rel="noopener noreferrer">About SVNIT</a></li>
+            <li><Link to="/about">About Us</Link></li>
             <li><Link to="/authors">Call for papers</Link></li>
             <li><Link to="/speakers">Invited Speakers</Link></li>
             <li><Link to="/committee">Committees</Link></li>
