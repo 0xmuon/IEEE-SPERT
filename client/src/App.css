@@ -60,9 +60,7 @@
   transition: color 0.3s ease;
 }
 
-.navbar-links a:hover {
-  color: #ffd700;
-}
+
 
 @media (max-width: 1024px) {
   .hamburger {
@@ -145,6 +143,14 @@
   color: #666;
   font-size: 1.2rem;
   margin: 10px 0;
+}
+
+.DropDown {
+  color: white;
+}
+
+.dropdownMenu a {
+  color: black;
 }
 
 @media (max-width: 1024px) {
