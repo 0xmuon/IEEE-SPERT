@@ -19,6 +19,31 @@
   opacity: 0.7;
 }
 
+.countdown-container {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.countdown-box {
+  background-color: #143d66; /* Darker background for the boxes */
+  color: white;
+  padding: 1rem;
+  margin: 0 1rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.countdown-box span {
+  font-size: 2rem; /* Larger font for the numbers */
+  font-weight: bold;
+}
+
+.label {
+  font-size: 1rem; /* Smaller font for the labels */
+}
+
 .footer-content {
   display: flex;
   justify-content: space-around;
@@ -68,6 +93,7 @@
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
+  margin-top: 1rem; /* Add margin to separate from the content above */
 }
 
 @media (max-width: 768px) {
