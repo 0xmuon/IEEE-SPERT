@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100">
-  <style>
-    .conference-text { fill: #483D8B; font-family: Arial, sans-serif; }
-    .year-text { fill: #4B0082; font-family: Arial, sans-serif; }
-  </style>
-  <text x="20" y="45" class="conference-text" font-size="35" font-weight="bold">SPERT</text>
-  <text x="150" y="45" class="year-text" font-size="35" font-weight="bold">2025</text>
-</svg> 
