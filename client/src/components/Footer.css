@@ -23,16 +23,19 @@
   display: flex;
   justify-content: center;
   padding: 1rem 0;
+  flex-wrap: wrap;
 }
 
 .countdown-box {
   background-color: #143d66; /* Darker background for the boxes */
   color: white;
   padding: 1rem;
-  margin: 0 1rem;
+  margin: 0.5rem;
   border-radius: 8px;
   text-align: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  flex: 1 1 100px;
+  min-width: 80px;
 }
 
 .countdown-box span {
