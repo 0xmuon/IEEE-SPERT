@@ -5,6 +5,7 @@ function Home() {
     <div className="home">
       <div className="conference-header">
         <div className="logo-container left">
+          {/* Remove SPERT2025 logo */}
           <img 
             src={process.env.PUBLIC_URL + '/assets/SPERT2025.png'} 
             alt="SPERT 2025 Logo" 
@@ -19,13 +20,14 @@ function Home() {
           <h3>Surat, Gujarat, INDIA</h3>
         </div>
 
-        <div className="logo-container right">
+        {/* Remove NIT_SURAT.svg logo */}
+        {/* <div className="logo-container right">
           <img 
             src={process.env.PUBLIC_URL + '/assets/NIT_SURAT.svg'} 
             alt="NIT Surat Logo" 
             className="institution-logo" 
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );
