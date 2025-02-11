@@ -1,10 +1,54 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.css';
 
 function Footer() {
+  const [countdown, setCountdown] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+
+  useEffect(() => {
+    const targetDate = new Date('2025-12-19T00:00:00Z').getTime();
+
+    const interval = setInterval(() => {
+      const now = new Date().getTime();
+      const distance = targetDate - now;
+
+      // Time calculations for days, hours, minutes and seconds
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      if (distance < 0) {
+        clearInterval(interval);
+        setCountdown({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+      } else {
+        setCountdown({ days, hours, minutes, seconds });
+      }
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <footer className="footer">
+      <div className="countdown-container">
+        <div className="countdown-box">
+          <span>{countdown.days}</span>
+          <div className="label">Days</div>
+        </div>
+        <div className="countdown-box">
+          <span>{countdown.hours}</span>
+          <div className="label">Hours</div>
+        </div>
+        <div className="countdown-box">
+          <span>{countdown.minutes}</span>
+          <div className="label">Minutes</div>
+        </div>
+        <div className="countdown-box">
+          <span>{countdown.seconds}</span>
+          <div className="label">Seconds</div>
+        </div>
+      </div>
       <div className="footer-content">
         <div className="footer-section">
           <h3>Quick Links</h3>
