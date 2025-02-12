@@ -4,9 +4,6 @@ const CommitteeDetail = ({MemberPost, MemberName, MemberPostCollege}) => {
   return (
     <div className='parentDivCommitte'>
       <div className ='committeeDetail'>
-        <div className='committeTitle'>
-          <h3>{MemberPost}</h3>
-        </div>
       </div>
       <div className="card committeCard">
         <div className='committeCardDetail'>
