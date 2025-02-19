@@ -1,0 +1,345 @@
+* {
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.home {
+    padding: 2rem;
+    text-align: center;
+    background-color: #f9f9f9; /* Light background for contrast */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.conference-header {
+    display: flex;
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 2rem;
+    padding: 1rem;
+    position: relative; /* Position relative for the pseudo-element */
+    height: 300px; /* Set a height for the header */
+    color: white; /* Change text color to white for better contrast */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.conference-header::before {
+    content: ""; /* Required for pseudo-element */
+    position: absolute; /* Position absolute to cover the header */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://i.ibb.co/TFzBzDF/Statue-of-Unity-bg.jpg'); /* Background image */
+    background-size: cover; /* Cover the entire header */
+    background-position: center; /* Center the background image */
+    opacity: 0.5; /* Set the desired opacity (0 to 1) */
+    z-index: 1; /* Ensure it is behind the text */
+}
+
+.conference-header > * {
+    position: relative; /* Position relative for the text elements */
+    z-index: 2; /* Ensure text is above the overlay */
+    text-align: center; /* Center align text for better appearance */
+}
+
+.left-logo {
+    flex: 1; /* Allow left logo to take space */
+    text-align: left; /* Align left */
+}
+
+.conference-info {
+    flex: 2; /* Allow conference info to take more space */
+    text-align: center; /* Center align text */
+}
+
+.right-logo {
+    flex: 1; /* Allow right logo to take space */
+    text-align: right; /* Align right */
+}
+
+.conference-title {
+    font-size: 2.5rem; /* Adjust font size as needed */
+    font-weight: bold;
+    color: #1a4c7c; /* Dark blue color */
+}
+
+.conference-subtitle {
+    font-size: 1.5rem; /* Adjust font size as needed */
+    color: #333; /* Darker text for contrast */
+}
+
+.conference-dates,
+.conference-location {
+    font-size: 1.2rem; /* Adjust font size as needed */
+    color: #555; /* Medium gray for less emphasis */
+}
+
+.tracks-title {
+    font-size: 2rem;
+    font-weight: normal; /* Unbold the title */
+    margin-top: 2rem;
+    color: #4CAF50; /* Green color for the title */
+    text-align: left; /* Ensure title is left aligned */
+}
+
+.track-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left; /* Ensure list is left aligned */
+    max-width: 800px; /* Limit width for better readability */
+    margin: 0; /* Remove auto margin to align left */
+}
+
+.track-list li {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    background-color: #e7f3fe; /* Light blue background for list items */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.conference-description {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #f0f4f8; /* Light background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    text-align: left; /* Change to left align */
+}
+
+.description-title {
+    font-size: 1.8rem;
+    font-weight: normal; /* Unbold the title */
+    color: #4CAF50; /* Green color for the title */
+    margin-bottom: 1rem;
+}
+
+.conference-description p {
+    font-size: 1rem;
+    color: #333; /* Darker text for readability */
+    line-height: 1.6; /* Improved line height for readability */
+    margin-bottom: 1rem; /* Space between paragraphs */
+}
+
+@media (max-width: 768px) {
+    .home {
+        padding: 1rem; /* Reduce padding for smaller screens */
+    }
+
+    .conference-header {
+        flex-direction: column; /* Stack items vertically on mobile */
+        align-items: center; /* Center items */
+        padding: 1rem; /* Adjust padding for smaller screens */
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .conference-title {
+        font-size: 2rem; /* Smaller title on mobile */
+    }
+
+    .conference-subtitle {
+        font-size: 1.5rem; /* Smaller subtitle on mobile */
+    }
+
+    .conference-dates,
+    .conference-location {
+        font-size: 1rem; /* Smaller font size for dates and location */
+    }
+
+    .sponsor-img img {
+        max-width: 100px; /* Adjust max width for sponsor images */
+    }
+
+    .tracks-title {
+        font-size: 1.5rem; /* Smaller tracks title on mobile */
+    }
+
+    .track-list {
+        max-width: 100%; /* Allow full width */
+    }
+
+    .track-list li {
+        font-size: 0.9rem; /* Smaller list item font size */
+    }
+
+    .tourist-attractions {
+        margin-top: 1rem; /* Reduce margin for mobile */
+    }
+
+    .attractions-title {
+        font-size: 1.5rem; /* Smaller title for attractions */
+    }
+
+    .attraction-image {
+        max-width: 100%; /* Allow image to take full width */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .slider-button {
+        font-size: 1.5rem; /* Smaller button size */
+    }
+}
+
+@media (max-width: 420px) {
+    .home {
+        padding: 0.5rem; /* Further reduce padding for very small screens */
+    }
+
+    .conference-title {
+        font-size: 1.5rem; /* Smaller title */
+    }
+
+    .conference-subtitle {
+        font-size: 1.2rem; /* Smaller subtitle */
+    }
+
+    .tracks-title {
+        font-size: 1.3rem; /* Smaller tracks title */
+    }
+
+    .track-list li {
+        font-size: 0.8rem; /* Smaller list item font size */
+    }
+
+    .slider-button {
+        font-size: 1.2rem; /* Smaller button size */
+    }
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; /* Center the images */
+    gap: 1rem; /* Space between images */
+    margin: 2rem 0; /* Margin above and below the images */
+    position: relative; /* Position relative for absolute positioning of overlay */
+}
+
+.image-container img {
+    max-width: 100px; /* Set a max width for the images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.sponsor-img {
+    display: flex; /* Use flexbox to align images in a row */
+    justify-content: center; /* Center the images */
+    gap: 5rem; /* Increase space between images (adjust as needed) */
+    margin: 2rem 0; /* Margin above and below the images */
+}
+
+.sponsor-img img {
+    max-width: 150px; /* Increase the max width for the images */
+    height: auto; /* Maintain aspect ratio */
+    border: none; /* Ensure no border is applied */
+}
+
+.welcome-title {
+    font-size: 2rem; /* Adjust font size as needed */
+    font-weight: normal; /* Unbold the title */
+    color: #1a4c7c; /* Dark blue color */
+    margin-top: 2rem; /* Space above the title */
+}
+
+.welcome-description {
+    font-size: 1.2rem; /* Adjust font size as needed */
+    color: #333; /* Darker text for contrast */
+    margin: 1rem 0; /* Space above and below the description */
+    text-align: left; /* Change to left align */
+}
+
+.content-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between left and right content */
+    margin-top: 2rem; /* Space above the content */
+}
+
+.left-content {
+    flex: 2; /* Allow left content to take more space */
+    text-align: left; /* Align text to the left */
+}
+
+.right-content {
+    flex: 1; /* Allow right content to take less space */
+    padding-left: 2rem; /* Space between left and right content */
+}
+
+.important-dates-title {
+    font-size: 1.5rem; /* Title size */
+    font-weight: bold; /* Bold title */
+    margin-bottom: 1rem; /* Space below title */
+    color: #4CAF50; /* Green color for the title */
+}
+
+.important-dates-table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Collapse borders */
+}
+
+.important-dates-table th, .important-dates-table td {
+    border: 1px solid #ddd; /* Border for table cells */
+    padding: 8px; /* Padding for table cells */
+    text-align: left; /* Align text to the left */
+}
+
+.important-dates-table th {
+    background-color: #e8f5e9; /* Light green background for header */
+    color: #4CAF50; /* Dark green text for header */
+}
+
+.tourist-attractions {
+    text-align: center; /* Center align the section */
+    margin-top: 2rem; /* Space above the section */
+}
+
+.attractions-title {
+    font-size: 2rem; /* Title size */
+    color: #4CAF50; /* Green color for the title */
+    margin-bottom: 1rem; /* Space below title */
+}
+
+.slider {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+}
+
+.attraction-image {
+    max-width: 600px; /* Set a specific width for the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.slider-button {
+    background-color: transparent; /* Transparent background */
+    border: none; /* No border */
+    font-size: 2rem; /* Button size */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin: 0 1rem; /* Space around buttons */
+}
+
+.image-wrapper {
+    position: relative; /* Position relative for the overlay */
+}
+
+.overlay {
+    position: absolute; /* Position absolute to overlay on the image */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex; /* Use flexbox to center the text */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    opacity: 0; /* Start hidden */
+    transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+.image-wrapper:hover .overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+
+.overlay-text {
+    color: white; /* Text color */
+    font-size: 1.5rem; /* Text size */
+    text-align: center; /* Center text */
+} 

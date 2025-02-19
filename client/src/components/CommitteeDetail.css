@@ -1,0 +1,8 @@
+.committee-detail {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 0.5rem; /* Reduced padding */
+    margin: 0.5rem; /* Space between cards */
+    text-align: center; /* Center text */
+    flex: 1 1 200px; /* Allow items to grow and shrink */
+} 

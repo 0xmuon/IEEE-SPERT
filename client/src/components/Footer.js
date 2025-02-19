@@ -31,7 +31,9 @@ function Footer() {
 
   return (
     <footer className="footer">
+      <h2 className="countdown-heading">Conference Begins In</h2>
       <div className="countdown-container">
+        
         <div className="countdown-box">
           <span>{countdown.days}</span>
           <div className="label">Days</div>

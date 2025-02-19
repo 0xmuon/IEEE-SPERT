@@ -3,7 +3,7 @@ import './About.css';
 
 function About() {
   return (
-    <div className="about-page">
+    <div className="about">
       <h1 className="about-title">About Us</h1>
       
       <section className="about-section">
@@ -32,11 +32,11 @@ function About() {
             Institute has also established the Centre of Indian Knowledge System and Centre for the Tribal Technology 
             Development.
           </p>
-          <div className="image-container">
-            <img 
-              src={process.env.PUBLIC_URL + '/assets/svnit-campus.jpg'} 
-              alt="SVNIT Campus" 
-              className="campus-image" 
+          <div className="">
+          <img 
+              src={"https://i.ibb.co/84MfjQph/svnit-main-gate.jpg"}
+              alt="SVNIT-Main-Gate" 
+              className="campus-image"
             />
           </div>
         </div>
@@ -45,16 +45,12 @@ function About() {
       <section className="about-section">
         <h2>About Department of Electrical Engineering</h2>
         <div className="content-wrapper">
-          <div className="video-container">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/ABOUT_SVNIT_SURATHKAL"
-              title="Campus Tour SVNIT Surat"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
+          <div className="">
+            <img 
+              src={"https://i.ibb.co/jPNkdgQv/electrical-engg-svnit.jpg"}
+              alt="Electrical Engineering Department" 
+              className="campus-image"
+            />
           </div>
           <p>
             The Department of Electrical Engineering (DoEE) is one of the oldest departments established in 1961. 

@@ -1,0 +1,11 @@
+.committee-row {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: flex-start; /* Align items to the start */
+    margin-bottom: 1.5rem; /* Space between rows */
+}
+
+.committee-row > div {
+    flex: 1 1 200px; /* Allow items to grow and shrink, with a base width of 200px */
+    margin: 0.5rem; /* Space between cards */
+} 

@@ -2,7 +2,8 @@
   position: relative;
   width: 100%;
   background-color: #1a4c7c;
-  margin-top: auto;
+  color: white;
+  padding: 2rem 0; /* Added padding for better spacing */
 }
 
 .footer-background {
@@ -19,46 +20,55 @@
   opacity: 0.7;
 }
 
+.countdown-heading {
+  font-size: 1.5rem; /* Font size for the heading */
+  color: white; /* White color for contrast */
+  margin-bottom: 1rem; /* Space below the heading */
+  text-align: center; /* Center the heading */
+}
+
 .countdown-container {
   display: flex;
   justify-content: center;
-  padding: 1rem 0;
+  padding: 1rem; /* Added padding for spacing */
   flex-wrap: wrap;
 }
 
 .countdown-box {
   background-color: #143d66; /* Darker background for the boxes */
   color: white;
-  padding: 1rem;
-  margin: 0.5rem;
+  padding: 0.3rem; /* Reduced padding for smaller size */
+  margin: 0.5rem 1rem; /* Increased horizontal margin for spacing */
   border-radius: 8px;
   text-align: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  flex: 1 1 100px;
-  min-width: 80px;
+  flex: 1 1 60px; /* Adjusted for smaller size */
+  min-width: 50px; /* Minimum width for boxes */
 }
 
 .countdown-box span {
-  font-size: 2rem; /* Larger font for the numbers */
+  font-size: 1.2rem; /* Smaller font for the numbers */
   font-weight: bold;
 }
 
 .label {
-  font-size: 1rem; /* Smaller font for the labels */
+  font-size: 0.7rem; /* Smaller font for the labels */
 }
 
 .footer-content {
   display: flex;
   justify-content: space-around;
-  padding: 2rem 4rem;
+  padding: 2rem 4rem; /* Added padding for better spacing */
   color: white;
   max-width: 1200px;
   margin: 0 auto;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
 
 .footer-section {
   flex: 1;
   margin: 0 1rem;
+  min-width: 200px; /* Minimum width for sections */
 }
 
 .footer-section h3 {

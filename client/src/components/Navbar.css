@@ -1,0 +1,81 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a4c7c; /* Dark blue background */
+  padding: 1rem 2rem; /* Padding for spacing */
+  color: white;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  flex: 1; /* Allow the brand to take available space */
+}
+
+.navbar-logo {
+  width: 150px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.navbar-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none; /* Remove underline */
+  margin-left: 1rem; /* Space between logo and title */
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem; /* Space between links */
+}
+
+.navbar-links li {
+  margin: 0;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+  color: #ffd700; /* Gold color on hover */
+}
+
+.hamburger {
+  display: none; /* Hide hamburger by default */
+  flex-direction: column;
+  cursor: pointer;
+  margin-left: auto; /* Push hamburger to the right */
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: white;
+  margin: 3px 0;
+}
+
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none; /* Hide links on mobile */
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Position below navbar */
+    left: 0;
+    background-color: #1a4c7c; /* Match navbar background */
+    width: 100%;
+  }
+
+  .navbar-links.active {
+    display: flex; /* Show links when active */
+  }
+
+  .hamburger {
+    display: flex; /* Show hamburger on mobile */
+  }
+} 

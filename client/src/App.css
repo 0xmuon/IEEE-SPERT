@@ -193,11 +193,7 @@
 .committeeDetail {
   margin: auto;
   margin-top: 3rem;
-  height: 3.5rem;
-  width: 72rem;
-  display: flex;
-  background: #D7F0DB;
-  border-radius: 0.5rem;
+
 }
 
 .parentDivCommitte {
@@ -212,6 +208,13 @@
   color: #1D5E26;
   padding-top: 0.8rem;
   font-weight: 500;
+  margin: auto;
+  margin-top: 3rem;
+  height: 3.5rem;
+  width: 75rem;
+  display: flex;
+  background: #D7F0DB;
+  border-radius: 0.5rem;
 }
 
 .committeCard {
@@ -224,11 +227,16 @@
 .cardTitle{
   font-size: 1.25rem;
   font-weight: 550;
-  padding-right : 6.9rem;
+  padding : auto;
   margin-bottom: 0.75rem;
 }
 
 .committeCardDetail {
   margin-top: 0.5rem;
   margin-right: 1.5rem;
+  margin:auto;
+
+}
+.committeeGrid {
+  display: inline;
 }

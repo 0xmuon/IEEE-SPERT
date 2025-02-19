@@ -1,0 +1,37 @@
+.registration-container {
+    padding: 2rem;
+    text-align: center;
+}
+
+.registration-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+}
+
+.registration-table th, .registration-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.registration-table th {
+    background-color: #1a4c7c;
+    color: white;
+}
+
+.registration-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.registration-note {
+    margin-top: 1.5rem;
+    text-align: left;
+}
+
+.note-box {
+    background-color: #e7f3fe; /* Light blue background */
+    border: 1px solid #b3d4fc; /* Light blue border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 1rem; /* Padding inside the box */
+    margin: 1rem 0; /* Margin around the box */
+} 

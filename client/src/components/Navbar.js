@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import './Navbar.css'; // Ensure you have a CSS file for styling
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -7,11 +8,12 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-brand">
-        <Link to="/">IEEE-SPERT 2025</Link>
+        <img 
+          src="https://i.ibb.co/JWhJB86S/SPERT2025.png" 
+          alt="SPERT Expanded Logo" 
+          className="navbar-logo" 
+        />
         <button className="hamburger" onClick={() => setIsOpen(!isOpen)}>
-          <span></span>
-          <span></span>
-          <span></span>
         </button>
       </div>
       <ul className={`navbar-links ${isOpen ? 'active' : ''}`}>
