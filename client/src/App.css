@@ -100,14 +100,6 @@
   padding: 2rem;
 }
 
-.conference-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: #fff;
-  margin-bottom: 2rem;
-}
 
 .logo-container {
   flex: 1;
@@ -148,10 +140,7 @@
 }
 
 @media (max-width: 1024px) {
-  .conference-header {
-    flex-direction: column;
-    gap: 20px;
-  }
+  
 
   .logo-container {
     order: 1;
@@ -211,7 +200,7 @@
   margin: auto;
   margin-top: 3rem;
   height: 3.5rem;
-  width: 75rem;
+  width: auto;
   display: flex;
   background: #D7F0DB;
   border-radius: 0.5rem;
