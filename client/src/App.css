@@ -211,7 +211,7 @@
   margin: auto;
   margin-top: 3rem;
   height: 3.5rem;
-  width: 75rem;
+  width: auto;
   display: flex;
   background: #D7F0DB;
   border-radius: 0.5rem;
