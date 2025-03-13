@@ -59,10 +59,12 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50 w-full backdrop-blur-lg transition-all duration-300">
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-2 font-bold">
-          <div className="size-8 rounded-lg bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center text-primary-foreground">
-            IEEE
-          </div>
-          <span>IEEE-SPERT</span>
+          <img
+            src="https://i.ibb.co/JWhJB86S/SPERT2025.png"
+            alt="IEEE-SPERT Logo"
+            className="h-8" // Adjust height as needed
+          />
+          <span className="text-lg">IEEE-SPERT</span>
         </div>
         <div className="hidden lg:flex gap-6">
           {navItems.map((item, index) => (
@@ -70,7 +72,7 @@ const Navbar = () => {
               {item.children ? (
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>
-                    <button className="flex items-center gap-1 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">
+                    <button className="flex items-center gap-1 text-lg font-medium text-muted-foreground transition-colors hover:text-foreground">
                       {item.name}
                       <ChevronDown className="size-4" />
                     </button>
@@ -78,7 +80,7 @@ const Navbar = () => {
                   <DropdownMenuContent align="start" className="w-56">
                     {item.children.map((child, childIndex) => (
                       <DropdownMenuItem key={childIndex} asChild>
-                        <Link href={child.href}>{child.name}</Link>
+                        <Link href={child.href} className="text-sm">{child.name}</Link>
                       </DropdownMenuItem>
                     ))}
                   </DropdownMenuContent>
@@ -86,7 +88,7 @@ const Navbar = () => {
               ) : (
                 <Link
                   href={item.href}
-                  className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+                  className="text-lg font-medium text-muted-foreground transition-colors hover:text-foreground"
                 >
                   {item.name}
                 </Link>
