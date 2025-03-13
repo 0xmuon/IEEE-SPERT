@@ -108,7 +108,7 @@ export default function HomePage() {
       <main className="flex-1">
         {/* Welcome Section with Announcements */}
         <ImageGallery />
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-conference">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-green-200 to-white dark:from-blue-800 dark:to-black">
           <div className="container px-4 md:px-6">
             <div className="grid gap-8 md:grid-cols-2">
               <div>
@@ -142,7 +142,7 @@ export default function HomePage() {
         </section>
 
         {/* Important Dates Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-muted">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-green-200 to-white dark:from-blue-800 dark:to-black">
           <div className="container px-4 md:px-6 flex flex-col md:flex-row justify-between">
             <div className="md:w-2/3">
               <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl mb-8">Conference Overview</h2>
@@ -187,7 +187,7 @@ export default function HomePage() {
         </section>
 
         {/* Countdown Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-muted">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-green-200 to-white dark:from-blue-800 dark:to-black">
           <div className="container px-4 md:px-6">
             <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl mb-8 text-center">
               Conference Starts In

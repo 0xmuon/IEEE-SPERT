@@ -13,7 +13,7 @@ export default function SubmissionAndRegistrationPage() {
             Submission and Registration
           </h1>
           
-          <Link href="/authors">
+          <Link href="https://cmt3.research.microsoft.com/SPERT2025">
             <Button>Register Now</Button>
           </Link>
         </div>

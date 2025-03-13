@@ -22,7 +22,7 @@ const Footer = () => {
         </div>
       </div>
       <p className="text-xs text-muted-foreground text-center mt-2">
-        Powered by Electricity
+        Powered by ⚡
       </p>
     </footer>
   );

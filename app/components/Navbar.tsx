@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useTheme } from "next-themes";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import { ChevronDown, Sun, Moon } from "lucide-react";
+import { useState } from "react";
 
 const navItems = [
   { name: "Home", href: "/" },
@@ -13,7 +14,6 @@ const navItems = [
     children: [
       { name: "About Us", href: "/about/about-us" },
       { name: "Organizing Committee", href: "/about/organizing-committee" },
-      { name: "Chairs", href: "/about/chairs" },
     ],
   },
   {
@@ -50,9 +50,14 @@ const navItems = [
 
 const Navbar = () => {
   const { theme, setTheme } = useTheme();
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggleTheme = () => {
     setTheme(theme === "dark" ? "light" : "dark");
+  };
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
   };
 
   return (
@@ -66,7 +71,10 @@ const Navbar = () => {
           />
           <span className="text-lg">IEEE-SPERT</span>
         </div>
-        <div className="hidden lg:flex gap-6">
+        <button onClick={toggleMenu} className="md:hidden">
+          <span className="text-2xl">☰</span>
+        </button>
+        <div className={`hidden lg:flex gap-6 md:block ${isOpen ? 'flex' : 'hidden'} flex-col md:flex-row`}>
           {navItems.map((item, index) => (
             <div key={index} className="relative group">
               {item.children ? (
@@ -89,6 +97,37 @@ const Navbar = () => {
                 <Link
                   href={item.href}
                   className="text-lg font-medium text-muted-foreground transition-colors hover:text-foreground"
+                >
+                  {item.name}
+                </Link>
+              )}
+            </div>
+          ))}
+        </div>
+        {/* Mobile Menu */}
+        <div className={`absolute top-16 left-0 w-full bg-white dark:bg-gray-800 shadow-md ${isOpen ? 'block' : 'hidden'} md:hidden`}>
+          {navItems.map((item, index) => (
+            <div key={index} className="p-2">
+              {item.children ? (
+                <DropdownMenu>
+                  <DropdownMenuTrigger asChild>
+                    <button className="flex items-center gap-1 text-lg font-medium text-muted-foreground transition-colors hover:text-foreground">
+                      {item.name}
+                      <ChevronDown className="size-4" />
+                    </button>
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent align="start" className="w-56">
+                    {item.children.map((child, childIndex) => (
+                      <DropdownMenuItem key={childIndex} asChild>
+                        <Link href={child.href} className="text-sm">{child.name}</Link>
+                      </DropdownMenuItem>
+                    ))}
+                  </DropdownMenuContent>
+                </DropdownMenu>
+              ) : (
+                <Link
+                  href={item.href}
+                  className="block text-lg font-medium text-muted-foreground transition-colors hover:text-foreground"
                 >
                   {item.name}
                 </Link>
