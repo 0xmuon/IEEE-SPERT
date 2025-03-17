@@ -9,7 +9,10 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "IEEE-SPERT 2025",
   description: "IEEE International Conference on Smart Power, Energy, Renewables, and Transportation",
-    generator: 'v0.dev'
+  icons: {
+    icon: '/favicon.ico',
+  },
+  generator: '0xmuon'
 }
 
 export default function RootLayout({
@@ -19,6 +22,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           <main>{children}</main>
