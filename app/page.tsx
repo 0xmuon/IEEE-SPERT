@@ -10,6 +10,7 @@ import { useTheme } from "next-themes"
 import { ImageGallery } from "@/components/image-gallery"
 import Image from "next/image"
 import { Lightbulb } from "lucide-react"
+import VisitorCounter from "@/app/components/VisitorCounter"
 
 // Add this function before the ConferencePage component
 function CountdownTimer({ targetDate }: { targetDate: string }) {
@@ -282,6 +283,7 @@ export default function HomePage() {
           </div>
         </section>
       </main>
+      <VisitorCounter />
       <Footer />
     </div>
   )
