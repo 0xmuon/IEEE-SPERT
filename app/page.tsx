@@ -119,9 +119,11 @@ export default function HomePage() {
                   The IEEE International Conference on Smart Power, Energy, Renewables, and Transportation (IEEE-SPERT) aims to bring together experts and researchers to discuss advancements in these critical fields. This conference will explore innovative solutions and technologies that drive the future of energy and transportation, fostering collaboration and knowledge sharing among participants.
                 </p>
                 <div className="flex flex-col gap-4 min-[400px]:flex-row">
-                  <Button size="lg">Register Now</Button>
-                  <Button size="lg" variant="outline">
-                    Submit Paper
+                  <Button size="lg" asChild>
+                    <Link href="/authors/call-for-papers">Register Now</Link>
+                  </Button>
+                  <Button size="lg" variant="outline" asChild>
+                    <Link href="/authors/submission-and-registration">Submit Paper</Link>
                   </Button>
                 </div>
               </div>
@@ -193,6 +195,56 @@ export default function HomePage() {
               Conference Starts In
             </h2>
             <CountdownTimer targetDate="2025-12-19T00:00:00" />
+          </div>
+        </section>
+
+        {/* Sponsors Section */}
+        <section className="w-full py-12 md:py-24 lg:py-32">
+          <div className="container px-4 md:px-6">
+            <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl mb-12 text-center">
+              Our Valued Sponsors
+            </h2>
+            
+            {/* Platinum Sponsors */}
+            <div className="mb-16">
+              <h3 className="text-2xl font-bold mb-8 text-center border-b pb-2 max-w-md mx-auto">
+                Platinum Sponsors
+              </h3>
+              <div className="flex justify-center">
+                <div className="max-w-sm w-full">
+                  <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+                    <div className="flex flex-col items-center">
+                      <Image 
+                        src="https://media.licdn.com/dms/image/v2/C4E0BAQEsSp-2XgoE-A/company-logo_200_200/company-logo_200_200/0/1630563919132?e=1750291200&v=beta&t=3IMFR0YkkSynwEkgSlZjuo1PFvkMDfgQOAHhfaG_W0k"
+                        alt="Raj Vijtech Private Limited"
+                        width={150}
+                        height={150}
+                        className="rounded-lg mb-4 hover:scale-105 transition-transform duration-200"
+                      />
+                      <h4 className="font-bold text-2xl mb-2">Raj Vijtech Private Limited</h4>
+                      <p className="text-gray-600 dark:text-gray-300 text-lg">Surat</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Silver Sponsors */}
+            <div>
+              <h3 className="text-2xl font-bold mb-8 text-center border-b pb-2 max-w-md mx-auto">
+                Silver Sponsors
+              </h3>
+              <div className="flex justify-center">
+                <div className="max-w-sm w-full">
+                  <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+                    <div className="flex flex-col items-center">
+                      <h4 className="font-bold text-2xl mb-2">TechSunBio Private Limited</h4>
+                      <p className="text-gray-600 dark:text-gray-300 text-lg">Surat</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
