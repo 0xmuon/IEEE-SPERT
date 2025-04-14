@@ -69,7 +69,7 @@ const Navbar = () => {
           <img
             src="https://i.ibb.co/cX34H3Fd/Spert-final-logo.jpg"
             alt="IEEE-SPERT Logo"
-            className="h-8" // Adjust height as needed
+            className="h-14"
           />
           <span className="text-lg">IEEE SPERT 2025</span>
         </Link>
