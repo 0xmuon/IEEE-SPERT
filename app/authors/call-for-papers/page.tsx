@@ -46,7 +46,7 @@ export default function CallForPapersPage() {
           <div className="w-full p-4">
             <h2 className="text-2xl font-bold mb-2">Authors Guidelines</h2>
             <p className="text-gray-500 dark:text-gray-400">
-              Authors are requested to submit their full original research paper in IEEE format through (link provided). Regular and Special session papers are limited to six pages of A4 or letter format. Authors must adhere to the IEEE Conference paper format mentioned in the submission guidelines.
+              Authors are requested to submit their full original research paper in <a href="https://www.ieee.org/conferences/publishing/templates.html" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">IEEE format</a>. Regular and Special session papers are limited to six pages of A4 or letter format. Authors must adhere to the IEEE Conference paper format mentioned in the submission guidelines.
             </p>
           </div>
 
@@ -54,9 +54,7 @@ export default function CallForPapersPage() {
           <div className="w-full p-4">
             <h2 className="text-2xl font-bold mb-2">Paper Submission Link</h2>
             <p className="text-gray-500 dark:text-gray-400">
-              <a href="https://cmt3.research.microsoft.com/SPERT2025" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">
-                https://cmt3.research.microsoft.com/SPERT2025
-              </a>
+              Submission link will be provided soon.
             </p>
           </div>
         </div>

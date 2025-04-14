@@ -45,6 +45,7 @@ const navItems = [
       { name: "Location", href: "/travel/location" },
     ],
   },
+  { name: "Students & YPs", href: "/students-and-yps" },
   { name: "Sponsorships", href: "/sponsorships" },
   { name: "Contact", href: "/contact" },
 ];
@@ -66,11 +67,11 @@ const Navbar = () => {
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center gap-2 font-bold">
           <img
-            src="https://i.ibb.co/JWhJB86S/SPERT2025.png"
+            src="https://i.ibb.co/cX34H3Fd/Spert-final-logo.jpg"
             alt="IEEE-SPERT Logo"
             className="h-8" // Adjust height as needed
           />
-          <span className="text-lg">IEEE-SPERT</span>
+          <span className="text-lg">IEEE SPERT 2025</span>
         </Link>
         <button onClick={toggleMenu} className="md:hidden">
           <span className="text-2xl">☰</span>

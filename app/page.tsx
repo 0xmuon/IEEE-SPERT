@@ -12,6 +12,13 @@ import Image from "next/image"
 import { Lightbulb } from "lucide-react"
 import VisitorCounter from "@/app/components/VisitorCounter"
 
+// Add JSX namespace declaration
+declare namespace JSX {
+  interface IntrinsicElements {
+    [elemName: string]: any;
+  }
+}
+
 // Add this function before the ConferencePage component
 function CountdownTimer({ targetDate }: { targetDate: string }) {
   const [timeLeft, setTimeLeft] = useState<{ [key: string]: number }>({});
@@ -40,7 +47,7 @@ function CountdownTimer({ targetDate }: { targetDate: string }) {
     return () => clearTimeout(timer);
   });
 
-  const timerComponents: JSX.Element[] = [];
+  const timerComponents: React.ReactNode[] = [];
 
   Object.keys(timeLeft).forEach((interval) => {
     if (!timeLeft[interval]) {
@@ -97,9 +104,18 @@ export default function HomePage() {
   ]
 
   const announcements = [
-    "Call for papers now open!",
-    "Early bird registration closing soon",
-    "Special session on AI in Power Systems",
+    <Link 
+      href="/authors/call-for-papers" 
+      className="text-primary hover:underline"
+    >
+      Call for papers now open!
+    </Link>,
+    <Link 
+      href="/program/call-for-special-session" 
+      className="text-primary hover:underline"
+    >
+      Special session on AI in Power Systems
+    </Link>
   ]
 
   return (
@@ -110,9 +126,11 @@ export default function HomePage() {
         <ImageGallery />
         <div className="w-full bg-gradient-to-r from-green-200 to-white dark:from-blue-800 dark:to-black py-4">
           <div className="container mx-auto">
-            <marquee className="text-xl font-semibold text-gray-800 dark:text-gray-200">
-              Our Current Sponsors | Platinum Sponsors: Raj Vijtech Private Limited, Surat | Silver Sponsors: TechSunBio Private Limited, Surat
-            </marquee>
+            <div className="text-xl font-semibold text-gray-800 dark:text-gray-200 overflow-hidden whitespace-nowrap">
+              <div className="animate-marquee inline-block">
+                Our Current Sponsors | Platinum Sponsors: Raj Vijtech Private Limited, Surat | Silver Sponsors: TechSunBio Private Limited, Surat
+              </div>
+            </div>
           </div>
         </div>
         <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-green-200 to-white dark:from-blue-800 dark:to-black">
