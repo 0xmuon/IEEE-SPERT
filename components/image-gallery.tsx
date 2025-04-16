@@ -38,7 +38,7 @@ export function ImageGallery() {
         <p className="text-xl text-center mb-2">
           IEEE International Conference on Smart Power, Energy, Renewables, and Transportation (IEEE-SPERT) 2025
         </p>
-        <p className="text-lg">19 Dec - 21 Dec, 2025</p>
+        <p className="text-lg">22 Dec - 24 Dec, 2025</p>
         <Image 
           src="https://imgs.search.brave.com/WFSCJ_QtSA6WBJR7nTNYbUyHylRSHAaK-XBDbUO7FZc/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/c3ZuaXQuYWMuaW4v/aW1hZ2VzL2xvZ28u/cG5n"
           alt="SVNIT Logo"
