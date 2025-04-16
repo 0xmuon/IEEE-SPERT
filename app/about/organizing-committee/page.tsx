@@ -49,16 +49,16 @@ export default function OrganizingCommitteePage() {
               <h2 className="text-2xl font-bold mb-4 text-primary">General Chairs</h2>
               <ul className="space-y-4">
                 <li>
+                  <p className="text-lg">Prof. Chirag N. Paunwala</p>
+                  <p className="text-gray-600 dark:text-gray-300">Chair - IEEE Gujarat Section</p>
+                </li>
+                <li>
                   <p className="text-lg">Dr. Mahmadasraf A. Mulla</p>
                   <p className="text-gray-600 dark:text-gray-300">DoEE, SVNIT Surat</p>
                 </li>
                 <li>
                   <p className="text-lg">Dr. Aeidapu Mahesh</p>
                   <p className="text-gray-600 dark:text-gray-300">DoEE, SVNIT Surat</p>
-                </li>
-                <li>
-                  <p className="text-lg">Prof. Chirag N. Paunwala</p>
-                  <p className="text-gray-600 dark:text-gray-300">Chair - IEEE Gujarat Section</p>
                 </li>
               </ul>
             </div>
