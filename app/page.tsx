@@ -145,10 +145,10 @@ export default function HomePage() {
                 </p>
                 <div className="flex flex-col gap-4 min-[400px]:flex-row">
                   <Button size="lg" asChild>
-                    <Link href="/authors/call-for-papers">Register Now</Link>
+                    <Link href="/">Register Now</Link>
                   </Button>
                   <Button size="lg" variant="outline" asChild>
-                    <Link href="/authors/submission-and-registration">Submit Paper</Link>
+                    <Link href="/authors/call-for-papers">Submit Paper</Link>
                   </Button>
                 </div>
               </div>
