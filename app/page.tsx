@@ -200,11 +200,11 @@ export default function HomePage() {
                     <td className="py-2 px-4 border-b dark:text-gray-300">Final Paper Submission Deadline</td>
                   </tr>
                   <tr className="dark:bg-gray-700">
-                    <td className="py-2 px-4 border-b dark:text-gray-300">19th December 2025</td>
+                    <td className="py-2 px-4 border-b dark:text-gray-300">22nd December 2025</td>
                     <td className="py-2 px-4 border-b dark:text-gray-300">Conference Begins</td>
                   </tr>
                   <tr className="dark:bg-gray-700">
-                    <td className="py-2 px-4 border-b dark:text-gray-300">21st December 2025</td>
+                    <td className="py-2 px-4 border-b dark:text-gray-300">24th December 2025</td>
                     <td className="py-2 px-4 border-b dark:text-gray-300">Conference Ends</td>
                   </tr>
                 </tbody>
