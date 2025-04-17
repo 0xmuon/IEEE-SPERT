@@ -79,7 +79,7 @@ export default function CallForPapersPage() {
               <div className="mb-8">
                 <h2 className="text-2xl font-bold mb-2">Paper Submission Link</h2>
                 <p className="text-gray-500 dark:text-gray-400">
-                  Submission link will be provided soon.
+                <a href="https://cmt3.research.microsoft.com/SPERT2025" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">https://cmt3.research.microsoft.com/SPERT2025</a>
                 </p>
               </div>
             </div>
