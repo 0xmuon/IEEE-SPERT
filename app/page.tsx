@@ -114,7 +114,7 @@ export default function HomePage() {
       href="/program/call-for-special-session" 
       className="text-primary hover:underline"
     >
-      Special session on AI in Power Systems
+      Call for Special Session will be announced soon!
     </Link>
   ]
 

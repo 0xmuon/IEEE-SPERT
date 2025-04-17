@@ -8,7 +8,7 @@ const announcements = [
   "Call for papers now open!",
   "Early bird registration closing soon",
   "Keynote speakers announced",
-  "Special session on AI in Power Systems",
+  "Call for Special session will be announced soon!",
 ]
 
 export function SlidingAnnouncements() {
