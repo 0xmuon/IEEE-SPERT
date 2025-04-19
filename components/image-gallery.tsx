@@ -36,7 +36,7 @@ export function ImageGallery() {
       <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-white p-4">
         <h1 className="text-4xl font-bold text-center mb-4">IEEE International Conference</h1>
         <p className="text-xl text-center mb-2">
-          IEEE International Conference on Smart Power, Energy, Renewables, and Transportation (IEEE-SPERT) 2025
+          Smart Power, Energy, Renewables, and Transportation (IEEE-SPERT) 2025
         </p>
         <p className="text-lg">22 Dec - 24 Dec, 2025</p>
         <Image 
