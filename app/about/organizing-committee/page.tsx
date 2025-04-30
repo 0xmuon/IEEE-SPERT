@@ -70,7 +70,7 @@ export default function OrganizingCommitteePage() {
                 {[
                   "Prof. Pranav B. Darji, DoEE, SVNIT Surat",
                   "Dr. Priyesh Chauhan, IITRAM, Ahmedabad",
-                  "Dr. Rajashekhar Reddy, DoEE, SVNIT Surat",
+                  "Dr. Rajasekharareddy Chilipi, DoEE, SVNIT Surat",
                   "Dr. Sanjay Tolani, DoEE, SVNIT Surat",
                   "Dr. K. V. Praveen Kumar, DoEE, SVNIT Surat",
                   "Dr. Suresh Lakhimsetty, DoEE, SVNIT Surat"
