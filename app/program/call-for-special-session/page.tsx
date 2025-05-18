@@ -28,77 +28,87 @@ export default function CallForSpecialSessionPage() {
 
           {/* Proposal Content Section */}
           <div className="mb-12">
-            <h2 className="text-2xl font-bold mb-4">Proposal Content</h2>
+            <h2 className="text-2xl font-bold mb-4">Dates: 22 Dec to 24 Dec 2025 | Venue: Sardar Vallabhbhai National Institute of Technology, Surat</h2>
             <p className="text-gray-500 dark:text-gray-400 mb-6">
-              If you intend to propose and organize a special session, please provide us with a proposal using the following information:
             </p>
             <ul className="list-disc pl-5 text-gray-500 dark:text-gray-400 space-y-2">
-              <li>Title of the Special Session</li>
-              <li>A brief description of the area of concern (approx. 300 words), with special focus on why we should believe this is an interesting and significant topic?</li>
-              <li>The name and contact information of maximum special session chairs, who are willing to promote and organize a sufficient amount of quality submissions to the special session. Please also indicate the background of the organizers.</li>
-              <li>A list of potential authors and their affiliation & other details (minimum 10)</li>
-              <li>A list of potential reviewers and their affiliation & other details (minimum 10)</li>
+              <li>We are pleased to invite proposals for Special Sessions to be included in IEEE International Conference Smart Power, Energy, Renewables, and Transportation (IEEE-SPERT) 2025, Sardar Vallabhbhai National Institute of Technology, Surat. The conference is organized by the Department of Electrical Engineering, and it aims to bring together leading researchers, academics, industry professionals, and practitioners from around the globe to share their latest research findings, innovations, and developments in the field of advanced energy systems, renewable energy sources, and sustainable transportation solutions.</li>
+              <li>Topics include smart grid technologies, energy storage, IoT applications in power systems, and the role of artificial intelligence in optimizing energy distribution. The conference also covers renewable energy advancements in solar, wind, and biofuels, alongside the evolution of electric and hybrid vehicles. It highlights sustainable mobility, smart transportation systems, and the environmental impacts of energy technologies.</li>
+              <li>Special Sessions are an integral part of our conference program, offering the opportunity to focus on emerging, specialized, or interdisciplinary topics that may not be fully represented in the main conference tracks. They serve as a platform for experts to delve deeper into niche areas of interest, facilitate focused discussions, and promote future collaborations.</li>
             </ul>
           </div>
 
-          {/* Special Session Organization Section */}
+          {/*  Benefits of Organizing a Special Session: */}
           <div className="mb-12">
-            <h2 className="text-2xl font-bold mb-4">Special Session Organization</h2>
-            <p className="text-gray-500 dark:text-gray-400">
-              Once approved, it is the duty of the organizers to publicize the Special Session among researchers and practitioners in the field and attract a sufficient number of papers.
-            </p>
-          </div>
-
-          {/* Review Process Section */}
-          <div className="mb-12">
-            <p className="text-gray-500 dark:text-gray-400 mb-4">
-              <span className="font-bold text-gray-900 dark:text-white">Review Process: </span>
-              Papers submitted to special sessions will undergo the same review process as regular papers. The special session chairs of the respective special session are responsible for organizing the review process, assuring at least three reviews per paper. This includes a selection of reviewers from their peers.
-            </p>
-            <p className="text-gray-500 dark:text-gray-400">
-              <span className="font-bold text-gray-900 dark:text-white">Conflict of Interest: </span>
-              Before starting the review process, special session organizers must explicitly declare papers, which present a conflict of interest for them. A conflict of interest arises where the judgment of a paper quality can be influenced by the organizers being authors or knowing some of the authors. To ensure independent reviews, this conflict must be marked as such in the submission system and the SS chairs notified so that they can arrange the review process.
-            </p>
-          </div>
-
-          {/* Requirements Section */}
-          <div className="mb-12">
-            <p className="text-gray-500 dark:text-gray-400 mb-4">
-              <span className="font-bold text-gray-900 dark:text-white">Requirements: </span>
-            </p>
+            <h2 className="text-2xl font-bold mb-4">✅ Benefits of Organizing a Special Session:</h2>
             <ul className="list-disc pl-5 text-gray-500 dark:text-gray-400 space-y-2">
-              <li>A minimum of 8 accepted and registered papers with authors from at least 4 different institutions is required for each session.</li>
-              <li>If a session has too few papers, accepted papers will be allocated to regular sessions wherever possible.</li>
-              <li>In case of indication of weakly organized special sessions, the conference organizers will support the organizers with advice but reserve measures including cancellation of the respective special session.</li>
+              <li>Recognition as a Special Session Chair</li>
+              <li>Opportunity to shape the technical content in your area of expertise</li>
+              <li>Networking opportunities with key researchers and professionals</li>
+              <li>Contribution to building a community around emerging research themes</li>
             </ul>
           </div>
 
-          {/* Complimentary Registration Section */}
-          <div className="mb-12">
-            <p className="text-gray-500 dark:text-gray-400">
-              <span className="font-bold text-gray-900 dark:text-white">Complimentary Conference Registration: </span>
-              At least one organizer of the successful Special Sessions is expected to register for and attend the conference, as well as chair the corresponding sessions. Organizers of a successful Special Session will get one free full registration (per at least 8 accepted and registered papers not authored by the any of the organizers)
-            </p>
-          </div>
-
-          {/* Session Chairs Section */}
-          <div className="mb-12">
-            <p className="text-gray-500 dark:text-gray-400">
-              <span className="font-bold text-gray-900 dark:text-white">Session Chairs: </span>
-              When a special session is finally accepted by the conference, SS organizers will serve as Session chairs in the conference. In some extenuated circumstance, Technical Program chairs and Conference General Chairs might take up the full control of appointing the Session Chairs, in case of SS organizers unable to participate in the conference.
-            </p>
-          </div>
-
-          {/* Restrictions Section */}
+          {/* Topics of Interest for Special Sessions */}
           <div className="mb-12">
             <p className="text-gray-500 dark:text-gray-400 mb-4">
-              <span className="font-bold text-gray-900 dark:text-white">Restrictions: </span>
-              During the review process, Special Session Organizers must consider that:
+              <span className="font-bold text-gray-900 dark:text-white">🧩 Topics of Interest for Special Sessions</span>
             </p>
             <ul className="list-disc pl-5 text-gray-500 dark:text-gray-400 space-y-2">
-              <li>An individual cannot be (co-) author of more than two papers submitted to the same Special Session.</li>
-              <li>From one organizations maximum 2 organizers can be participated in one special session</li>
-              <li>Maximum number of organizers in one session can be 4 and minimum 2</li>
+              <li>We welcome proposals across all areas covered by the conference, including but not limited to the regular tracks mentioned in the conference website.If your area is novel or evolving, we especially encourage you to submit a proposal that will broaden the conference's scope and appeal.</li>
+            </ul>
+          </div>
+
+          {/* Proposal Submission Guidelines */}
+          <div className="mb-12">
+            <p className="text-gray-500 dark:text-gray-400">
+              <span className="font-bold text-gray-900 dark:text-white">📄 Proposal Submission Guideline </span>
+              Special Session proposals should include the following information:
+            </p>
+            <ul className="list-disc pl-5 text-gray-500 dark:text-gray-400 space-y-2">
+              <li>Title of the Special Session:</li>
+              <li>Names, affiliations, and contact details of the organizers:</li>
+              <li>Short biography of each organizer (100–150 words):</li>
+              <li>Session abstract (300–500 words): Explain the significance of the topic, why it fits within the scope of the conference, and what makes it timely and relevant.</li>
+              <li>List of potential contributors or invited speakers (if already identified):</li>
+              <li>Tentative number of papers/speakers expected: Minimum of 08 papers should be eligible for publish and at least one speaker is expected. </li>
+            </ul>
+          </div>
+
+          {/* Important Dates: */}
+          <div className="mb-12">
+            <p className="text-gray-500 dark:text-gray-400">
+              <span className="font-bold text-gray-900 dark:text-white">⏳ Important Dates: </span>
+            </p>
+            <ul className="list-disc pl-5 text-gray-500 dark:text-gray-400 space-y-2">
+              <li>Deadline for Special Session Proposals: 20-05-2025</li>
+              <li>Notification of Acceptance: 25-05-2025</li>
+              <li>Deadline for Special Session Paper Submissions: 31-07-2025</li>
+              <li>Conference Dates: 22 Dec to 24 Dec 2025</li>
+            </ul>
+          </div>
+
+          {/* Submission Procedure: */}
+          <div className="mb-12">
+            <p className="text-gray-500 dark:text-gray-400">
+              <span className="font-bold text-gray-900 dark:text-white">📬 Submission Procedure: </span>         
+            </p>
+            <ul className="list-disc pl-5 text-gray-500 dark:text-gray-400 space-y-2">
+              <li>Please submit your Special Session proposal in PDF or Word format via email to:</li>
+              <li>spert2025@gmail.com</li>
+              <li>with the subject line: “Special Session Proposal – [Your Proposed Session Title]”</li>
+            </ul>
+          </div>
+
+          {/* Review and Selection Process: */}
+          <div className="mb-12">
+            <p className="text-gray-500 dark:text-gray-400 mb-4">
+              <span className="font-bold text-gray-900 dark:text-white">📌 Review and Selection Process: </span>
+            </p>
+            <ul className="list-disc pl-5 text-gray-500 dark:text-gray-400 space-y-2">
+              <li>All proposals will be evaluated by the conference's Special Sessions Committee based on their relevance, novelty, the profile of the organizers, and alignment with the overall goals of the conference.</li>
+              <li>Once accepted, special sessions will be listed on the official conference website, and a dedicated submission track will be created.</li>
+              <li>Papers submitted to Special Sessions will undergo the same rigorous peer-review process as regular submissions and will be published in the conference proceedings, subject to the acceptance and registration of the authors.</li>
             </ul>
           </div>
 
