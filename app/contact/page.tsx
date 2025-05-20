@@ -16,7 +16,7 @@ export default function ContactPage() {
           
           {/* New section for IEEE-SPERT 2025 details */}
           <div className="mt-8">
-            <h2 className="text-2xl font-bold">IEEE-SPERT 2025</h2>
+            <h2 className="text-2xl font-bold">Contact us to the email provided:</h2>
             <p className="text-gray-500 dark:text-gray-400">Sardar Vallabhbhai National Institute of Technology, Surat</p>
             <p className="text-gray-500 dark:text-gray-400">Email: <a href="mailto:spert2025@gmail.com" className="text-blue-500">spert2025@gmail.com</a></p>
             <p className="text-gray-500 dark:text-gray-400">SVNIT, Surat - 395007 (Gujarat) India</p>

@@ -27,7 +27,7 @@ export default function StudentsAndYPsPage() {
               </CardContent>
             </Card>
             
-            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {/* <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               <Card>
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold mb-2">IES-SYPA Program</h3>
@@ -54,7 +54,7 @@ export default function StudentsAndYPsPage() {
                   </p>
                 </CardContent>
               </Card>
-            </div>
+            </div> */}
           </div>
         </section>
       </main>
