@@ -8,6 +8,7 @@ const images = [
   "https://i.ibb.co/X031GYt/photo1.webp",
   "https://i.ibb.co/8LS03LTr/Akshardham-Temple-Gujarat-7.jpg",
   "https://i.ibb.co/KzGBFs9v/electrical-engg-svnit.jpg",
+  "https://www.istockphoto.com/photos/gujarat-landscape"
 ]
 
 export function ImageGallery() {
@@ -34,7 +35,7 @@ export function ImageGallery() {
         />
       ))}
       <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-white p-4">
-        <h1 className="text-4xl font-bold text-center mb-4">IEEE International Conference</h1>
+        <h1 className="text-4xl font-bold text-center mb-4">IEEE International Conference on</h1>
         <p className="text-xl text-center mb-2">
           Smart Power, Energy, Renewables, and Transportation (IEEE-SPERT) 2025
         </p>
