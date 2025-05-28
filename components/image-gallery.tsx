@@ -7,8 +7,7 @@ const images = [
   "https://i.ibb.co/QFHnxq40/Statue-of-Unity.webp",
   "https://i.ibb.co/X031GYt/photo1.webp",
   "https://i.ibb.co/8LS03LTr/Akshardham-Temple-Gujarat-7.jpg",
-  "https://i.ibb.co/KzGBFs9v/electrical-engg-svnit.jpg",
-  "https://www.istockphoto.com/photos/gujarat-landscape"
+  "https://i.ibb.co/KzGBFs9v/electrical-engg-svnit.jpg"
 ]
 
 export function ImageGallery() {
