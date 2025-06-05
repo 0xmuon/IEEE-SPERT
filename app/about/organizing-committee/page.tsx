@@ -41,6 +41,10 @@ export default function OrganizingCommitteePage() {
                   <p className="text-lg">Prof. Victor Veliadis</p>
                   <p className="text-gray-600 dark:text-gray-300">IEEE Fellow, CTO of PowerAmerica and Professor at NC State University</p>
                 </li>
+                <li>
+                  <p className="text-lg">Dr. Sanjeet Kumar Dwivedi</p>
+                  <p className="text-gray-600 dark:text-gray-300">Fellow IET, Senior Consultant, RDT Engineers, Denmark</p>
+                </li>
               </ul>
             </div>
 
@@ -149,6 +153,7 @@ export default function OrganizingCommitteePage() {
                     "Prof. Pradhyuman Chaturvedi, VNIT Nagpur",
                     "Prof. Ashwani Kumar, NIT Kurukshetra",
                     "Prof. V.T. Somasekhar, DoEE, NIT Warangal",
+                    "Dr. Naveen Yalla, IIT BHU",
                     "Prof. R B Jadeja, Marwadi University",
                     "Dr. Gopal Gajjar, Hitachi Energy",
                     "Dr. Vijay K. Shah, ABB, Vadodara"
