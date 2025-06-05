@@ -114,7 +114,7 @@ export default function HomePage() {
       href="/program/call-for-special-session" 
       className="text-primary hover:underline"
     >
-      Call for Special Session now open!
+      Special Session Announced!
     </Link>
   ]
 
