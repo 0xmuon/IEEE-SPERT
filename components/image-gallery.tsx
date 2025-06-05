@@ -4,10 +4,18 @@ import { useState, useEffect } from "react"
 import Image from "next/image"
 
 const images = [
-  "https://i.ibb.co/QFHnxq40/Statue-of-Unity.webp",
-  "https://i.ibb.co/X031GYt/photo1.webp",
-  "https://i.ibb.co/8LS03LTr/Akshardham-Temple-Gujarat-7.jpg",
-  "https://i.ibb.co/KzGBFs9v/electrical-engg-svnit.jpg"
+  "https://i.ibb.co/JWB2yy71/common-banner.png",
+  "https://i.ibb.co/yFnrh1j0/world-s-tallest-statue.jpg",
+  "https://i.ibb.co/tMv2dKth/Rani-Ki-Vav.jpg",
+  "https://i.ibb.co/XZwCvyjT/Getty-Images-821330386.jpg",
+  "https://i.ibb.co/mCFnBrbN/Dandi.jpg",
+  "https://i.ibb.co/Mkjvsc4b/gopi-talav.jpg",
+  "https://i.ibb.co/QF5BGM2J/Akshardham-Temple-Banner.jpg",
+ // "https://i.ibb.co/X031GYt/photo1.webp",
+ // "https://i.ibb.co/8LS03LTr/Akshardham-Temple-Gujarat-7.jpg",
+ // "https://i.ibb.co/KzGBFs9v/electrical-engg-svnit.jpg",
+  "https://i.ibb.co/nNmk47W7/Statue-of-Unity-Engineering-Construction-and-Project-Management-of-Worlds-Tallest-Statue.jpg",
+  //"https://i.ibb.co/Pvwm2mZW/statue-of-unity-blog-cover.webp",
 ]
 
 export function ImageGallery() {
@@ -21,7 +29,7 @@ export function ImageGallery() {
   }, [])
 
   return (
-    <div className="relative w-full h-[550px]">
+    <div className="relative w-full h-[85vh]">
       {images.map((src, index) => (
         <Image
           key={index}
