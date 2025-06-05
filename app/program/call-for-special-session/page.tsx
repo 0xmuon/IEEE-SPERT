@@ -96,7 +96,7 @@ export default function CallForSpecialSessionPage() {
             <ul className="list-disc pl-5 text-gray-500 dark:text-gray-400 space-y-2">
               <li>Please submit your Special Session proposal in PDF or Word format via email to:</li>
               <li>spert2025@gmail.com</li>
-              <li>with the subject line: “Special Session Proposal – [Your Proposed Session Title]”</li>
+              <li>with the subject line: "Special Session Proposal – [Your Proposed Session Title]"</li>
             </ul>
           </div>
 
@@ -118,6 +118,90 @@ export default function CallForSpecialSessionPage() {
               <span className="font-bold text-gray-900 dark:text-white">Format for Paper Submission: </span>
               Maximum 6 pages and should follow the IEEE conference template. <Link href="https://www.ieee.org/conferences/publishing/templates.html" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">View IEEE templates here</Link>.
             </p>
+          </div>
+
+          {/* Special Sessions Section */}
+          <div className="mb-12">
+            <h2 className="text-2xl font-bold mb-6">Approved Special Sessions</h2>
+            <div className="space-y-8">
+              <div className="border rounded-lg p-6">
+                <h3 className="text-xl font-semibold mb-3">Advanced Control and Optimization of DC-DC Converters for Smart and Sustainable Energy Systems</h3>
+                <p className="text-gray-600 dark:text-gray-400">
+                  <strong>Organizers:</strong><br />
+                  1. Dr. Vanjari Venkata Ramana, Assistant Professor, Department of Electrical Engineering, Delhi Technological University, Delhi<br />
+                  2. Dr. D.G. Abhilash Krishna, Assistant Professor, Department of Electrical and Electronics Engineering, RV College of Engineering, Bengaluru
+                </p>
+              </div>
+
+              <div className="border rounded-lg p-6">
+                <h3 className="text-xl font-semibold mb-3">Solar Energy Solutions for Renewable Integration and Electric Mobility</h3>
+                <p className="text-gray-600 dark:text-gray-400">
+                  <strong>Organizers:</strong><br />
+                  1. Dr. Chinmaya K A, Assistant Professor, Department of Electrical Engineering IIT (BHU), Varanasi, India<br />
+                  2. Dr. Dileep. G, Assistant Professor, Department of Electrical and Electronics Engineering Jigme Namgyel Engineering College, Dewathang, Bhutan<br />
+                  3. Dr. Sukriti Tiwari, Assistant Professor, National Institute of Technology Calicut (NITC), Kerala, India
+                </p>
+              </div>
+
+              <div className="border rounded-lg p-6">
+                <h3 className="text-xl font-semibold mb-3">Intelligent Forecasting Techniques for Smart Energy and Transportation Systems using Machine Learning and Hybrid Deep Learning Models</h3>
+                <p className="text-gray-600 dark:text-gray-400">
+                  <strong>Organizers:</strong><br />
+                  1. Madderla Chiranjeevi, Assistant Professor, School of Computer Science and Artificial Intelligence, SR University, Warangal, India<br />
+                  2. Dr. Tukaram Moger, Associate Professor, Department of Electrical and Electronics Engineering, NITK Surathkal, Mangalore, India<br />
+                  3. Dr. Debashisha Jena, Professor, Department of Electrical and Electronics Engineering, NITK Surathkal, Mangalore, India
+                </p>
+              </div>
+
+              <div className="border rounded-lg p-6">
+                <h3 className="text-xl font-semibold mb-3">Smart Mobility: Integration of AI, Batteries and Charging Systems for EVs</h3>
+                <p className="text-gray-600 dark:text-gray-400">
+                  <strong>Organizers:</strong><br />
+                  1. Hareesh Myneni, Assistant Professor, Department of Electrical Engineering, NIT Srinagar, Jammu & Kashmir, India<br />
+                  2. Dr. D. V. Siva krishna Rao, Assistant Professor, Department of Electrical Engineering, NIT Trichy
+                </p>
+              </div>
+
+              <div className="border rounded-lg p-6">
+                <h3 className="text-xl font-semibold mb-3">Advanced Power Converters and Control Techniques for Renewable Energy Systems</h3>
+                <p className="text-gray-600 dark:text-gray-400">
+                  <strong>Organizers:</strong><br />
+                  1. Dr. Ravi Eswar K M, Assistant Professor, Department of Electrical and Electronics Engineering, SRM Institute of Science and Technology, Chennai, India<br />
+                  2. Dr. Phani Teja Bankupalli, Assistant Professor, Department of Electrical and Electronics Engineering, SRM Institute of Science and Technology, Chennai, India
+                </p>
+              </div>
+
+              <div className="border rounded-lg p-6">
+                <h3 className="text-xl font-semibold mb-3">Applications of Machine-Learning in Energy Systems</h3>
+                <p className="text-gray-600 dark:text-gray-400">
+                  <strong>Organizers:</strong><br />
+                  1. Dr. Sandeep Kakran, Assistant Professor Gr. 1, Electrical Engineering Department, NIT Kurukshetra<br />
+                  2. Dr. Pradeep Kumar, Assistant Professor Gr. 1, Electrical Engineering Department, NIT Kurukshetra<br />
+                  3. Dr. Rajesh Kumar, Assistant Professor Gr. 1, Electrical Engineering Department, NIT Kurukshetra
+                </p>
+              </div>
+
+              <div className="border rounded-lg p-6">
+                <h3 className="text-xl font-semibold mb-3">Integration of Smart Agriculture and Energy for Empowering Rural India</h3>
+                <p className="text-gray-600 dark:text-gray-400">
+                  <strong>Organizers:</strong><br />
+                  1. Dr. Sonali Paunikar, Professor & Head, Department of Electrical and Electronics Engineering, IES College of Technology, Bhopal<br />
+                  2. Dr. N P Patidar, Professor, Department of Electrical Engineering, MANIT Bhopal<br />
+                  3. Prof. Mohan Lal Kolhe, Professor in Smart Grid & Renewable Energy, Faculty of Engineering & Science, University of Agder (Norway)
+                </p>
+              </div>
+
+              <div className="border rounded-lg p-6">
+                <h3 className="text-xl font-semibold mb-3">Innovation in Renewable and Power Converters: Quest for a more sustainable energy and e-mobility</h3>
+                <p className="text-gray-600 dark:text-gray-400">
+                  <strong>Organizers:</strong><br />
+                  1. Dr. Soumyabrata Barik, Assistant Professor, Department of Electrical Engineering, IIT (ISM) Dhanbad<br />
+                  2. Dr. Sukanta Halder, Assistant Professor, Department of Electrical Engineering, IIT (ISM) Dhanbad, Jharkhand, India<br />
+                  3. Dr. Sudarshan Swain, Assistant Professor, Department of Electrical and Electronics Engineering, BITS Pilani, K.K. Birla Goa Campus<br />
+                  4. Dr. Subhadeep Paladhi, Assistant Professor, Department of Electrical Engineering, IIT Indore
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
