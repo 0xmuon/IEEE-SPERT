@@ -133,7 +133,7 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-green-200 to-white dark:from-blue-800 dark:to-black">
+        <section className="w-full py-4 md:py-4 lg:py-4 bg-gradient-to-r from-green-200 to-white dark:from-blue-800 dark:to-black">
           <div className="container px-4 md:px-6">
             <div className="grid gap-8 md:grid-cols-2">
               <div>
@@ -152,6 +152,48 @@ export default function HomePage() {
                   </Button>
                 </div>
               </div>
+              {/* Important Dates Section */}
+              <div className="container px-4 md:px-6 flex flex-col md:flex-row justify-between">
+                <div className="md:w-full mt-8 md:mt-0">
+                  <div className="bg-primary/10 rounded-xl p-6 shadow-lg">
+                    <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl mb-6 text-primary">
+                      Important Dates
+                    </h2>
+                    <div className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden">
+                      <table className="min-w-full">
+                        <thead>
+                          <tr className="bg-primary/20 dark:bg-gray-700">
+                            <th className="py-3 px-4 text-left font-semibold text-primary dark:text-white">Date</th>
+                            <th className="py-3 px-4 text-left font-semibold text-primary dark:text-white">Event</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr className="bg-primary/5 hover:bg-primary/10 dark:hover:bg-gray-700">
+                            <td className="py-3 px-4 font-bold text-gray-800 dark:text-gray-200">31st July 2025</td>
+                            <td className="py-3 px-4 text-blue-600 dark:text-blue-400">Full Paper Submission Deadline</td>
+                          </tr>
+                          <tr className="bg-white dark:bg-gray-800 hover:bg-primary/10 dark:hover:bg-gray-700">
+                            <td className="py-3 px-4 font-bold text-gray-800 dark:text-gray-200">15th September 2025</td>
+                            <td className="py-3 px-4 text-green-600 dark:text-green-400">Notification of Acceptance</td>
+                          </tr>
+                          <tr className="bg-primary/5 hover:bg-primary/10 dark:hover:bg-gray-700">
+                            <td className="py-3 px-4 font-bold text-gray-800 dark:text-gray-200">15th October 2025</td>
+                            <td className="py-3 px-4 text-yellow-600 dark:text-yellow-400">Final Paper Submission Deadline</td>
+                          </tr>
+                          <tr className="bg-white dark:bg-gray-800 hover:bg-primary/10 dark:hover:bg-gray-700">
+                            <td className="py-3 px-4 font-bold text-gray-800 dark:text-gray-200">22nd December 2025</td>
+                            <td className="py-3 px-4 text-purple-600 dark:text-purple-400">Conference Begins</td>
+                          </tr>
+                          <tr className="bg-primary/5 hover:bg-primary/10 dark:hover:bg-gray-700">
+                            <td className="py-3 px-4 font-bold text-gray-800 dark:text-gray-200">24th December 2025</td>
+                            <td className="py-3 px-4 text-red-600 dark:text-red-400">Conference Ends</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div>
                 <h3 className="text-2xl font-bold mb-4">Announcements</h3>
                 <div className="space-y-4">
@@ -168,53 +210,49 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Important Dates Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-green-200 to-white dark:from-blue-800 dark:to-black">
-          <div className="container px-4 md:px-6 flex flex-col md:flex-row justify-between">
-            <div className="md:w-2/3">
-              <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl mb-8">Conference Overview</h2>
-              <p className="max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-                The International Conference on Smart Power, Energy, Renewables, and Transportation aims to explore the integration of advanced energy systems, renewable energy sources, and sustainable transportation solutions. Topics include smart grid technologies, energy storage, IoT applications in power systems, and the role of artificial intelligence in optimizing energy distribution. The conference also covers renewable energy advancements in solar, wind, and biofuels, alongside the evolution of electric and hybrid vehicles. It highlights sustainable mobility, smart transportation systems, and the environmental impacts of energy technologies. Discussions will focus on policy, regulation, and economic strategies to accelerate the transition toward a cleaner, more efficient energy and transportation future. The event provides a platform for collaboration between experts from academia, industry, and government to drive innovations in these critical sectors.
-              </p>
-            </div>
-            <div className="md:w-1/3 mt-8 md:mt-0">
-              <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl mb-8">Important Dates</h2>
-              <table className="min-w-full bg-white border border-gray-300 dark:bg-gray-800 dark:border-gray-700">
-                <thead>
-                  <tr>
-                    <th className="py-2 px-4 border-b dark:text-white">Date</th>
-                    <th className="py-2 px-4 border-b dark:text-white">Event</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="dark:bg-gray-700">
-                    <td className="py-2 px-4 border-b dark:text-gray-300">31st July 2025</td>
-                    <td className="py-2 px-4 border-b dark:text-gray-300">Full Paper Submission Deadline</td>
-                  </tr>
-                  <tr className="dark:bg-gray-700">
-                    <td className="py-2 px-4 border-b dark:text-gray-300">15th September 2025</td>
-                    <td className="py-2 px-4 border-b dark:text-gray-300">Notification of Acceptance</td>
-                  </tr>
-                  <tr className="dark:bg-gray-700">
-                    <td className="py-2 px-4 border-b dark:text-gray-300">15th October 2025</td>
-                    <td className="py-2 px-4 border-b dark:text-gray-300">Final Paper Submission Deadline</td>
-                  </tr>
-                  <tr className="dark:bg-gray-700">
-                    <td className="py-2 px-4 border-b dark:text-gray-300">22nd December 2025</td>
-                    <td className="py-2 px-4 border-b dark:text-gray-300">Conference Begins</td>
-                  </tr>
-                  <tr className="dark:bg-gray-700">
-                    <td className="py-2 px-4 border-b dark:text-gray-300">24th December 2025</td>
-                    <td className="py-2 px-4 border-b dark:text-gray-300">Conference Ends</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </section>
+<section className="w-full py-4 md:py-8 lg:py-12 bg-gradient-to-r from-green-200 to-white dark:from-blue-800 dark:to-black">
+  <div className="container px-4 md:px-6">
+    <div className="grid grid-cols-1 gap-4">
+      
+      {/* Regular Tracks */}
+      <Card className="bg-white dark:bg-gray-800 shadow-md">
+        <CardContent className="p-6">
+          <h2 className="text-2xl font-bold mb-2 text-primary">Regular Tracks</h2> {/* reduced mb */}
+          <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
+            {regularTracks.map((track, index) => (
+              <li key={index}>{track}</li>
+            ))}
+          </ul>
+        </CardContent>
+      </Card>
+
+      {/* Special Sessions */}
+      <Card className="bg-white dark:bg-gray-800 shadow-md">
+        <CardContent className="p-6">
+          <h2 className="text-2xl font-bold mb-2 text-primary">Special Sessions</h2> {/* reduced mb */}
+          <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
+            <li><strong>SS1:</strong> Advanced Control and Optimization of DC-DC Converters for Smart and Sustainable Energy Systems</li>
+            <li><strong>SS2:</strong> Solar Energy Solutions for Renewable Integration and Electric Mobility</li>
+            <li><strong>SS3:</strong> Intelligent Forecasting Techniques for Smart Energy and Transportation Systems using Machine Learning and Hybrid Deep Learning Models</li>
+            <li><strong>SS4:</strong> Smart Mobility: Integration of AI, Batteries and Charging Systems for EVs</li>
+            <li><strong>SS5:</strong> Advanced Power Converters and Control Techniques for Renewable Energy Systems</li>
+            <li><strong>SS6:</strong> Applications of Machine-Learning in Energy Systems</li>
+            <li><strong>SS7:</strong> Integration of Smart Agriculture and Energy for Empowering Rural India</li>
+            <li><strong>SS8:</strong> Innovation in Renewable and Power Converters: Quest for a more sustainable energy and e-mobility</li>
+            <li><strong>SS9:</strong> Wide Band Gap devices-based converters for renewable and transportation applications</li>
+          </ul>
+        </CardContent>
+      </Card>
+
+    </div>
+  </div>
+</section>
+
+
+
 
         {/* Countdown Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-green-200 to-white dark:from-blue-800 dark:to-black">
+        <section className="w-full py-4 md:py-8 lg:py-12 bg-gradient-to-r from-green-200 to-white dark:from-blue-800 dark:to-black">
           <div className="container px-4 md:px-6">
             <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl mb-8 text-center">
               Conference Starts In
@@ -224,7 +262,7 @@ export default function HomePage() {
         </section>
 
         {/* Sponsors Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32">
+        <section className="w-full py-4 md:py-8 lg:py-12">
           <div className="container px-4 md:px-6">
             <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl mb-12 text-center">
               Our Valued Sponsors

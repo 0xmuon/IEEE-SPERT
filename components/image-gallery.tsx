@@ -5,7 +5,7 @@ import Image from "next/image"
 
 const images = [
   "https://i.ibb.co/JWB2yy71/common-banner.png",
-  "https://i.ibb.co/yFnrh1j0/world-s-tallest-statue.jpg",
+  "https://i.ibb.co/k2RHKH4y/Whats-App-Image-2025-06-06-at-23-25-07.jpg",
   "https://i.ibb.co/tMv2dKth/Rani-Ki-Vav.jpg",
   "https://i.ibb.co/XZwCvyjT/Getty-Images-821330386.jpg",
   "https://i.ibb.co/mCFnBrbN/Dandi.jpg",
@@ -29,7 +29,7 @@ export function ImageGallery() {
   }, [])
 
   return (
-    <div className="relative w-full h-[85vh]">
+    <div className="relative w-full h-[68vh]">
       {images.map((src, index) => (
         <Image
           key={index}
