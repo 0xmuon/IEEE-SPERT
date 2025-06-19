@@ -240,6 +240,7 @@ export default function HomePage() {
             <li><strong>SS7:</strong> Integration of Smart Agriculture and Energy for Empowering Rural India</li>
             <li><strong>SS8:</strong> Innovation in Renewable and Power Converters: Quest for a more sustainable energy and e-mobility</li>
             <li><strong>SS9:</strong> Wide Band Gap devices-based converters for renewable and transportation applications</li>
+            <li><strong>SS10:</strong> Multilevel Inverters: Advanced Topologies, Modulation Strategies for medium and high-power Applications</li>
           </ul>
         </CardContent>
       </Card>

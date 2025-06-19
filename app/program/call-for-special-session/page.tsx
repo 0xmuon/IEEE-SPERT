@@ -10,7 +10,7 @@ export default function CallForSpecialSessionPage() {
       <section className="w-full py-12 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6">
           <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none mb-8">
-            Call for Special Session
+            Special Sessions
           </h1>
 
           {/* Special Sessions Section */}
@@ -96,7 +96,17 @@ export default function CallForSpecialSessionPage() {
               </div>
 
               <div className="border rounded-lg p-6">
-                <h3 className="text-xl font-semibold mb-3">SS9: Multilevel Inverters: Advanced Topologies, Modulation Strategies for medium and high-power Applications</h3>
+                <h3 className="text-xl font-semibold mb-3">SS9: Wide Band Gap devices-based converters for renewable and transportation applications</h3>
+                <p className="text-gray-600 dark:text-gray-400">
+                  <strong>Organizers:</strong><br />
+                  1. Dr Lalit Kumar Sahu, Assistant Professor, Department of Electrical Engineering, IIT Bhilai<br />
+                  2. Dr A Hemachander, Assistant Professor, Department of Electrical and Electronics Engineering, NIT Puducherry<br />
+                  3. Mr P Praneeth Kumar, Lead, BMS Project, Senior Hardware Engineer, Samarth E-Mobility Pvt. Ltd.
+                </p>
+              </div>
+
+              <div className="border rounded-lg p-6">
+                <h3 className="text-xl font-semibold mb-3">SS10: Multilevel Inverters: Advanced Topologies, Modulation Strategies for medium and high-power Applications</h3>
                 <p className="text-gray-600 dark:text-gray-400">
                   <strong>Organizers:</strong><br />
                   1. Dr. Y Suresh, NITK Surathkal, Karnataka, India<br />

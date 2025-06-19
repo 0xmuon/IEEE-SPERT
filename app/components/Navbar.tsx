@@ -29,7 +29,7 @@ const navItems = [
     name: "Program",
     href: "/program",
     children: [
-      { name: "Call for Special Session", href: "/program/call-for-special-session" },
+      { name: "Special Sessions", href: "/program/call-for-special-session" },
       { name: "Keynote Speaker", href: "/program/keynote-speaker" },
       { name: "Tutorial Speaker", href: "/program/tutorial-speaker" },
     ],
