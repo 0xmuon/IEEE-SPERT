@@ -161,6 +161,7 @@ export default function CallForSpecialSessionPage() {
               <li>Opportunity to shape the technical content in your area of expertise</li>
               <li>Networking opportunities with key researchers and professionals</li>
               <li>Contribution to building a community around emerging research themes</li>
+              <li>One free registration per 8 accepted and registred papers, exculding the papers authored by the special session chairs in their respective special session</li>
             </ul>
           </div>
 
