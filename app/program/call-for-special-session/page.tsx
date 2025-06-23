@@ -114,6 +114,17 @@ export default function CallForSpecialSessionPage() {
                   3. Dr. C Dhanamjayulu, VIT Vellore, Tamilnadu, India
                 </p>
               </div>
+
+              <div className="border rounded-lg p-6">
+                <h3 className="text-xl font-semibold mb-3">SS11: Thermal Runaway Characterization, Management Strategies and Safety Mechanisms in EV Battery Packs</h3>
+                <p className="text-gray-600 dark:text-gray-400">
+                  <strong>Organizers:</strong><br />
+                  1. Dr. Anubhav Agrawal, Associate Professor, School of Engineering and Technology, BML Munjal University<br />
+                  2. Dr. Aneesh Prabhakar, Assistant Professor, Centre for Energy and Environment, Malaviya National Institute of Technology Jaipur<br />
+                  3. Dr. Rojo Kurian Daniels, Assistant Professor, School of Engineering and Technology, BML Munjal University.
+                </p>
+              </div>
+
             </div>
           </div>
 
