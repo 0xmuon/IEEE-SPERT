@@ -125,6 +125,16 @@ export default function CallForSpecialSessionPage() {
                 </p>
               </div>
 
+              <div className="border rounded-lg p-6">
+                <h3 className="text-xl font-semibold mb-3">SS12: Flexible and Self-Powered Nanogenerator-Integrated Systems for Smart Energy and Sustainable Electronics</h3>
+                <p className="text-gray-600 dark:text-gray-400">
+                  <strong>Organizers:</strong><br />
+                  1. Dr. Deepak Puneta, Assistant Professor, Depatment of Electronics and Communication Engineering, MNNIT Allahabad<br />
+                  2. Dr. Anand Sharma, Assistant Professor, Depatment of Electronics and Communication Engineering, MNNIT Allahabad<br />
+                  3. Dr. Satish Chandra, Assistant Professor, Depatment of Electronics and Communication Engineering, MNNIT Allahabad
+                </p>
+              </div>
+
             </div>
           </div>
 
