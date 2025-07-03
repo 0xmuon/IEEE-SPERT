@@ -80,7 +80,8 @@ export default function CallForSpecialSessionPage() {
                   <strong>Organizers:</strong><br />
                   1. Dr. Sonali Paunikar, Professor & Head, Department of Electrical and Electronics Engineering, IES College of Technology, Bhopal<br />
                   2. Dr. N P Patidar, Professor, Department of Electrical Engineering, MANIT Bhopal<br />
-                  3. Prof. Mohan Lal Kolhe, Professor in Smart Grid & Renewable Energy, Faculty of Engineering & Science, University of Agder (Norway)
+                  3. Prof. Mohan Lal Kolhe, Professor in Smart Grid & Renewable Energy, Faculty of Engineering & Science, University of Agder (Norway) <br />
+                  4. Prof. Varsha A Shah, Professor, Department of Electrical Engineering, SVNIT Surat
                 </p>
               </div>
 

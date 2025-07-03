@@ -241,10 +241,11 @@ export default function HomePage() {
             <li><strong>SS8:</strong> Innovation in Renewable and Power Converters: Quest for a more sustainable energy and e-mobility</li>
             <li><strong>SS9:</strong> Wide Band Gap devices-based converters for renewable and transportation applications</li>
             <li><strong>SS10:</strong> Multilevel Inverters: Advanced Topologies, Modulation Strategies for medium and high-power Applications</li>
+            <li><strong>SS11:</strong> Thermal Runaway Characterization, Management Strategies and Safety Mechanisms in EV Battery Packs</li>
+            <li><strong>SS12:</strong> Flexible and Self-Powered Nanogenerator-Integrated Systems for Smart Energy and Sustainable Electronics</li>
           </ul>
         </CardContent>
       </Card>
-
     </div>
   </div>
 </section>
