@@ -136,6 +136,16 @@ export default function CallForSpecialSessionPage() {
                 </p>
               </div>
 
+              <div className="border rounded-lg p-6">
+                <h3 className="text-xl font-semibold mb-3">SS13: Green Intelligence: Advanced Materials and AI-Driven Approaches for Smart and Resilient Energy Infrastructure</h3>
+                <p className="text-gray-600 dark:text-gray-400">
+                  <strong>Organizers:</strong><br />
+                  1. Dr. Sudhakar Jyothula, Principal, Vignan's Institute of Information Technology (VIIT), Visakhapatnam, Andhra Pradesh<br />
+                  2. Dr. Pratap Kumar Dakua, Sr. Associate Professor, ECE Department, Vignan's Institute of Information Technology (VIIT), Visakhapatnam, Andhra Pradesh <br />
+                  3. Dr. Subheundu Sekhar Sahoo, Associate Professor, EEE Department, Vignan's Institute of Information Technology (VIIT), Visakhapatnam, Andhra Pradesh
+                </p>
+              </div>
+
             </div>
           </div>
 
