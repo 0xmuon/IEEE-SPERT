@@ -146,6 +146,17 @@ export default function CallForSpecialSessionPage() {
                 </p>
               </div>
 
+              <div className="border rounded-lg p-6">
+                <h3 className="text-xl font-semibold mb-3">SS14: Cybersecurity and Resilience of Smart Power and Renewable Energy Systems in Defence Applications</h3>
+                <p className="text-gray-600 dark:text-gray-400">
+                  <strong>Organizers:</strong><br />
+                  1. Dr. Saurav Verma, Assistant Professor, MPSTME, NMIMS University, Mumbai <br />
+                  2. Dr. Ashwini Rao, Associate Professor, MPSTME, NMIMS University, Mumbai <br />
+                  3. Dr. Vikram Kulkarni, Associate Professor, MPSTME, NMIMS University, Mumbai <br />
+                  4. Dr. Chetana Prakash, Professor, BIET, Davanagere, VTU, Karnataka
+                </p>
+              </div>
+
             </div>
           </div>
 
