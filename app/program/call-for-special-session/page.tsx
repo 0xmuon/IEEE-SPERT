@@ -157,6 +157,16 @@ export default function CallForSpecialSessionPage() {
                 </p>
               </div>
 
+              <div className="border rounded-lg p-6">
+                <h3 className="text-xl font-semibold mb-3">SS15: AI-Driven Predictive Maintenance and Fault Detection in Power and EV Systems</h3>
+                <p className="text-gray-600 dark:text-gray-400">
+                  <strong>Organizers:</strong><br />
+                  1. Dr. Himanshu Sharma, Dean R&D, G.H. Raisoni College of Engineering and Management, Nagpur <br />
+                  2. Dr. Krishan Arora, Professor, School of Electronics and Electrical Engineering, Lovely Professional University<br />
+                  3. Dr. Akhil Gupta, Associate Professor, Symbiosis Institute of Technology, Nagpur <br />
+                </p>
+              </div>
+
             </div>
           </div>
 
