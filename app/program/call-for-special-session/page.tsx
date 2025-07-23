@@ -147,7 +147,7 @@ export default function CallForSpecialSessionPage() {
               </div>
 
               <div className="border rounded-lg p-6">
-                <h3 className="text-xl font-semibold mb-3">SS14: Cybersecurity and Resilience of Smart Power and Renewable Energy Systems in Defence Applications</h3>
+                <h3 className="text-xl font-semibold mb-3">SS14: Cybersecurity and Resilience of Smart Power and Renewable Energy Systems </h3>
                 <p className="text-gray-600 dark:text-gray-400">
                   <strong>Organizers:</strong><br />
                   1. Dr. Saurav Verma, Assistant Professor, MPSTME, NMIMS University, Mumbai <br />
