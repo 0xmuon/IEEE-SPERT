@@ -102,28 +102,63 @@ export default function OrganizingCommitteePage() {
             {/* Other Committee Sections */}
             {[
               {
-                title: "Finance Chair",
+                title: "Finance Chairs",
                 members: [
                   "Dr. Mahmadasraf A. Mulla, DoEE, SVNIT Surat",
-                  "Prof. A. K. Panchal, DoEE, SVNIT",
-                  "Dr. Basant K. Sethi, DoEE, SVNIT",
-                  "Dr. Akanksha Shukla, DoEE, SVNIT"
+                  "Dr. Suresh Lakhimsetty, DoEE, SVNIT Surat",
+                  "Dr. Anjali Diwan, IEEE Gujarat Section",
                 ]
               },
               {
                 title: "Technical Program Committee Chairs",
                 members: [
+                  "Dr. Amit Ved, Marwadi University",
                   "Prof. Pranav B. Darji, DoEE, SVNIT Surat",
                   "Dr. Mahmadasraf A. Mulla, DoEE, SVNIT Surat",
                   "Dr. Aeidapu Mahesh, DoEE, SVNIT Surat",
-                  "Prof. Sabha Raj Arya, DoEE, SVNIT Surat",
-                  "Prof. Anandita Chawdhury, DoEE, SVNIT Surat",
                   "Dr. Brij N. Singh, IEEE Fellow, John Deere Fellow, Electrification R&D Manager in John Deere USA",
                   "Prof. Victor Veliadis, IEEE Fellow, CTO of PowerAmerica and Professor at NC State University",
                   "Dr. Surender Reddy Salkuti, Department of Railroad and Electrical Engineering, Woosong University, Republic of Korea",
-                  "Dr. Amit Ved, Marwadi University"
                 ]
               },
+
+              {
+                title: "Publication Chairs",
+                members: [
+                  "Prof. Sabha Raj Arya, DoEE, SVNIT Surat",
+                  "Dr. Sanjay Tolani, DoEE, SVNIT Surat",
+                  "Dr. K. V. Praveen Kumar, DoEE, SVNIT Surat",
+                ]
+              },
+
+               {
+                title: "Publicity Chairs",
+                members: [
+                  "Dr. Sunanda Sinha, DoEE, MNIT Jaipur",
+                  "Dr. G Sushnigdha, DoEE, SVNIT Surat",
+                  "Dr. Basant K. Sethi, DoEE, SVNIT Surat",
+                ]
+              },
+
+               {
+                title: "Special Session Chairs",
+                members: [
+                  "Dr. Giribabu Dyanamina, MANIT Bhopal",
+                  "Dr. Tejavathu Ramesh, NIT Andhra Pradesh",
+                ]
+              },
+
+              {
+                title: "Tutorial and Workshop Chairs",
+                members: [
+                  "Dr. Priyesh Chauhan, IITRAM, Ahmedabad", 
+                  "Dr. Rajashekhar Reddy Chilipi, DoEE, VNIT Surat",
+                ]
+              },
+
+              
+
+              
               // Add other committees here...
             ].map((committee, index) => (
               <div key={index} className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
