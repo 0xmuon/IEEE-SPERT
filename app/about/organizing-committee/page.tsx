@@ -72,12 +72,13 @@ export default function OrganizingCommitteePage() {
               <h2 className="text-2xl font-bold mb-4 text-primary">Organizing Chairs</h2>
               <ul className="space-y-4">
                 {[
-                  "Prof. Pranav B. Darji, DoEE, SVNIT Surat",
+                  "Dr. Suresh Lakhimsetty, DoEE, SVNIT Surat",
                   "Dr. Priyesh Chauhan, IITRAM, Ahmedabad",
+                  "Prof. Pranav B. Darji, DoEE, SVNIT Surat",
                   "Dr. Rajasekharareddy Chilipi, DoEE, SVNIT Surat",
                   "Dr. Sanjay Tolani, DoEE, SVNIT Surat",
                   "Dr. K. V. Praveen Kumar, DoEE, SVNIT Surat",
-                  "Dr. Suresh Lakhimsetty, DoEE, SVNIT Surat"
+                  
                 ].map((chair, index) => (
                   <li key={index} className="text-lg">{chair}</li>
                 ))}
@@ -115,7 +116,8 @@ export default function OrganizingCommitteePage() {
                   "Dr. Amit Ved, Marwadi University",
                   "Prof. Pranav B. Darji, DoEE, SVNIT Surat",
                   "Dr. Mahmadasraf A. Mulla, DoEE, SVNIT Surat",
-                  "Dr. Aeidapu Mahesh, DoEE, SVNIT Surat",
+                  "Dr. Sabha Raj Arya, DoEE, SVNIT Surat",
+                  "Dr. Anandita Chowdhury, DoEE, SVNIT Surat",
                   "Dr. Brij N. Singh, IEEE Fellow, John Deere Fellow, Electrification R&D Manager in John Deere USA",
                   "Prof. Victor Veliadis, IEEE Fellow, CTO of PowerAmerica and Professor at NC State University",
                   "Dr. Surender Reddy Salkuti, Department of Railroad and Electrical Engineering, Woosong University, Republic of Korea",
@@ -125,7 +127,7 @@ export default function OrganizingCommitteePage() {
               {
                 title: "Publication Chairs",
                 members: [
-                  "Prof. Sabha Raj Arya, DoEE, SVNIT Surat",
+                  "Dr. Rakesh Maurya, DoEE, SVNIT Surat",
                   "Dr. Sanjay Tolani, DoEE, SVNIT Surat",
                   "Dr. K. V. Praveen Kumar, DoEE, SVNIT Surat",
                 ]
@@ -145,19 +147,26 @@ export default function OrganizingCommitteePage() {
                 members: [
                   "Dr. Giribabu Dyanamina, MANIT Bhopal",
                   "Dr. Tejavathu Ramesh, NIT Andhra Pradesh",
+                  "Dr. Jammala Venkataramanaiah, DoEE, SVNIT",
                 ]
               },
 
               {
                 title: "Tutorial and Workshop Chairs",
                 members: [
-                  "Dr. Priyesh Chauhan, IITRAM, Ahmedabad", 
+                  "Dr. Priyesh Chauhan, IITRAM, Ahmedabad",
                   "Dr. Rajashekhar Reddy Chilipi, DoEE, VNIT Surat",
                 ]
               },
 
-              
-
+              {
+                title: "Institute Advisory Committee Chairs",
+                members: [
+                  "Prof. H R Jariwala, DoEE, SVNIT Surat",
+                  "Prof. R Chudamani, DoEE, SVNIT Surat",
+                  "Prof. Varsha A Shah, DoEE, SVNIT Surat",
+                ]
+              },
               
               // Add other committees here...
             ].map((committee, index) => (
