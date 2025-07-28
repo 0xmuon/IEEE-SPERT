@@ -114,8 +114,8 @@ export default function OrganizingCommitteePage() {
                 title: "Technical Program Committee Chairs",
                 members: [
                   "Dr. Amit Ved, Marwadi University",
-                  "Prof. Pranav B. Darji, DoEE, SVNIT Surat",
                   "Dr. Mahmadasraf A. Mulla, DoEE, SVNIT Surat",
+                  "Dr. Aeidapu Mahesh, DoEE, SVNIT Surat",
                   "Dr. Sabha Raj Arya, DoEE, SVNIT Surat",
                   "Dr. Anandita Chowdhury, DoEE, SVNIT Surat",
                   "Dr. Brij N. Singh, IEEE Fellow, John Deere Fellow, Electrification R&D Manager in John Deere USA",
@@ -162,9 +162,9 @@ export default function OrganizingCommitteePage() {
               {
                 title: "Institute Advisory Committee Chairs",
                 members: [
+                  "Prof. Varsha A Shah, DoEE, SVNIT Surat",
                   "Prof. H R Jariwala, DoEE, SVNIT Surat",
                   "Prof. R Chudamani, DoEE, SVNIT Surat",
-                  "Prof. Varsha A Shah, DoEE, SVNIT Surat",
                 ]
               },
               
