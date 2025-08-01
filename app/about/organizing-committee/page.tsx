@@ -114,6 +114,7 @@ export default function OrganizingCommitteePage() {
                 title: "Technical Program Committee Chairs",
                 members: [
                   "Dr. Amit Ved, Marwadi University",
+                  "Dr. Srinivas Bhaskar karanki, IEEE PELS Vice-Chair India-Pacific, IIT Bhubhaneshwar",
                   "Dr. Mahmadasraf A. Mulla, DoEE, SVNIT Surat",
                   "Dr. Aeidapu Mahesh, DoEE, SVNIT Surat",
                   "Dr. Sabha Raj Arya, DoEE, SVNIT Surat",

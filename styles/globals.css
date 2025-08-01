@@ -74,3 +74,32 @@
   }
 }
 
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 10s linear infinite;
+}
+
+@keyframes multicolor-blink {
+  0% { color: #16a34a; }
+  25% { color: #0ea5e9; }
+  50% { color: #f59e0b; }
+  75% { color: #ef4444; }
+  100% { color: #16a34a; }
+}
+
+.multicolor-blink {
+  animation: multicolor-blink 1s infinite;
+  font-weight: bold;
+}
+
+
