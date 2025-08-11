@@ -119,6 +119,7 @@ export default function OrganizingCommitteePage() {
                   "Dr. Aeidapu Mahesh, DoEE, SVNIT Surat",
                   "Dr. Sabha Raj Arya, DoEE, SVNIT Surat",
                   "Dr. Anandita Chowdhury, DoEE, SVNIT Surat",
+                  "Dr. Chandini P Gor, DoEE, SVNIT Surat",
                   "Dr. Brij N. Singh, IEEE Fellow, John Deere Fellow, Electrification R&D Manager in John Deere USA",
                   "Prof. Victor Veliadis, IEEE Fellow, CTO of PowerAmerica and Professor at NC State University",
                   "Dr. Surender Reddy Salkuti, Department of Railroad and Electrical Engineering, Woosong University, Republic of Korea",
