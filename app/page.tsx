@@ -128,7 +128,7 @@ export default function HomePage() {
             <div className="container mx-auto">
               <div className="text-xl font-semibold text-red-600 overflow-hidden whitespace-nowrap">
                 <div className="animate-marquee">
-                  Final Deadline paper submission is 31st August, 2025 (Hard Deadline)
+                  Final deadline for paper submission is extended up to 31st August, 2025 (Hard Deadline)
                 </div>
               </div>
             </div>
@@ -181,8 +181,9 @@ export default function HomePage() {
                        <tr className="bg-primary/5 hover:bg-primary/10 dark:hover:bg-gray-700">
                           <td className="py-3 px-4 font-bold text-gray-800 dark:text-gray-200">
                             <span className="text-red-600 line-through">31st July 2025</span><br />
-                            <span className="text-purple-600 font-extrabold animate-pulse">17th August 2025</span><br />
-                            <span className="text-yellow-600 font-semibold">(Extended Deadline)</span>
+                            <span className="text-red-600 line-through">17th August 2025</span><br />
+                            <span className="text-purple-600 font-extrabold animate-pulse">31 August 2025</span><br />
+                            <span className="text-yellow-600 font-semibold">(Hard Deadline)</span>
                           </td>
                           <td className="py-3 px-4 text-blue-600 dark:text-blue-400">
                             Full Paper Submission Deadline
