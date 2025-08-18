@@ -41,7 +41,7 @@ export default function SubmissionAndRegistrationPage() {
             ["Indian Author - Academia/Industry (2 Papers)", "₹11,800", "₹14,160", "₹14,160", "₹16,520"],
             ["Indian Author - Attendee", "₹7,080", "₹9,440", "₹9,440", "₹11,800"],
             ["Student Author (1 Paper)", "₹6,608", "₹8,260", "₹8,260", "₹10,620"],
-            ["Student Attendee", "₹4,720", "₹5,900", "₹5,900", "₹8,260"],
+            ["Student Attendee", "₹2,950", "₹4,130", "₹2,950", "₹4,130"],
             ["Foreign Author - Academia/Industry (2 Papers)", "$354", "$413", "$413", "$472"],
             ["Foreign Attendee", "$236", "$295", "$295", "$354"],
             ["Foreign Student Author (1 Paper)", "$236", "$295", "$295", "$354"],
@@ -63,7 +63,6 @@ export default function SubmissionAndRegistrationPage() {
   <h3 className="text-2xl font-bold mb-4 text-primary">Important instructions:</h3>
   <ul className="list-disc list-outside pl-6 space-y-2 text-gray-700 dark:text-gray-300">
     <li>Each accepted paper must have at least one author registered under the full category (Academician, Scientist, Industry Professional, or Foreign Author) before the deadline to be included in IEEE Xplore.</li>
-    <li>A single full registration allows the presentation and submission of up to two (2) papers.</li>
     <li>Student registration permits the presentation of only one (1) paper.</li>
     <li>Initial manuscript submissions may be up to six (6) pages. Two (2) additional pages are allowed in the final submission without extra charges. Maximum page limit is eight (8).</li>
     <li>Registration fees are non-refundable.</li>
@@ -73,6 +72,7 @@ export default function SubmissionAndRegistrationPage() {
   <ul className="list-disc list-outside pl-6 space-y-2 text-gray-700 dark:text-gray-300">
     <li><strong>Full Registration:</strong> Includes access to keynotes, tutorials, all technical sessions, a registration kit, lunch on all three days, tea breaks, and a gala dinner.</li>
     <li><strong>Student Registration:</strong> Includes access to Keynotes, tutorials, all conference sessions, a registration kit, lunches for all three days, tea breaks, and a gala dinner. Students must upload a valid student ID card during registration. Confirmation will be granted only after verifying the ID proof.</li>
+    <li><strong>Please Note:</strong> Registration kit is only provided per registration not per paper (one kit per registration (1/2 papers))</li>
   </ul>
 </div>
 

@@ -204,6 +204,7 @@ export default function CallForSpecialSessionPage() {
               <li>Networking opportunities with key researchers and professionals</li>
               <li>Contribution to building a community around emerging research themes</li>
               <li>One free registration per 8 accepted and registred papers, exculding the papers authored by the special session chairs in their respective special session</li>
+              <li><strong>Please Note:</strong> No TA/DA or accomodation is provided for special session organizers. They have to register and attend as the regular attendees only, but the registration fees can be waived off based on the criteria mentioned above. </li>
             </ul>
           </div>
 
