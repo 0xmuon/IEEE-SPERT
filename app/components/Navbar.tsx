@@ -3,12 +3,11 @@
 import Link from "next/link";
 import { useTheme } from "next-themes";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
-import { ChevronDown, Sun, Moon } from "lucide-react";
+import { ChevronDown, Sun, Moon, Flame } from "lucide-react";
 import { useState } from "react";
 import Image from "next/image";
 
 const navItems = [
-  { name: "Home", href: "/" },
   {
     name: "About",
     href: "/about",
@@ -22,9 +21,10 @@ const navItems = [
     href: "/authors",
     children: [
       { name: "Call for Papers", href: "/authors/call-for-papers" },
-      { name: "Submission and Registration", href: "/authors/submission-and-registration" },
+      { name: "Submission", href: "/authors/submission-and-registration" },
     ],
   },
+  { name: "Registration", href: "/registration", isHot: true, isImportant: true },
   {
     name: "Program",
     href: "/program",
@@ -82,7 +82,7 @@ const Navbar = () => {
               {item.children ? (
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>
-                    <button className="flex items-center gap-1 text-lg font-medium text-muted-foreground transition-colors hover:text-foreground">
+                    <button className="flex items-center gap-1 text-base font-medium text-muted-foreground transition-colors hover:text-foreground">
                       {item.name}
                       <ChevronDown className="size-4" />
                     </button>
@@ -98,9 +98,16 @@ const Navbar = () => {
               ) : (
                 <Link
                   href={item.href}
-                  className="text-lg font-medium text-muted-foreground transition-colors hover:text-foreground"
+                  className={`text-base font-medium transition-colors ${
+                    item.isHot && item.isImportant
+                      ? "text-red-600 dark:text-red-400 font-bold bg-gradient-to-r from-red-500/10 to-orange-500/10 px-3 py-2 rounded-lg border-2 border-red-500/30 hover:border-red-500/60 hover:from-red-500/20 hover:to-orange-500/20 hover:text-red-700 dark:hover:text-red-300"
+                      : "text-muted-foreground hover:text-foreground"
+                  }`}
                 >
                   {item.name}
+                  {item.isHot && item.isImportant && (
+                    <span className="ml-1 text-xs bg-red-500 text-white px-2 py-1 rounded-full animate-bounce">NEW</span>
+                  )}
                 </Link>
               )}
             </div>
@@ -129,9 +136,16 @@ const Navbar = () => {
               ) : (
                 <Link
                   href={item.href}
-                  className="block text-lg font-medium text-muted-foreground transition-colors hover:text-foreground"
+                  className={`block text-base font-medium transition-colors ${
+                    item.isHot && item.isImportant
+                      ? "text-red-600 dark:text-red-400 font-bold bg-gradient-to-r from-red-500/10 to-orange-500/10 px-3 py-2 rounded-lg border-2 border-red-500/30 hover:border-red-500/60 hover:from-red-500/20 hover:to-orange-500/20 hover:text-red-700 dark:hover:text-red-300"
+                      : "text-muted-foreground hover:text-foreground"
+                  }`}
                 >
                   {item.name}
+                  {item.isHot && item.isImportant && (
+                    <span className="ml-1 text-xs bg-red-500 text-white px-2 py-1 rounded-full animate-bounce">NEW</span>
+                  )}
                 </Link>
               )}
             </div>

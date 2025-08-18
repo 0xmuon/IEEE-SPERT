@@ -124,20 +124,20 @@ export default function HomePage() {
       <main className="flex-1">
         {/* Welcome Section with Announcements */}
 
-          <div className="w-full bg-gradient-to-r from-green-200 to-white dark:from-blue-800 dark:to-black py-4">
+          <div className="w-full bg-gradient-to-r from-green-200 to-white dark:from-blue-800 dark:to-black py-4 animate-pulse" style={{ animationDelay: '0s' }}>
             <div className="container mx-auto">
-              <div className="text-xl font-semibold text-red-600 overflow-hidden whitespace-nowrap">
-                <div className="animate-marquee">
+              <div className="text-xl font-semibold text-gray-800 dark:text-gray-200 overflow-hidden whitespace-nowrap">
+                <div className="animate-marquee inline-block" style={{ marginLeft: '0px' }}>
                   Final deadline for paper submission is extended up to 31st August, 2025 (Hard Deadline)
                 </div>
               </div>
             </div>
           </div>
         <ImageGallery />
-        <div className="w-full bg-gradient-to-r from-green-200 to-white dark:from-blue-800 dark:to-black py-4">
+        <div className="w-full bg-gradient-to-r from-green-200 to-white dark:from-blue-800 dark:to-black py-4 animate-pulse" style={{ animationDelay: '0s' }}>
           <div className="container mx-auto">
             <div className="text-xl font-semibold text-gray-800 dark:text-gray-200 overflow-hidden whitespace-nowrap">
-              <div className="animate-marquee inline-block">
+              <div className="animate-marquee inline-block" style={{ marginLeft: '0px' }}>
                 Our Current Sponsors | Platinum Sponsors: Raj Vijtech Private Limited, Surat | Silver Sponsors: TechSunBio Private Limited, Surat
               </div>
             </div>
@@ -301,7 +301,7 @@ export default function HomePage() {
                   <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
                     <div className="flex flex-col items-center">
                       <Image 
-                        src="https://media.licdn.com/dms/image/v2/C4E0BAQEsSp-2XgoE-A/company-logo_200_200/company-logo_200_200/0/1630563919132?e=1750291200&v=beta&t=3IMFR0YkkSynwEkgSlZjuo1PFvkMDfgQOAHhfaG_W0k"
+                        src="https://i.ibb.co/27zWC9Ht/rvpl1.jpg"
                         alt="Raj Vijtech Private Limited"
                         width={150}
                         height={150}
@@ -324,7 +324,13 @@ export default function HomePage() {
                 <div className="max-w-sm w-full">
                   <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
                     <div className="flex flex-col items-center">
-                      <h4 className="font-bold text-2xl mb-2">TechSunBio Private Limited</h4>
+                    <Image 
+                         src="https://i.ibb.co/fVmFVZTv/tsb.jpg"
+                         alt="TechSunBio Private Limited"
+                         width={240}
+                         height={240}
+                       />
+                      <h4 className="font-bold text-2xl mb-2 text-center">TechSunBio Private Limited</h4>
                       <p className="text-gray-600 dark:text-gray-300 text-lg">Surat</p>
                     </div>
                   </div>
