@@ -138,7 +138,7 @@ export default function OrganizingCommitteePage() {
                {
                 title: "Publicity Chairs",
                 members: [
-                  "Dr. Sunanda Sinha, DoEE, MNIT Jaipur",
+                  "Dr. Sunanda Sinha, CEE, MNIT Jaipur",
                   "Dr. G Sushnigdha, DoEE, SVNIT Surat",
                   "Dr. Basant K. Sethi, DoEE, SVNIT Surat",
                 ]
@@ -157,7 +157,8 @@ export default function OrganizingCommitteePage() {
                 title: "Tutorial and Workshop Chairs",
                 members: [
                   "Dr. Priyesh Chauhan, IITRAM, Ahmedabad",
-                  "Dr. Rajashekhar Reddy Chilipi, DoEE, VNIT Surat",
+                  "Dr. Rajashekhar Reddy Chilipi, DoEE, SVNIT Surat",
+                  "Dr. Prasanta Kundu, DoEE, SVNIT Surat"
                 ]
               },
 

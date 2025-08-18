@@ -108,13 +108,13 @@ export default function HomePage() {
       href="/authors/call-for-papers" 
       className="text-primary hover:underline"
     >
-      Call for papers now open!
+      Final Call for papers up to 31 August 2025
     </Link>,
     <Link 
       href="/program/call-for-special-session" 
       className="text-primary hover:underline"
     >
-      Special Sessions Announced!
+      Special Sessions
     </Link>
   ]
 
@@ -123,16 +123,16 @@ export default function HomePage() {
       <Navbar />
       <main className="flex-1">
         {/* Welcome Section with Announcements */}
-            <div className="w-full bg-gradient-to-r from-green-200 to-white dark:from-blue-800 dark:to-black py-4">
-  <div className="container mx-auto">
-    <div className="text-xl font-semibold text-gray-800 dark:text-gray-200 overflow-hidden whitespace-nowrap">
-      <div className="animate-marquee multicolor-blink">
-        Deadline for paper submission is extended up to 17th August, 2025
-      </div>
-    </div>
-  </div>
-</div>
 
+          <div className="w-full bg-gradient-to-r from-green-200 to-white dark:from-blue-800 dark:to-black py-4">
+            <div className="container mx-auto">
+              <div className="text-xl font-semibold text-red-600 overflow-hidden whitespace-nowrap">
+                <div className="animate-marquee">
+                  Final Deadline paper submission is 31st August, 2025 (Hard Deadline)
+                </div>
+              </div>
+            </div>
+          </div>
         <ImageGallery />
         <div className="w-full bg-gradient-to-r from-green-200 to-white dark:from-blue-800 dark:to-black py-4">
           <div className="container mx-auto">
