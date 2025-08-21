@@ -75,7 +75,6 @@ export default function OrganizingCommitteePage() {
                   "Dr. Suresh Lakhimsetty, DoEE, SVNIT Surat",
                   "Dr. Priyesh Chauhan, IITRAM, Ahmedabad",
                   "Prof. Pranav B. Darji, DoEE, SVNIT Surat",
-                  "Dr. Rajasekharareddy Chilipi, DoEE, SVNIT Surat",
                   "Dr. Sanjay Tolani, DoEE, SVNIT Surat",
                   "Dr. K. V. Praveen Kumar, DoEE, SVNIT Surat",
                   
@@ -84,6 +83,20 @@ export default function OrganizingCommitteePage() {
                 ))}
               </ul>
             </div>
+
+            {/* Conference Convener*/}
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
+              <h2 className="text-2xl font-bold mb-4 text-primary">Conveners</h2>
+              <ul className="space-y-4">
+                {[
+                  "Dr. Rajasekharareddy Chilipi, DoEE, SVNIT Surat",
+                ].map((secretary, index) => (
+                  <li key={index} className="text-lg">{secretary}</li>
+                ))}
+              </ul>
+            </div>
+
+            
 
             {/* Conference Secretaries */}
             <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
