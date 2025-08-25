@@ -42,20 +42,39 @@ export function ImageGallery() {
         />
       ))}
       <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-white p-4">
-        <h1 className="text-4xl font-bold text-center mb-4">IEEE International Conference on</h1>
-        <p className="text-xl text-center mb-2">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-3 md:mb-4">IEEE International Conference on</h1>
+        <p className="text-lg md:text-xl text-center mb-2">
           Smart Power, Energy, Renewables, and Transportation (IEEE-SPERT) 2025
         </p>
-        <p className="text-lg">22 Dec - 24 Dec, 2025</p>
+        <p className="text-base md:text-lg">22 Dec - 24 Dec, 2025</p>
         <Image 
           src="https://imgs.search.brave.com/WFSCJ_QtSA6WBJR7nTNYbUyHylRSHAaK-XBDbUO7FZc/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/c3ZuaXQuYWMuaW4v/aW1hZ2VzL2xvZ28u/cG5n"
           alt="SVNIT Logo"
-          width={150}
-          height={150}
-          className="my-4"
+          width={120}
+          height={120}
+          className="my-3 md:my-4"
         />
-        <p className="text-lg">Organized by Electrical Engineering Department</p>
-        <p className="text-lg">Sardar Vallabhbhai National Institute of Technology, Surat, Gujarat, INDIA</p>
+        <p className="text-sm md:text-base text-center">Organized by Electrical Engineering Department</p>
+        <p className="text-sm md:text-base text-center">Sardar Vallabhbhai National Institute of Technology, Surat, Gujarat, INDIA</p>
+        
+        {/* IEEE and PELS Logos */}
+        <p className="text-base md:text-lg font-semibold mt-4 md:mt-6 mb-2 md:mb-3">Technically co-sponsored by</p>
+        <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6">
+          <Image 
+            src="https://i.ibb.co/MkYmRFPX/IEEE-IAS.jpg"
+            alt="IEEE IAS Logo"
+            width={70}
+            height={50}
+            className="object-contain"
+          />
+          <Image 
+            src="https://i.ibb.co/8nwDMYMV/pels-tag-clear-bar-vert.png"
+            alt="IEEE PELS Logo"
+            width={70}
+            height={50}
+            className="object-contain"
+          />
+        </div>
       </div>
     </div>
   )
