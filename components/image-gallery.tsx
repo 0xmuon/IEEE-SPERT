@@ -58,20 +58,20 @@ export function ImageGallery() {
         <p className="text-sm md:text-base text-center">Sardar Vallabhbhai National Institute of Technology, Surat, Gujarat, INDIA</p>
         
         {/* IEEE and PELS Logos */}
-        <p className="text-base md:text-lg font-semibold mt-4 md:mt-6 mb-2 md:mb-3">Technically co-sponsored by</p>
+        <p className="text-base md:text-lg font-semibold mt-4 md:mt-6 mb-2 md:mb-3">Technically co-sponsored by IEEE Industrial Electoncs Society (IAS) and Power Electronics Society (PELS) </p>
         <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6">
           <Image 
             src="https://i.ibb.co/MkYmRFPX/IEEE-IAS.jpg"
             alt="IEEE IAS Logo"
-            width={70}
-            height={50}
+            width={90}
+            height={70}
             className="object-contain"
           />
           <Image 
             src="https://i.ibb.co/8nwDMYMV/pels-tag-clear-bar-vert.png"
             alt="IEEE PELS Logo"
-            width={70}
-            height={50}
+            width={90}
+            height={70}
             className="object-contain"
           />
         </div>

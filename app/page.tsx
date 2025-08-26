@@ -128,7 +128,7 @@ export default function HomePage() {
             <div className="container mx-auto">
               <div className="text-xl font-semibold text-gray-800 dark:text-gray-200 overflow-hidden whitespace-nowrap">
                 <div className="animate-marquee inline-block" style={{ marginLeft: '0px' }}>
-                  The conference will be held offline (Physical) mode only | Final deadline for paper submission is extended up to 31st August, 2025 (Hard Deadline)
+                  The conference will be held fully in offline (physical) mode only | Final deadline for paper submission is extended up to 31st August, 2025 (Hard Deadline)
                 </div>
               </div>
             </div>
