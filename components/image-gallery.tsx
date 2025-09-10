@@ -30,6 +30,7 @@ export function ImageGallery() {
 
   return (
     <div className="relative w-full h-[68vh]">
+      {/* Rotating images */}
       {images.map((src, index) => (
         <Image
           key={index}
@@ -41,39 +42,58 @@ export function ImageGallery() {
           }`}
         />
       ))}
-      <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-white p-4">
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-3 md:mb-4">IEEE International Conference on</h1>
+
+      {/* Full dark overlay */}
+      <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center text-white p-6 md:p-10">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-3 md:mb-4">
+          IEEE International Conference on
+        </h1>
         <p className="text-lg md:text-xl text-center mb-2">
           Smart Power, Energy, Renewables, and Transportation (IEEE-SPERT) 2025
         </p>
-        <p className="text-base md:text-lg">22 Dec - 24 Dec, 2025</p>
-        <Image 
-          src="https://imgs.search.brave.com/WFSCJ_QtSA6WBJR7nTNYbUyHylRSHAaK-XBDbUO7FZc/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/c3ZuaXQuYWMuaW4v/aW1hZ2VzL2xvZ28u/cG5n"
-          alt="SVNIT Logo"
-          width={120}
-          height={120}
-          className="my-3 md:my-4"
-        />
+        <p className="text-base md:text-lg mb-4">22 Dec - 24 Dec, 2025</p>
 
-        <Image 
-          src="https://i.ibb.co/ks9mhG84/guj-section-logo.png"
-          alt="Gujarat Section Logo"
-          width={120}
-          height={120}
-          className="my-3 md:my-4"
-        />
+        {/* SVNIT + Gujarat Section Logos side by side */}
+        <div className="flex flex-row items-center justify-center gap-8 mb-4">
 
-        <p className="text-sm md:text-base text-center">Jointly organized by IEEE Gujarat Section, IEEE Gujarat Section IAS/IES/PELS Joint Chapter and </p>
-        <p className="text-sm md:text-base text-center">Department of Electrical Engineering, Sardar Vallabhbhai National Institute of Technology, Surat, Gujarat, INDIA</p>
-        
-        {/* IEEE and PELS Logos */}
-        <p className="text-base md:text-lg font-semibold mt-4 md:mt-6 mb-2 md:mb-3">Technically co-sponsored by IEEE Industrial Electoncs Society (IAS) and Power Electronics Society (PELS) </p>
-        <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6">
           <Image 
-            src="https://i.ibb.co/MkYmRFPX/IEEE-IAS.jpg"
+            src="https://i.ibb.co/ks9mhG84/guj-section-logo.png"
+            alt="Gujarat Section Logo"
+            width={300}
+            height={300}
+            className="object-contain"
+          />
+          <Image 
+            src="https://www.svnit.ac.in/images/logo.png"
+            alt="SVNIT Logo"
+            width={150}
+            height={150}
+            className="object-contain"
+          />
+          <Image 
+            src="https://i.ibb.co/fYQ9ZvB3/Jt-Chapter-Logo.png"
+            alt="IEEE IES/PELS Joint Chapter Logo"
+            width={300}
+            height={300}
+            className="object-contain"
+          />
+        </div>
+        
+
+        <p className="text-sm md:text-base text-center">
+          Finacially sponsored and jointly organized by IEEE Gujarat Section, IEEE Gujarat Section IAS/IES/PELS Joint Chapter and
+        </p>
+        <p className="text-sm md:text-base text-center mb-4">
+          Department of Electrical Engineering, Sardar Vallabhbhai National Institute of Technology, Surat, Gujarat, INDIA
+        </p>
+
+        {/* IEEE IAS + PELS Logos side by side */}
+        <div className="flex flex-row items-center justify-center gap-6">
+          <Image 
+            src="https://i.ibb.co/xqbwmHGg/IAS-Logo-No-BG1.png"
             alt="IEEE IAS Logo"
-            width={90}
-            height={70}
+            width={120}
+            height={90}
             className="object-contain"
           />
           <Image 
@@ -84,8 +104,13 @@ export function ImageGallery() {
             className="object-contain"
           />
         </div>
+          <p className="text-base md:text-lg font-semibold mb-3">
+          Technically co-sponsored by IEEE Industrial Electronics Society (IAS) and Power Electronics Society (PELS)
+        </p>
+        
       </div>
     </div>
   )
 }
+
 

@@ -387,7 +387,7 @@ export default function HomePage() {
               <Card className="bg-card">
                 <CardContent className="p-6 flex items-center justify-center h-40">
                   <Image 
-                    src="https://ieeegujaratsection.org/wp-content/uploads/sites/179/2023/01/IESIASPELS-Joint-Chapter.jpg"
+                    src="https://i.ibb.co/fYQ9ZvB3/Jt-Chapter-Logo.png"
                     alt="IEEE IES/PELS Joint Chapter Logo" 
                     width={100} 
                     height={100}
