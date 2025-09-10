@@ -54,8 +54,17 @@ export function ImageGallery() {
           height={120}
           className="my-3 md:my-4"
         />
-        <p className="text-sm md:text-base text-center">Organized by Electrical Engineering Department</p>
-        <p className="text-sm md:text-base text-center">Sardar Vallabhbhai National Institute of Technology, Surat, Gujarat, INDIA</p>
+
+        <Image 
+          src="https://i.ibb.co/ks9mhG84/guj-section-logo.png"
+          alt="Gujarat Section Logo"
+          width={120}
+          height={120}
+          className="my-3 md:my-4"
+        />
+
+        <p className="text-sm md:text-base text-center">Jointly organized by IEEE Gujarat Section, IEEE Gujarat Section IAS/IES/PELS Joint Chapter and </p>
+        <p className="text-sm md:text-base text-center">Department of Electrical Engineering, Sardar Vallabhbhai National Institute of Technology, Surat, Gujarat, INDIA</p>
         
         {/* IEEE and PELS Logos */}
         <p className="text-base md:text-lg font-semibold mt-4 md:mt-6 mb-2 md:mb-3">Technically co-sponsored by IEEE Industrial Electoncs Society (IAS) and Power Electronics Society (PELS) </p>
