@@ -1,6 +1,7 @@
 import Navbar from "@/app/components/Navbar"
 import Footer from "@/app/components/Footer"
 import { Card, CardContent } from "@/components/ui/card"
+import Image from "next/image"
 
 export default function SubmissionAndRegistrationPage() {
   return (
@@ -79,13 +80,33 @@ export default function SubmissionAndRegistrationPage() {
 
 <div className="mt-10 bg-primary/10 p-6 rounded-lg border dark:border-gray-700">
   <h3 className="text-2xl font-bold mb-4 text-primary">Bank Account Details for paying the Registration Fee</h3>
-  <div className="text-gray-700 dark:text-gray-300 space-y-2">
-    <p><strong>Account Number:</strong> 44122037989</p>
-    <p><strong>Account Name:</strong> DIRECTOR SVNIT IEEE SPERT 2025</p>
-    <p><strong>Bank Name:</strong> State Bank of India</p>
-    <p><strong>Branch Address:</strong> SVNIT Branch</p>
-    <p><strong>City:</strong> Surat, Gujarat State</p>
-    <p><strong>Country:</strong> India</p>
+  <div className="mb-4">
+    <div className="w-full rounded-md bg-primary/10 dark:bg-primary/20 px-4 py-3 text-primary font-bold text-center">
+      For quick payment, scan the QR code shown alongside.
+    </div>
+  </div>
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
+    <div className="md:col-span-2 text-gray-700 dark:text-gray-300 space-y-2">
+      <p><strong>Account Number:</strong> 44122037989</p>
+      <p><strong>Account Name:</strong> DIRECTOR SVNIT IEEE SPERT 2025</p>
+      <p><strong>Bank Name:</strong> State Bank of India</p>
+      <p><strong>Branch Address:</strong> SVNIT Branch</p>
+      <p><strong>City:</strong> Surat, Gujarat State</p>
+      <p><strong>Country:</strong> India</p>
+      
+    </div>
+    <div className="md:col-span-1">
+      <div className="w-full bg-white dark:bg-gray-900 border rounded-md overflow-hidden flex items-center justify-center p-2">
+        <Image
+          src="https://i.ibb.co/sd2fCdDL/qr-code.jpg"
+          alt="qr-code"
+          width={480}
+          height={640}
+          className="object-contain w-full h-auto"
+          priority
+        />
+      </div>
+    </div>
   </div>
 </div>
 

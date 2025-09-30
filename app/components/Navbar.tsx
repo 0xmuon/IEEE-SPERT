@@ -71,7 +71,6 @@ const Navbar = () => {
             alt="IEEE-SPERT Logo"
             className="h-14"
           />
-          <span className="text-lg">IEEE SPERT 2025</span>
         </Link>
         <button onClick={toggleMenu} className="md:hidden">
           <span className="text-2xl">☰</span>

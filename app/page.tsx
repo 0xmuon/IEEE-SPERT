@@ -104,17 +104,18 @@ export default function HomePage() {
   ]
 
   const announcements = [
-    <Link 
-      href="/authors/call-for-papers" 
-      className="text-primary hover:underline"
-    >
-      Final Call for papers up to 31 August 2025
-    </Link>,
+    
     <Link 
       href="/program/call-for-special-session" 
       className="text-primary hover:underline"
     >
       Special Sessions
+    </Link>,
+    <Link
+      href="/registration"
+      className="text-primary hover:underline"
+    >
+      Acceptance has been conveyed, Early Bird Registration started (Upto 31 Oct, 2025)
     </Link>
   ]
 
@@ -124,15 +125,150 @@ export default function HomePage() {
       <main className="flex-1">
         {/* Welcome Section with Announcements */}
 
-          <div className="w-full bg-gradient-to-r from-green-200 to-white dark:from-blue-800 dark:to-black py-4 animate-pulse" style={{ animationDelay: '0s' }}>
+          <div className="w-full bg-gradient-to-r from-green-200 to-white dark:from-blue-800 dark:to-black py-4" style={{ animationDelay: '0s' }}>
             <div className="container mx-auto">
-              <div className="text-xl font-semibold text-gray-800 dark:text-gray-200 overflow-hidden whitespace-nowrap">
-                <div className="animate-marquee inline-block" style={{ marginLeft: '0px' }}>
-                  The conference will be held fully in offline (physical) mode only | Final deadline for paper submission is extended up to 31st August, 2025 (Hard Deadline)
+              <div className="text-xl font-semibold text-gray-800 dark:text-gray-200 flex items-center gap-4">
+                <span className="shrink-0 text-primary font-extrabold">Announcement:</span>
+                <div className="relative flex-1 overflow-hidden min-w-0">
+                  <div className="animate-marquee inline-block whitespace-nowrap" style={{ marginLeft: '0px' }}>
+                    The conference will be held fully in offline (physical) mode only | Final deadline for paper submission is extended up to 31st August, 2025 (Hard Deadline)
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+        {/* Sponsor/Organizer strip matching gradient theme */}
+        <div className="w-full py-6 bg-white dark:bg-black">
+          <div className="container mx-auto px-4">
+            <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-6 md:gap-8 text-gray-800 dark:text-gray-200">
+              {/* Left image */}
+              <div className="shrink-0 w-full md:w-auto flex items-center justify-center md:mt-4">
+                <Image 
+                  src="https://imgs.search.brave.com/WFSCJ_QtSA6WBJR7nTNYbUyHylRSHAaK-XBDbUO7FZc/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/c3ZuaXQuYWMuaW4v/aW1hZ2VzL2xvZ28u/cG5n"
+                  alt="SVNIT Logo"
+                  width={200}
+                  height={200}
+                  className="object-contain rounded-md"
+                />
+              </div>
+
+              {/* Center text block */}
+              <div className="flex-1 flex flex-col items-center text-center">
+                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-3 md:mb-4">
+                  IEEE International Conference on
+                </h1>
+                <p className="text-lg md:text-xl text-center mb-2">
+                  Smart Power, Energy, Renewables, and Transportation (IEEE-SPERT) 2025
+                </p>
+                <p className="text-base md:text-lg mb-4">22 Dec - 24 Dec, 2025</p>
+
+                {/* SVNIT + Gujarat Section Logos side by side */}
+                <div className="flex flex-row items-center justify-center gap-8 mb-4">
+                  <Image 
+                    src="https://i.ibb.co/ks9mhG84/guj-section-logo.png"
+                    alt="Gujarat Section Logo"
+                    width={300}
+                    height={300}
+                    className="object-contain"
+                  />
+                  <Image 
+                    src="https://www.svnit.ac.in/images/logo.png"
+                    alt="SVNIT Logo"
+                    width={150}
+                    height={150}
+                    className="object-contain"
+                  />
+                  <Image 
+                    src="https://i.ibb.co/fYQ9ZvB3/Jt-Chapter-Logo.png"
+                    alt="IEEE IES/PELS Joint Chapter Logo"
+                    width={300}
+                    height={300}
+                    className="object-contain"
+                  />
+                </div>
+
+                <p className="text-sm md:text-base text-center">
+                  Finacially sponsored and jointly organized by IEEE Gujarat Section, IEEE Gujarat Section IAS/IES/PELS Joint Chapter and
+                </p>
+                <p className="text-sm md:text-base text-center mb-4">
+                  Department of Electrical Engineering, Sardar Vallabhbhai National Institute of Technology, Surat, Gujarat, INDIA
+                </p>
+
+                {/* IEEE IAS + PELS Logos side by side */}
+                <div className="flex flex-row items-center justify-center gap-6">
+                  <Image 
+                    src="https://i.ibb.co/xqbwmHGg/IAS-Logo-No-BG1.png"
+                    alt="IEEE IAS Logo"
+                    width={120}
+                    height={90}
+                    className="object-contain"
+                  />
+                  <Image 
+                    src="https://i.ibb.co/8nwDMYMV/pels-tag-clear-bar-vert.png"
+                    alt="IEEE PELS Logo"
+                    width={90}
+                    height={70}
+                    className="object-contain"
+                  />
+                </div>
+                <p className="text-base md:text-lg font-semibold mb-3">
+                  Technically co-sponsored by IEEE Industrial Electronics Society (IAS) and Power Electronics Society (PELS)
+                </p>
+              </div>
+
+              {/* Right image */}
+              <div className="shrink-0 w-full md:w-auto flex items-center justify-center md:mt-8">
+                <Image 
+                  src="https://i.ibb.co/ks9mhG84/guj-section-logo.png" 
+                  alt="Gujarat Section Logo" 
+                  width={230}
+                  height={230}
+                  className="object-contain"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* Static logos row below announcement */}
+        <div className="w-full py-4">
+          <div className="flex w-full items-center justify-between gap-8 px-4 sm:px-6 lg:px-8 flex-wrap">
+              <Image 
+                src="https://i.ibb.co/mrdb1b5s/ieee-logo.png" 
+                alt="IEEE Logo" 
+                width={100} 
+                height={100} 
+                className="object-contain"
+              />
+              <Image 
+                src="https://i.ibb.co/xqbwmHGg/IAS-Logo-No-BG1.png" 
+                alt="IEEE IAS Logo" 
+                width={120} 
+                height={90} 
+                className="object-contain"
+              />
+              <Image 
+                src="https://i.ibb.co/8nwDMYMV/pels-tag-clear-bar-vert.png" 
+                alt="IEEE PELS Logo" 
+                width={90} 
+                height={70} 
+                className="object-contain"
+              />
+              <Image 
+                src="https://i.ibb.co/fYQ9ZvB3/Jt-Chapter-Logo.png" 
+                alt="IEEE IES/PELS Joint Chapter Logo" 
+                width={120} 
+                height={120} 
+                className="object-contain"
+              />
+              <Image 
+                src="https://i.ibb.co/ks9mhG84/guj-section-logo.png" 
+                alt="Gujarat Section Logo" 
+                width={100} 
+                height={100} 
+                className="object-contain"
+              />
+          </div>
+        </div>
         <ImageGallery />
         <div className="w-full bg-gradient-to-r from-green-200 to-white dark:from-blue-800 dark:to-black py-4 animate-pulse" style={{ animationDelay: '0s' }}>
           <div className="container mx-auto">
@@ -186,17 +322,20 @@ export default function HomePage() {
                             <span className="text-yellow-600 font-semibold">(Hard Deadline)</span>
                           </td>
                           <td className="py-3 px-4 text-blue-600 dark:text-blue-400">
-                            Full Paper Submission Deadline
+                            Full Paper Submission Completed
                           </td>
                         </tr>
 
                           <tr className="bg-white dark:bg-gray-800 hover:bg-primary/10 dark:hover:bg-gray-700">
-                            <td className="py-3 px-4 font-bold text-gray-800 dark:text-gray-200">15th September 2025</td>
-                            <td className="py-3 px-4 text-green-600 dark:text-green-400">Notification of Acceptance</td>
+                            <td className="py-3 px-4 font-bold text-gray-800 dark:text-gray-200">
+                              <span className="text-red-600 line-through">15th September 2025</span><br />
+                              <span className="text-green-700 dark:text-green-400">30th September 2025</span>
+                            </td>
+                            <td className="py-3 px-4 text-green-600 dark:text-green-400">Notification Sent</td>
                           </tr>
                           <tr className="bg-primary/5 hover:bg-primary/10 dark:hover:bg-gray-700">
                             <td className="py-3 px-4 font-bold text-gray-800 dark:text-gray-200">15th October 2025</td>
-                            <td className="py-3 px-4 text-yellow-600 dark:text-yellow-400">Final Paper Submission Deadline</td>
+                            <td className="py-3 px-4 text-yellow-600 dark:text-yellow-400">Final Paper Submission Deadline(Upcoming)</td>
                           </tr>
                           <tr className="bg-white dark:bg-gray-800 hover:bg-primary/10 dark:hover:bg-gray-700">
                             <td className="py-3 px-4 font-bold text-gray-800 dark:text-gray-200">22nd December 2025</td>
@@ -227,6 +366,8 @@ export default function HomePage() {
             </div>
           </div>
         </section>
+
+        {/* Removed Upcoming Speakers Section as per request */}
 
 <section className="w-full py-4 md:py-8 lg:py-12 bg-gradient-to-r from-green-200 to-white dark:from-blue-800 dark:to-black">
   <div className="container px-4 md:px-6">
@@ -291,11 +432,8 @@ export default function HomePage() {
               Our Valued Sponsors
             </h2>
             
-            {/* Platinum Sponsors */}
-            <div className="mb-16">
-              <h3 className="text-2xl font-bold mb-8 text-center border-b pb-2 max-w-md mx-auto">
-                Platinum Sponsors
-              </h3>
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+              {/* Raj Vijtech Private Limited */}
               <div className="flex justify-center">
                 <div className="max-w-sm w-full">
                   <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
@@ -307,32 +445,58 @@ export default function HomePage() {
                         height={150}
                         className="rounded-lg mb-4 hover:scale-105 transition-transform duration-200"
                       />
-                      <h4 className="font-bold text-2xl mb-2">Raj Vijtech Private Limited</h4>
-                      <p className="text-gray-600 dark:text-gray-300 text-lg">Surat</p>
+                      <h4 className="font-bold text-2xl mb-2"></h4>
+                      <p className="text-gray-600 dark:text-gray-300 text-lg"></p>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            {/* Silver Sponsors */}
-            <div>
-              <h3 className="text-2xl font-bold mb-8 text-center border-b pb-2 max-w-md mx-auto">
-                Silver Sponsors
-              </h3>
+              {/* TechSunBio Private Limited */}
               <div className="flex justify-center">
-                <div className="max-w-sm w-full">
-                  <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
-                    <div className="flex flex-col items-center">
-                    <Image 
-                         src="https://i.ibb.co/fVmFVZTv/tsb.jpg"
-                         alt="TechSunBio Private Limited"
-                         width={240}
-                         height={240}
-                       />
-                      <h4 className="font-bold text-2xl mb-2 text-center">TechSunBio Private Limited</h4>
-                      <p className="text-gray-600 dark:text-gray-300 text-lg">Surat</p>
+                <div className="max-w-sm w-full h-full">
+                  <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300 h-full">
+                    <div className="flex flex-col items-center h-full">
+                      <Image 
+                        src="https://i.ibb.co/fVmFVZTv/tsb.jpg"
+                        alt="TechSunBio Private Limited"
+                        width={240}
+                        height={240}
+                        className="object-contain w-full h-40"
+                      />
+                      <h4 className="font-bold text-2xl mb-2 text-center"></h4>
+                      <p className="text-gray-600 dark:text-gray-300 text-lg"></p>
                     </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Sponsor image 1 */}
+              <div className="flex justify-center">
+                <div className="max-w-sm w-full h-full">
+                  <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-4 md:p-6 hover:shadow-xl transition-shadow duration-300 h-full">
+                    <Image 
+                      src="https://i.ibb.co/ywwzwDp/sponsi1.jpg"
+                      alt="sponsi1"
+                      width={800}
+                      height={600}
+                      className="rounded-lg object-contain w-full h-48"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              {/* Sponsor image 2 */}
+              <div className="flex justify-center">
+                <div className="max-w-sm w-full h-full">
+                  <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-4 md:p-6 hover:shadow-xl transition-shadow duration-300 h-full">
+                    <Image 
+                      src="https://i.ibb.co/CK1yG47Y/sponsi2.jpg"
+                      alt="sponsi2"
+                      width={800}
+                      height={600}
+                      className="rounded-lg object-contain w-full h-48"
+                    />
                   </div>
                 </div>
               </div>
@@ -404,4 +568,3 @@ export default function HomePage() {
     </div>
   )
 }
-
