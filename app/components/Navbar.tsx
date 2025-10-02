@@ -7,7 +7,16 @@ import { ChevronDown, Sun, Moon, Flame } from "lucide-react";
 import { useState } from "react";
 import Image from "next/image";
 
-const navItems = [
+type NavChild = { name: string; href: string };
+type NavItem = {
+  name: string;
+  href: string;
+  children?: NavChild[];
+  isHot?: boolean;
+  isImportant?: boolean;
+};
+
+const navItems: NavItem[] = [
   {
     name: "About",
     href: "/about",
@@ -24,7 +33,16 @@ const navItems = [
       { name: "Submission", href: "/authors/submission-and-registration" },
     ],
   },
-  { name: "Registration", href: "/registration", isHot: true, isImportant: true },
+  {
+    name: "Registration",
+    href: "/registration",
+    children: [
+      { name: "Registration Details", href: "/registration" },
+      { name: "Instructions", href: "/registration/instructions" },
+    ],
+    isHot: true,
+    isImportant: true,
+  },
   {
     name: "Program",
     href: "/program",
@@ -71,6 +89,7 @@ const Navbar = () => {
             alt="IEEE-SPERT Logo"
             className="h-14"
           />
+          <span>SPERT 2025</span>
         </Link>
         <button onClick={toggleMenu} className="md:hidden">
           <span className="text-2xl">☰</span>
@@ -81,7 +100,11 @@ const Navbar = () => {
               {item.children ? (
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>
-                    <button className="flex items-center gap-1 text-base font-medium text-muted-foreground transition-colors hover:text-foreground">
+                    <button className={`flex items-center gap-1 text-base font-medium transition-colors ${
+                      item.name === "Registration"
+                        ? "text-white bg-red-600 hover:bg-red-700 dark:bg-red-600 dark:hover:bg-red-700 border border-red-600 rounded-md px-3 py-1"
+                        : "text-muted-foreground hover:text-foreground"
+                    }`}>
                       {item.name}
                       <ChevronDown className="size-4" />
                     </button>
@@ -119,7 +142,11 @@ const Navbar = () => {
               {item.children ? (
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>
-                    <button className="flex items-center gap-1 text-lg font-medium text-muted-foreground transition-colors hover:text-foreground">
+                    <button className={`flex items-center gap-1 text-lg font-medium transition-colors ${
+                      item.name === "Registration"
+                        ? "text-white bg-red-600 hover:bg-red-700 dark:bg-red-600 dark:hover:bg-red-700 border border-red-600 rounded-md px-3 py-1"
+                        : "text-muted-foreground hover:text-foreground"
+                    }`}>
                       {item.name}
                       <ChevronDown className="size-4" />
                     </button>

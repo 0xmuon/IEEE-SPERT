@@ -3,8 +3,7 @@
             alt="IEEE-SPERT Logo"
             className="h-14"
           />
-<Image 
-              src="https://imgs.search.brave.com/WFSCJ_QtSA6WBJR7nTNYbUyHylRSHAaK-XBDbUO7FZc/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/c3ZuaXQuYWMuaW4v/aW1hZ2VzL2xvZ28u/cG5n"
+<Image src="https://imgs.search.brave.com/WFSCJ_QtSA6WBJR7nTNYbUyHylRSHAaK-XBDbUO7FZc/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/c3ZuaXQuYWMuaW4v/aW1hZ2VzL2xvZ28u/cG5n"
               alt="SVNIT Logo"
               width={40}
               height={40}
@@ -12,7 +11,7 @@
             />
 
 
-          <Image 
+<Image 
             src="https://i.ibb.co/ks9mhG84/guj-section-logo.png"
             alt="Gujarat Section Logo"
             width={300}
