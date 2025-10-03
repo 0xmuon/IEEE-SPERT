@@ -9,7 +9,7 @@ export default function RegistrationInstructionsPage() {
       <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-green-200 to-white dark:from-blue-800 dark:to-black">
         <div className="container px-4 md:px-6">
           <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none mb-8 text-center">
-            Registration Instructions
+            Instructions for Submission of Camera Ready Paper and Registration
           </h1>
 
           <Card className="mb-8">

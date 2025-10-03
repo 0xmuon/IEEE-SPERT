@@ -36,11 +36,11 @@ const navItems: NavItem[] = [
   {
     name: "Registration",
     href: "/registration",
-    children: [
-      { name: "Registration Details", href: "/registration" },
-      { name: "Instructions", href: "/registration/instructions" },
-    ],
-    isHot: true,
+  },
+    {
+    name: "Camera Ready Paper Submission",
+    href: "/Camera-Ready-Paper-Submission",
+    //isHot: true,
     isImportant: true,
   },
   {
