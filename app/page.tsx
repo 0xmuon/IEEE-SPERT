@@ -138,20 +138,8 @@ export default function HomePage() {
             </div>
           </div>
         {/* Sponsor/Organizer strip matching gradient theme */}
-        <div className="w-full py-6 bg-white dark:bg-black">
-          <div className="container mx-auto px-4">
-            <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-6 md:gap-8 text-gray-800 dark:text-gray-200">
-              {/* Left image */}
-              <div className="shrink-0 w-full md:w-auto flex items-center justify-center md:mt-4">
-                <Image 
-                  src="https://imgs.search.brave.com/WFSCJ_QtSA6WBJR7nTNYbUyHylRSHAaK-XBDbUO7FZc/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/c3ZuaXQuYWMuaW4v/aW1hZ2VzL2xvZ28u/cG5n"
-                  alt="SVNIT Logo"
-                  width={200}
-                  height={200}
-                  className="object-contain rounded-md"
-                />
-              </div>
-
+        <div className="w-full py-6 bg-white dark:bg-black"> 
+          <div className="container mx-auto px-4"> <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-6 md:gap-8 text-gray-800 dark:text-gray-200">
               {/* Center text block */}
               <div className="flex-1 flex flex-col items-center text-center">
                 <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-3 md:mb-4">
@@ -217,15 +205,7 @@ export default function HomePage() {
               </div>
 
               {/* Right image */}
-              <div className="shrink-0 w-full md:w-auto flex items-center justify-center md:mt-8">
-                <Image 
-                  src="https://i.ibb.co/ks9mhG84/guj-section-logo.png" 
-                  alt="Gujarat Section Logo" 
-                  width={230}
-                  height={230}
-                  className="object-contain"
-                />
-              </div>
+
             </div>
           </div>
         </div>

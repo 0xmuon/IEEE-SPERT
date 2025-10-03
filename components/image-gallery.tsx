@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import Image from "next/image"
 
 const images = [
+//  "https://i.ibb.co/dwsTR2T4/Screenshot-2025-10-03-145653.png",
   "https://i.ibb.co/JWB2yy71/common-banner.png",
   "https://i.ibb.co/k2RHKH4y/Whats-App-Image-2025-06-06-at-23-25-07.jpg",
   "https://i.ibb.co/tMv2dKth/Rani-Ki-Vav.jpg",
