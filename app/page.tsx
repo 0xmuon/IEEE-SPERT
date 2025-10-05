@@ -138,123 +138,13 @@ export default function HomePage() {
             </div>
           </div>
         {/* Sponsor/Organizer strip matching gradient theme */}
-        <div className="w-full py-6 bg-white dark:bg-black"> 
-          <div className="container mx-auto px-4"> <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-6 md:gap-8 text-gray-800 dark:text-gray-200">
-              {/* Center text block */}
-              <div className="flex-1 flex flex-col items-center text-center">
-                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-3 md:mb-4">
-                  IEEE International Conference on
-                </h1>
-                <p className="text-lg md:text-xl text-center mb-2">
-                  Smart Power, Energy, Renewables, and Transportation (IEEE-SPERT) 2025
-                </p>
-                <p className="text-base md:text-lg mb-4">22 Dec - 24 Dec, 2025</p>
-
-                {/* SVNIT + Gujarat Section Logos side by side */}
-                <div className="flex flex-row items-center justify-center gap-8 mb-4">
-                  <Image 
-                    src="https://i.ibb.co/ks9mhG84/guj-section-logo.png"
-                    alt="Gujarat Section Logo"
-                    width={300}
-                    height={300}
-                    className="object-contain"
-                  />
-                  <Image 
-                    src="https://www.svnit.ac.in/images/logo.png"
-                    alt="SVNIT Logo"
-                    width={150}
-                    height={150}
-                    className="object-contain"
-                  />
-                  <Image 
-                    src="https://i.ibb.co/fYQ9ZvB3/Jt-Chapter-Logo.png"
-                    alt="IEEE IES/PELS Joint Chapter Logo"
-                    width={300}
-                    height={300}
-                    className="object-contain"
-                  />
-                </div>
-
-                <p className="text-sm md:text-base text-center">
-                  Finacially sponsored and jointly organized by IEEE Gujarat Section, IEEE Gujarat Section IAS/IES/PELS Joint Chapter and
-                </p>
-                <p className="text-sm md:text-base text-center mb-4">
-                  Department of Electrical Engineering, Sardar Vallabhbhai National Institute of Technology, Surat, Gujarat, INDIA
-                </p>
-
-                {/* IEEE IAS + PELS Logos side by side */}
-                <div className="flex flex-row items-center justify-center gap-6">
-                  <Image 
-                    src="https://i.ibb.co/xqbwmHGg/IAS-Logo-No-BG1.png"
-                    alt="IEEE IAS Logo"
-                    width={120}
-                    height={90}
-                    className="object-contain"
-                  />
-                  <Image 
-                    src="https://i.ibb.co/8nwDMYMV/pels-tag-clear-bar-vert.png"
-                    alt="IEEE PELS Logo"
-                    width={90}
-                    height={70}
-                    className="object-contain"
-                  />
-                </div>
-                <p className="text-base md:text-lg font-semibold mb-3">
-                  Technically co-sponsored by IEEE Industrial Electronics Society (IAS) and Power Electronics Society (PELS)
-                </p>
-              </div>
-
-              {/* Right image */}
-
-            </div>
-          </div>
-        </div>
-        {/* Static logos row below announcement */}
-        <div className="w-full py-4">
-          <div className="flex w-full items-center justify-between gap-8 px-4 sm:px-6 lg:px-8 flex-wrap">
-              <Image 
-                src="https://i.ibb.co/mrdb1b5s/ieee-logo.png" 
-                alt="IEEE Logo" 
-                width={100} 
-                height={100} 
-                className="object-contain"
-              />
-              <Image 
-                src="https://i.ibb.co/xqbwmHGg/IAS-Logo-No-BG1.png" 
-                alt="IEEE IAS Logo" 
-                width={120} 
-                height={90} 
-                className="object-contain"
-              />
-              <Image 
-                src="https://i.ibb.co/8nwDMYMV/pels-tag-clear-bar-vert.png" 
-                alt="IEEE PELS Logo" 
-                width={90} 
-                height={70} 
-                className="object-contain"
-              />
-              <Image 
-                src="https://i.ibb.co/fYQ9ZvB3/Jt-Chapter-Logo.png" 
-                alt="IEEE IES/PELS Joint Chapter Logo" 
-                width={120} 
-                height={120} 
-                className="object-contain"
-              />
-              <Image 
-                src="https://i.ibb.co/ks9mhG84/guj-section-logo.png" 
-                alt="Gujarat Section Logo" 
-                width={100} 
-                height={100} 
-                className="object-contain"
-              />
-          </div>
-        </div>
+        
         <ImageGallery />
         <div className="w-full bg-gradient-to-r from-green-200 to-white dark:from-blue-800 dark:to-black py-4 animate-pulse" style={{ animationDelay: '0s' }}>
           <div className="container mx-auto">
             <div className="text-xl font-semibold text-gray-800 dark:text-gray-200 overflow-hidden whitespace-nowrap">
               <div className="animate-marquee inline-block" style={{ marginLeft: '0px' }}>
-                Our Current Sponsors | Platinum Sponsors: Raj Vijtech Private Limited, Surat | Silver Sponsors: TechSunBio Private Limited, Surat
+                Our Current Sponsors | Platinum Sponsors: Raj Vijtech Private Limited, Surat | Silver Sponsors: TechSunBio Private Limited, Surat | Revine Technologies | Royal Electronics | Entuple Technologies
               </div>
             </div>
           </div>
@@ -298,24 +188,31 @@ export default function HomePage() {
                           <td className="py-3 px-4 font-bold text-gray-800 dark:text-gray-200">
                             <span className="text-red-600 line-through">31st July 2025</span><br />
                             <span className="text-red-600 line-through">17th August 2025</span><br />
-                            <span className="text-purple-600 font-extrabold animate-pulse">31 August 2025</span><br />
-                            <span className="text-yellow-600 font-semibold">(Hard Deadline)</span>
+                            <span className="text-red-600 line-through">31 August 2025</span><br />
                           </td>
                           <td className="py-3 px-4 text-blue-600 dark:text-blue-400">
-                            Full Paper Submission Completed
+                            Paper Submission Closed
                           </td>
                         </tr>
-
-                          <tr className="bg-white dark:bg-gray-800 hover:bg-primary/10 dark:hover:bg-gray-700">
-                            <td className="py-3 px-4 font-bold text-gray-800 dark:text-gray-200">
-                              <span className="text-red-600 line-through">15th September 2025</span><br />
-                              <span className="text-green-700 dark:text-green-400">30th September 2025</span>
-                            </td>
-                            <td className="py-3 px-4 text-green-600 dark:text-green-400">Notification Sent</td>
+                           <tr className="bg-primary/5 hover:bg-primary/10 dark:hover:bg-gray-700">
+                            <td className="py-3 px-4 font-bold text-gray-800 dark:text-gray-200">30th Sept 2025</td>
+                            <td className="py-3 px-4 text-yellow-600 dark:text-yellow-400">Acceptance emails Sent</td>
+                          </tr>
+                          <tr className="bg-primary/5 hover:bg-primary/10 dark:hover:bg-gray-700">
+                            <td className="py-3 px-4 font-bold text-gray-800 dark:text-gray-200">1st October 2025</td>
+                            <td className="py-3 px-4 text-yellow-600 dark:text-yellow-400">Early Bird Registration Started</td>
                           </tr>
                           <tr className="bg-primary/5 hover:bg-primary/10 dark:hover:bg-gray-700">
                             <td className="py-3 px-4 font-bold text-gray-800 dark:text-gray-200">15th October 2025</td>
-                            <td className="py-3 px-4 text-yellow-600 dark:text-yellow-400">Final Paper Submission Deadline(Upcoming)</td>
+                            <td className="py-3 px-4 text-yellow-600 dark:text-yellow-400">Camera Ready Paper Submission Deadline(Upcoming)</td>
+                          </tr>
+                          <tr className="bg-primary/5 hover:bg-primary/10 dark:hover:bg-gray-700">
+                            <td className="py-3 px-4 font-bold text-gray-800 dark:text-gray-200">30th October 2025</td>
+                            <td className="py-3 px-4 text-yellow-600 dark:text-yellow-400">Early Bird Registration Closes</td>
+                          </tr>
+                          <tr className="bg-primary/5 hover:bg-primary/10 dark:hover:bg-gray-700">
+                            <td className="py-3 px-4 font-bold text-gray-800 dark:text-gray-200">1st Nov 2025</td>
+                            <td className="py-3 px-4 text-yellow-600 dark:text-yellow-400">Standard Registration Starts</td>
                           </tr>
                           <tr className="bg-white dark:bg-gray-800 hover:bg-primary/10 dark:hover:bg-gray-700">
                             <td className="py-3 px-4 font-bold text-gray-800 dark:text-gray-200">22nd December 2025</td>
