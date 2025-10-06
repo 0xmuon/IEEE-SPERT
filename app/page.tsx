@@ -144,7 +144,7 @@ export default function HomePage() {
           <div className="container mx-auto">
             <div className="text-xl font-semibold text-gray-800 dark:text-gray-200 overflow-hidden whitespace-nowrap">
               <div className="animate-marquee inline-block" style={{ marginLeft: '0px' }}>
-                Our Current Sponsors | Platinum Sponsors: Raj Vijtech Private Limited, Surat | Silver Sponsors: TechSunBio Private Limited, Surat | Revine Technologies | Royal Electronics | Entuple Technologies
+                Our Current Sponsors | Platinum Sponsors: Raj Vijtech Private Limited, Surat | Silver Sponsors: TechSunBio Private Limited, Surat | Revine Technologies | Royal Electronics Sales & Services | Entuple Technologies | GB Solar Technologies Pvt Ltd
               </div>
             </div>
           </div>
@@ -369,6 +369,34 @@ export default function HomePage() {
                   <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-4 md:p-6 hover:shadow-xl transition-shadow duration-300 h-full">
                     <Image 
                       src="https://i.ibb.co/CK1yG47Y/sponsi2.jpg"
+                      alt="sponsi2"
+                      width={800}
+                      height={600}
+                      className="rounded-lg object-contain w-full h-48"
+                    />
+                  </div>
+                </div>
+              </div>
+
+                <div className="flex justify-center">
+                <div className="max-w-sm w-full h-full">
+                  <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-4 md:p-6 hover:shadow-xl transition-shadow duration-300 h-full">
+                    <Image 
+                      src="/images/RESS.jpg"
+                      alt="sponsi2"
+                      width={800}
+                      height={600}
+                      className="rounded-lg object-contain w-full h-48"
+                    />
+                  </div>
+                </div>
+              </div>
+
+                <div className="flex justify-center">
+                <div className="max-w-sm w-full h-full">
+                  <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-4 md:p-6 hover:shadow-xl transition-shadow duration-300 h-full">
+                    <Image 
+                      src="/images/GBSolar.png"
                       alt="sponsi2"
                       width={800}
                       height={600}

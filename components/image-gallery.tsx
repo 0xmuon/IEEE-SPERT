@@ -34,23 +34,26 @@ export function ImageGallery() {
   }, [])
 
 return (
-  <div className="flex justify-center items-center w-full bg-white py-0">
-    {/* Rotating images container */}
-    <div className="relative w-[73%] max-w-[1600px] aspect-video">
-      {images.map((src, index) => (
-        <Image
-          key={index}
-          src={src}
-          alt={`Conference image ${index + 1}`}
-          fill
-          className={`object-contain transition-opacity duration-1000 ease-in-out ${
-            index === currentIndex ? "opacity-100" : "opacity-0"
-          }`}
-          priority={index === 0}
-        />
-      ))}
-    </div>
+<div className="flex justify-center items-center w-full py-0 bg-gradient-to-b from-[#b3e5fc] to-[#c8e6c9] relative">
+  <div className="relative aspect-video w-[90%] sm:w-[85%] md:w-[80%] lg:w-[70%] max-w-[1600px] overflow-hidden">
+    {images.map((src, index) => (
+      <Image
+        key={index}
+        src={src}
+        alt={`Conference image ${index + 1}`}
+        fill
+        className={`object-contain transition-opacity duration-1000 ease-in-out ${
+          index === currentIndex ? "opacity-100" : "opacity-0"
+        }`}
+        priority={index === 0}
+      />
+    ))}
+
   </div>
+</div>
+
+
+
 )
 
 }
