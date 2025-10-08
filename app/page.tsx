@@ -144,7 +144,7 @@ export default function HomePage() {
           <div className="container mx-auto">
             <div className="text-xl font-semibold text-gray-800 dark:text-gray-200 overflow-hidden whitespace-nowrap">
               <div className="animate-marquee inline-block" style={{ marginLeft: '0px' }}>
-                Our Current Sponsors | Platinum Sponsors: Raj Vijtech Private Limited, Surat | Silver Sponsors: TechSunBio Private Limited, Surat | Revine Technologies | Royal Electronics Sales & Services | Entuple Technologies | GB Solar Technologies Pvt Ltd
+                Our Current Sponsors | Platinum Sponsors: Raj Vijtech Private Limited, Surat | Silver Sponsors: TechSunBio Private Limited, Surat | Revine Technologies | Royal Electronics Sales & Services | Entuple Technologies | GB Solar Technologies Pvt Ltd | Quntek Technologies
               </div>
             </div>
           </div>

@@ -9,6 +9,7 @@ const images = [
   "/images/2.png",
   "/images/3.png",
   "/images/4.png",
+  "/images/5.png",
   //"https://i.ibb.co/JWB2yy71/common-banner.png",
   //"https://i.ibb.co/k2RHKH4y/Whats-App-Image-2025-06-06-at-23-25-07.jpg",
   //"https://i.ibb.co/tMv2dKth/Rani-Ki-Vav.jpg",
