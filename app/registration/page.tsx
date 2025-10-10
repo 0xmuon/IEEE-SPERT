@@ -30,10 +30,10 @@ export default function SubmissionAndRegistrationPage() {
             <th colSpan={2} className="px-4 py-3 border">Standard<br /><span className="text-xs">(From 1st Nov, 2025)</span></th>
           </tr>
           <tr className="bg-primary/90">
-            <th className="px-4 py-2 border">IEEE</th>
-            <th className="px-4 py-2 border">Non-IEEE</th>
-            <th className="px-4 py-2 border">IEEE</th>
-            <th className="px-4 py-2 border">Non-IEEE</th>
+            <th className="px-4 py-2 border">IEEE Members</th>
+            <th className="px-4 py-2 border">Non-IEEE Members</th>
+            <th className="px-4 py-2 border">IEEE Members</th>
+            <th className="px-4 py-2 border">Non-IEEE Members</th>
           </tr>
         </thead>
         <tbody>
