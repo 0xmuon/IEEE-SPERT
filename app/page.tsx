@@ -124,19 +124,50 @@ export default function HomePage() {
       <Navbar />
       <main className="flex-1">
         {/* Welcome Section with Announcements */}
-
-          <div className="w-full bg-gradient-to-r from-green-200 to-white dark:from-blue-800 dark:to-black py-4" style={{ animationDelay: '1s' }}>
-            <div className="container mx-auto">
-              <div className="text-xl font-semibold text-gray-800 dark:text-gray-200 flex items-center gap-4">
-                <span className="shrink-0 text-primary font-extrabold">Announcement:</span>
-                <div className="relative flex-1 overflow-hidden min-w-0">
-                  <div className="animate-marquee inline-block whitespace-nowrap" style={{ marginLeft: '0px' }}>
-                  <a href="https://forms.gle/G7zt3YeGx2FEGKv89" target="_blank" rel="noopener noreferrer" className="underline text-primary">Please fill the google form after submitting the camera ready paper and paying the registration fee for completing the registration process</a>  | The conference will be held fully in offline (physical) mode only |
-                  </div>
+        {/* Announcement Marquee with Pause on Hover */}
+        <div
+          className="w-full bg-gradient-to-r from-green-200 to-white dark:from-blue-800 dark:to-black py-4"
+          style={{ animationDelay: '0s' }}
+        >
+          <div className="container mx-auto">
+            <div className="text-xl font-semibold text-gray-800 dark:text-gray-200 flex items-center gap-4">
+              <span className="shrink-0 text-primary font-extrabold">Announcement:</span>
+              <div className="relative flex-1 overflow-hidden min-w-0">
+                <style jsx>{`
+                  .marquee {
+                    display: inline-block;
+                    white-space: nowrap;
+                    animation: marquee 18s linear infinite;
+                  }
+                  .marquee-paused {
+                    animation-play-state: paused !important;
+                  }
+                  @keyframes marquee {
+                    0% { transform: translateX(100%); }
+                    100% { transform: translateX(-100%); }
+                  }
+                `}</style>
+                <div
+                  className="marquee"
+                  tabIndex={0}
+                  onMouseEnter={e => e.currentTarget.classList.add('marquee-paused')}
+                  onMouseLeave={e => e.currentTarget.classList.remove('marquee-paused')}
+                >
+                  <a
+                    href="https://forms.gle/G7zt3YeGx2FEGKv89"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline text-primary"
+                  >
+                    Please fill the google form after submitting the camera ready paper and paying the registration fee for completing the registration process
+                  </a>
+                  {" | "}Visit Travel page for details related to guest house and hotels{" | "}The conference will be held fully in offline (physical) mode only{" | "}
                 </div>
               </div>
             </div>
           </div>
+        </div>
+ 
         {/* Sponsor/Organizer strip matching gradient theme */}
         
         <ImageGallery />
