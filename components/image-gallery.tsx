@@ -4,24 +4,11 @@ import { useState, useEffect } from "react"
 import Image from "next/image"
 
 const images = [
-//  "https://i.ibb.co/dwsTR2T4/Screenshot-2025-10-03-145653.png",
-"/images/1.png",
+  "/images/1.png",
   "/images/2.png",
   "/images/3.png",
   "/images/4.png",
   "/images/5.png",
-  //"https://i.ibb.co/JWB2yy71/common-banner.png",
-  //"https://i.ibb.co/k2RHKH4y/Whats-App-Image-2025-06-06-at-23-25-07.jpg",
-  //"https://i.ibb.co/tMv2dKth/Rani-Ki-Vav.jpg",
-  //"https://i.ibb.co/XZwCvyjT/Getty-Images-821330386.jpg",
-  //"https://i.ibb.co/mCFnBrbN/Dandi.jpg",
-  //"https://i.ibb.co/Mkjvsc4b/gopi-talav.jpg",
-  //"https://i.ibb.co/QF5BGM2J/Akshardham-Temple-Banner.jpg",
- // "https://i.ibb.co/X031GYt/photo1.webp",
- // "https://i.ibb.co/8LS03LTr/Akshardham-Temple-Gujarat-7.jpg",
- // "https://i.ibb.co/KzGBFs9v/electrical-engg-svnit.jpg",
-  //"https://i.ibb.co/nNmk47W7/Statue-of-Unity-Engineering-Construction-and-Project-Management-of-Worlds-Tallest-Statue.jpg",
-  //"https://i.ibb.co/Pvwm2mZW/statue-of-unity-blog-cover.webp",
 ]
 
 export function ImageGallery() {
@@ -34,29 +21,86 @@ export function ImageGallery() {
     return () => clearInterval(timer)
   }, [])
 
-return (
-<div className="flex justify-center items-center w-full py-0 bg-gradient-to-b from-[#b3e5fc] to-[#c8e6c9] relative">
-  <div className="relative aspect-video w-[90%] sm:w-[85%] md:w-[80%] lg:w-[70%] max-w-[1600px] overflow-hidden">
-    {images.map((src, index) => (
-      <Image
-        key={index}
-        src={src}
-        alt={`Conference image ${index + 1}`}
-        fill
-        className={`object-contain transition-opacity duration-1000 ease-in-out ${
-          index === currentIndex ? "opacity-100" : "opacity-0"
-        }`}
-        priority={index === 0}
-      />
-    ))}
+  return (
+    <div className="flex flex-col lg:flex-row justify-center items-stretch w-full py-4 bg-gradient-to-b from-[#b3e5fc] to-[#c8e6c9] gap-4 px-4">
 
-  </div>
+      {/* Announcements Section */}
+      <div className="lg:w-1/5 w-full bg-white/60 rounded-xl shadow-lg p-4 backdrop-blur-md flex flex-col">
+        <h2 className="text-xl font-semibold mb-2 text-center">Announcements</h2>
+        <ul className="text-sm space-y-2 overflow-auto">
+          <li>📢 Early Bird Registration Deadline: </li>
+          <li>Oct 31, 2025</li>          
+          <li>📅 Camera Ready paper submission Deadline: Oct 15,2025</li>
+          <li>🎤 Keynote speakers announced </li>
+        </ul>
+      </div>
+
+      {/* Image Gallery */}
+      <div className="relative aspect-video lg:w-3/5 w-full max-w-[1600px] overflow-hidden rounded-xl shadow-xl">
+        {images.map((src, index) => (
+          <Image
+            key={index}
+            src={src}
+            alt={`Conference image ${index + 1}`}
+            fill
+            className={`object-contain transition-opacity duration-1000 ease-in-out ${
+              index === currentIndex ? "opacity-100" : "opacity-0"
+            }`}
+            priority={index === 0}
+          />
+        ))}
+      </div>
+
+      {/* Updates Section */}
+      <div className="lg:w-1/5 w-full bg-white/60 rounded-xl shadow-lg p-4 backdrop-blur-md flex flex-col">
+  <h2 className="text-xl font-semibold mb-2 text-center">Updates</h2>
+  <ul className="text-sm space-y-3 overflow-auto">
+
+    <li className="flex items-start gap-2">
+      <span className="bg-green-600 text-white text-[10px] px-2 py-[2px] rounded-full font-semibold mt-[3px]">
+        NEW
+      </span>
+      <a
+        href="https://forms.gle/G7zt3YeGx2FEGKv89"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="underline text-blue-700 hover:text-blue-900"
+      >
+        Please fill the Google Form to complete the registration process
+      </a>
+    </li>
+
+    <li className="flex items-start gap-2">
+      <span className="bg-green-600 text-white text-[10px] px-2 py-[2px] rounded-full font-semibold mt-[3px]">
+        NEW
+      </span>
+      <a
+        href="/travel/hotel-booking"
+        className="underline text-blue-700 hover:text-blue-900"
+      >
+        Click here for the details related to Guest House and Hotel bookings
+      </a>
+    </li>
+
+    {/* 
+    <li className="flex items-start gap-2">
+      <span className="bg-yellow-500 text-white text-[10px] px-2 py-[2px] rounded-full font-semibold mt-[3px]">
+      INFO
+      </span>
+      <span>🎓 Workshops and tutorials planned</span>
+    </li>
+
+    <li className="flex items-start gap-2">
+      <span className="bg-yellow-500 text-white text-[10px] px-2 py-[2px] rounded-full font-semibold mt-[3px]">
+      INFO
+      </span>
+      <span>📝 Schedule coming soon</span>
+    </li>
+    */}
+
+  </ul>
 </div>
 
-
-
-)
-
+    </div>
+  )
 }
-
-

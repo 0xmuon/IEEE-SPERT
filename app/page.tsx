@@ -153,15 +153,8 @@ export default function HomePage() {
                   onMouseEnter={e => e.currentTarget.classList.add('marquee-paused')}
                   onMouseLeave={e => e.currentTarget.classList.remove('marquee-paused')}
                 >
-                  <a
-                    href="https://forms.gle/G7zt3YeGx2FEGKv89"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="underline text-primary"
-                  >
-                    Please fill the google form after submitting the camera ready paper and paying the registration fee for completing the registration process
-                  </a>
-                  {" | "}Visit Travel page for details related to guest house and hotels{" | "}The conference will be held fully in offline (physical) mode only{" | "}
+               
+                  {" | "}The conference will be held fully in offline (physical) mode only{" | "}
                 </div>
               </div>
             </div>

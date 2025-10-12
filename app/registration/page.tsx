@@ -74,7 +74,7 @@ export default function SubmissionAndRegistrationPage() {
   <ul className="list-disc list-outside pl-6 space-y-2 text-gray-700 dark:text-gray-300">
     <li><strong>Full Registration:</strong> Includes access to keynotes, tutorials, all technical sessions, a registration kit, lunch on all three days, tea breaks, and a gala dinner.</li>
     <li><strong>Student Registration:</strong> Includes access to Keynotes, tutorials, all conference sessions, a registration kit, lunches for all three days, tea breaks, and a gala dinner. Students must upload a valid student ID card during registration. Confirmation will be granted only after verifying the ID proof.</li>
-    <li><strong>Please Note:</strong> Registration kit is only provided per registration not per paper (one kit per registration (1/2 papers))</li>
+    <li><strong>Please Note:</strong> Registration kit is only provided per registration not per paper (one kit per registration (1 or 2 papers))</li>
   </ul>
 </div>
 
