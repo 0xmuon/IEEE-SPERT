@@ -43,14 +43,14 @@ export default function RegistrationInstructionsPage() {
                     <div className="mt-2 space-y-2">
                       <p>First-time users should do the following:</p>
                       <ol className="list-decimal pl-6 space-y-1">
-                        <li>Select the New Users - Click Here link.</li>
-                        <li>Enter the following:
-                          <ul className="list-disc pl-6 mt-1">
-                            <li>67079X for the Conference ID</li>
-                            <li>your email address</li>
-                            <li>a password</li>
-                          </ul>
-                        </li>
+                        <li>Select the New Users - <a href="https://ieee-pdf-express.org/Account/Login" target="_blank" rel="noopener noreferrer" className="underline text-primary">Click Here</a>.</li>
+                      <li>Enter the following:
+                        <ul className="list-disc pl-6 mt-1">
+                          <li>67079X for the Conference ID</li>
+                          <li>your email address</li>
+                          <li>a password</li>
+                        </ul>
+                      </li>
                         <li>Continue to enter information as prompted.</li>
                       </ol>
                       <p>An online confirmation and an email confirmation will verify your account setup.</p>
