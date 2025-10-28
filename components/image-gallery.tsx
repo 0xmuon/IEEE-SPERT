@@ -53,7 +53,7 @@ export function ImageGallery() {
 
       {/* Updates Section */}
       <div className="lg:w-1/5 w-full bg-white/60 rounded-xl shadow-lg p-4 backdrop-blur-md flex flex-col">
-  <h2 className="text-xl font-semibold mb-2 text-center">Updates</h2>
+  <h2 className="text-xl font-semibold mb-2 text-center">Author Registration</h2>
   <ul className="text-sm space-y-3 overflow-auto">
 
     <li className="flex items-start gap-2">
@@ -66,10 +66,11 @@ export function ImageGallery() {
         rel="noopener noreferrer"
         className="underline text-blue-700 hover:text-blue-900"
       >
-        Please fill the Google Form to complete the registration process
+        All the authors are requested to fill the Google Form to complete the registration process
       </a>
     </li>
 
+<h2 className="text-xl font-semibold mb-2 text-center">Accomodation details</h2>
     <li className="flex items-start gap-2">
       <span className="bg-green-600 text-white text-[10px] px-2 py-[2px] rounded-full font-semibold mt-[3px]">
         NEW
@@ -79,6 +80,21 @@ export function ImageGallery() {
         className="underline text-blue-700 hover:text-blue-900"
       >
         Click here for the details related to Guest House and Hotel bookings
+      </a>
+    </li>
+
+<h3 className="text-xl font-semibold mb-2 text-center">Attendee Registraion</h3>
+    <li className="flex items-start gap-2">
+      <span className="bg-green-600 text-white text-[10px] px-2 py-[2px] rounded-full font-semibold mt-[3px]">
+        NEW
+      </span>
+      <a
+        href="https://forms.gle/rgjdrgnGHGNtX6G19"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="underline text-blue-700 hover:text-blue-900"
+      >
+        Please pay the registation fee and click here to fill the attendee registration form
       </a>
     </li>
 
