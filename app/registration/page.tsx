@@ -92,6 +92,7 @@ export default function SubmissionAndRegistrationPage() {
       <p><strong>Account Name:</strong> DIRECTOR SVNIT IEEE SPERT 2025</p>
       <p><strong>Bank Name:</strong> State Bank of India</p>
       <p><strong>Branch Address:</strong> SVNIT Branch</p>
+      <p><strong>IFSC:</strong> SBIN0003320</p>
       <p><strong>City:</strong> Surat, Gujarat State</p>
       <p><strong>Country:</strong> India</p>
       
