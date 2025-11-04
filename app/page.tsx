@@ -218,25 +218,33 @@ export default function HomePage() {
                             Paper Submission Closed
                           </td>
                         </tr>
-                           <tr className="bg-primary/5 hover:bg-primary/10 dark:hover:bg-gray-700">
-                            <td className="py-3 px-4 font-bold text-gray-800 dark:text-gray-200">30th Sept 2025</td>
+                          <tr className="bg-primary/5 hover:bg-primary/10 dark:hover:bg-gray-700">
+                            <td className="py-3 px-4 font-bold text-gray-800 dark:text-gray-200">
+                              <span className="text-red-600 line-through">30th Sept 2025</span>
+                            </td>
                             <td className="py-3 px-4 text-yellow-600 dark:text-yellow-400">Acceptance emails Sent</td>
                           </tr>
                           <tr className="bg-primary/5 hover:bg-primary/10 dark:hover:bg-gray-700">
-                            <td className="py-3 px-4 font-bold text-gray-800 dark:text-gray-200">1st October 2025</td>
+                            <td className="py-3 px-4 font-bold text-gray-800 dark:text-gray-200">
+                              <span className="text-red-600 line-through">1st October 2025</span>
+                            </td>
                             <td className="py-3 px-4 text-yellow-600 dark:text-yellow-400">Early Bird Registration Started</td>
                           </tr>
                           <tr className="bg-primary/5 hover:bg-primary/10 dark:hover:bg-gray-700">
-                            <td className="py-3 px-4 font-bold text-gray-800 dark:text-gray-200">15th October 2025</td>
-                            <td className="py-3 px-4 text-yellow-600 dark:text-yellow-400">Camera Ready Paper Submission Deadline(Upcoming)</td>
+                            <td className="py-3 px-4 font-bold text-gray-800 dark:text-gray-200">
+                              <span className="text-red-600 line-through">15th October 2025</span>
+                            </td>
+                            <td className="py-3 px-4 text-yellow-600 dark:text-yellow-400">Camera Ready Paper Submission Deadline </td>
                           </tr>
                           <tr className="bg-primary/5 hover:bg-primary/10 dark:hover:bg-gray-700">
-                            <td className="py-3 px-4 font-bold text-gray-800 dark:text-gray-200">30th October 2025</td>
-                            <td className="py-3 px-4 text-yellow-600 dark:text-yellow-400">Early Bird Registration Closes</td>
+                            <td className="py-3 px-4 font-bold text-gray-800 dark:text-gray-200">
+                              <span className="text-red-600 line-through">30th October 2025</span>
+                            </td>
+                            <td className="py-3 px-4 text-yellow-600 dark:text-yellow-400">Early Bird Registration Closed</td>
                           </tr>
                           <tr className="bg-primary/5 hover:bg-primary/10 dark:hover:bg-gray-700">
                             <td className="py-3 px-4 font-bold text-gray-800 dark:text-gray-200">1st Nov 2025</td>
-                            <td className="py-3 px-4 text-yellow-600 dark:text-yellow-400">Standard Registration Starts</td>
+                            <td className="py-3 px-4 text-yellow-600 dark:text-yellow-400">Standard Registration Started</td>
                           </tr>
                           <tr className="bg-white dark:bg-gray-800 hover:bg-primary/10 dark:hover:bg-gray-700">
                             <td className="py-3 px-4 font-bold text-gray-800 dark:text-gray-200">22nd December 2025</td>
