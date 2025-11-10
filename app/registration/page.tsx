@@ -26,8 +26,8 @@ export default function SubmissionAndRegistrationPage() {
         <thead className="bg-primary text-white">
           <tr>
             <th rowSpan={2} className="px-4 py-3 border">Category</th>
-            <th colSpan={2} className="px-4 py-3 border">Early Bird<br /><span className="text-xs">(Upto 31 Oct, 2025)</span></th>
-            <th colSpan={2} className="px-4 py-3 border">Standard<br /><span className="text-xs">(From 1st Nov, 2025)</span></th>
+            <th colSpan={2} className="px-4 py-3 border">Early Bird<br /><span className="text-xs">(Upto 15 Nov, 2025)</span></th>
+            <th colSpan={2} className="px-4 py-3 border">Standard<br /><span className="text-xs">(From 16th Nov, 2025)</span></th>
           </tr>
           <tr className="bg-primary/90">
             <th className="px-4 py-2 border">IEEE Members</th>

@@ -237,13 +237,26 @@ export default function HomePage() {
                             <td className="py-3 px-4 text-yellow-600 dark:text-yellow-400">Camera Ready Paper Submission Deadline </td>
                           </tr>
                           <tr className="bg-primary/5 hover:bg-primary/10 dark:hover:bg-gray-700">
-                            <td className="py-3 px-4 font-bold text-gray-800 dark:text-gray-200">
-                              <span className="text-red-600 line-through">30th October 2025</span>
+                           <td className="py-3 px-4 font-bold text-gray-800 dark:text-gray-200">15 Nov 2025</td>
+                            <td className="py-3 px-4">
+                              <span className="font-medium color-cycle">Early Bird Registration Extended</span>
+                              <style jsx>{`
+                                .color-cycle {
+                                  animation: colorCycle 3s linear infinite;
+                                  -webkit-animation: colorCycle 3s linear infinite;
+                                }
+                                @keyframes colorCycle {
+                                  0% { color: #ef4444; }   /* red */
+                                  25% { color: #f59e0b; }  /* amber */
+                                  50% { color: #10b981; }  /* green */
+                                  75% { color: #3b82f6; }  /* blue */
+                                  100% { color: #a78bfa; } /* purple */
+                                }
+                              `}</style>
                             </td>
-                            <td className="py-3 px-4 text-yellow-600 dark:text-yellow-400">Early Bird Registration Closed</td>
                           </tr>
                           <tr className="bg-primary/5 hover:bg-primary/10 dark:hover:bg-gray-700">
-                            <td className="py-3 px-4 font-bold text-gray-800 dark:text-gray-200">1st Nov 2025</td>
+                            <td className="py-3 px-4 font-bold text-gray-800 dark:text-gray-200">16th Nov 2025</td>
                             <td className="py-3 px-4 text-yellow-600 dark:text-yellow-400">Standard Registration Started</td>
                           </tr>
                           <tr className="bg-white dark:bg-gray-800 hover:bg-primary/10 dark:hover:bg-gray-700">
