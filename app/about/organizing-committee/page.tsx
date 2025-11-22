@@ -106,7 +106,8 @@ export default function OrganizingCommitteePage() {
                 members: [
                   "Dr. Mahmadasraf A. Mulla, DoEE, SVNIT Surat",
                   "Dr. Suresh Lakhimsetty, DoEE, SVNIT Surat",
-                  "Dr. Anjali Diwan, IEEE Gujarat Section",
+                  "Dr. Anjali Diwan, Marwadi University, Rajkot",
+                  "Dr. Manisha Shah, Nirma University, Ahmedabad",
                 ]
               },
               {
