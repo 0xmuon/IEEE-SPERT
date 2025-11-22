@@ -57,7 +57,7 @@ export default function OrganizingCommitteePage() {
                   <p className="text-gray-600 dark:text-gray-300">Chair - IEEE Gujarat Section</p>
                 </li>
                 <li>
-                  <p className="text-lg">Dr. Mahmadasraf A. Mulla</p>
+                  <p className="text-lg">Prof. Mahmadasraf A. Mulla</p>
                   <p className="text-gray-600 dark:text-gray-300">DoEE, SVNIT Surat</p>
                 </li>
                 <li>
@@ -104,7 +104,7 @@ export default function OrganizingCommitteePage() {
               {
                 title: "Finance Chairs",
                 members: [
-                  "Dr. Mahmadasraf A. Mulla, DoEE, SVNIT Surat",
+                  "Prof. Mahmadasraf A. Mulla, DoEE, SVNIT Surat",
                   "Dr. Suresh Lakhimsetty, DoEE, SVNIT Surat",
                   "Dr. Anjali Diwan, Marwadi University, Rajkot",
                   "Dr. Manisha Shah, Nirma University, Ahmedabad",
@@ -115,10 +115,10 @@ export default function OrganizingCommitteePage() {
                 members: [
                   "Dr. Amit Ved, Marwadi University",
                   "Dr. Srinivas Bhaskar karanki, IEEE PELS Vice-Chair India-Pacific, IIT Bhubhaneshwar",
-                  "Dr. Mahmadasraf A. Mulla, DoEE, SVNIT Surat",
+                  "Prof. Mahmadasraf A. Mulla, DoEE, SVNIT Surat",
                   "Dr. Aeidapu Mahesh, DoEE, SVNIT Surat",
-                  "Dr. Sabha Raj Arya, DoEE, SVNIT Surat",
-                  "Dr. Anandita Chowdhury, DoEE, SVNIT Surat",
+                  "Prof. Sabha Raj Arya, DoEE, SVNIT Surat",
+                  "Prof. Anandita Chowdhury, DoEE, SVNIT Surat",
                   "Dr. Chandini P Gor, DoEE, SVNIT Surat",
                   "Dr. Brij N. Singh, IEEE Fellow, John Deere Fellow, Electrification R&D Manager in John Deere USA",
                   "Prof. Victor Veliadis, IEEE Fellow, CTO of PowerAmerica and Professor at NC State University",
@@ -129,7 +129,7 @@ export default function OrganizingCommitteePage() {
               {
                 title: "Publication Chairs",
                 members: [
-                  "Dr. Rakesh Maurya, DoEE, SVNIT Surat",
+                  "Prof. Rakesh Maurya, DoEE, SVNIT Surat",
                   "Dr. Sanjay Tolani, DoEE, SVNIT Surat",
                   "Dr. K. V. Praveen Kumar, DoEE, SVNIT Surat",
                 ]
@@ -138,9 +138,9 @@ export default function OrganizingCommitteePage() {
                {
                 title: "Publicity Chairs",
                 members: [
+                  "Prof. Ashish K Panchal, DoEE, SVNIT Surat",
                   "Dr. Sunanda Sinha, CEE, MNIT Jaipur",
                   "Dr. G Sushnigdha, DoEE, SVNIT Surat",
-                  "Dr. Basant K. Sethi, DoEE, SVNIT Surat",
                 ]
               },
 
