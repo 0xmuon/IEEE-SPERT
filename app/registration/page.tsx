@@ -43,7 +43,7 @@ export default function SubmissionAndRegistrationPage() {
             ["Indian Author - Attendee", "₹7,080", "₹9,440", "₹9,440", "₹11,800"],
             ["Indian Student Author (1 Paper)", "₹6,608", "₹8,260", "₹8,260", "₹10,620"],
             ["Student Attendee", "₹2,950", "₹4,130", "₹2,950", "₹4,130"],
-            ["Foreign Author - Academia/Industry (2 Papers)", "$354", "$413", "$413", "$472"],
+            ["Foreign Author - Academia/Industry (1 Paper)", "$354", "$413", "$413", "$472"],
             ["Foreign Attendee", "$236", "$295", "$295", "$354"],
             ["Foreign Student Author (1 Paper)", "$236", "$295", "$295", "$354"],
             ["Foreign Student Attendee", "$177", "$236", "$236", "$295"],
