@@ -163,6 +163,28 @@ export default function HomePage() {
  
         {/* Sponsor/Organizer strip matching gradient theme */}
         
+ {/* Full-bleed 16:9 video (public/images/video.mp4) */}
+        <div className="w-full py-6">
+          {/* remove container constraints and cancel the page padding so the video spans the viewport */
+            /* negative margins match your container px (px-4 md:px-6) so it aligns full-bleed */
+          }
+          <div className="relative -mx-4 md:-mx-6">
+            <div className="w-screen max-w-none">
+              <div className="relative w-full aspect-video overflow-hidden">
+                <video
+                  src="/images/video.mp4"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  preload="auto"
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
         <ImageGallery />
         <div className="w-full bg-gradient-to-r from-green-200 to-white dark:from-blue-800 dark:to-black py-4 animate-pulse" style={{ animationDelay: '0s' }}>
           <div className="container mx-auto">
