@@ -113,7 +113,7 @@ export default function OrganizingCommitteePage() {
               {
                 title: "Technical Program Committee Chairs",
                 members: [
-                  "Dr. Amit Ved, Marwadi University",
+                  "Dr. Amit Ved, Marwadi University, Rajkot",
                   "Dr. Srinivas Bhaskar karanki, IEEE PELS Vice-Chair India-Pacific, IIT Bhubhaneshwar",
                   "Prof. Mahmadasraf A. Mulla, DoEE, SVNIT Surat",
                   "Dr. Aeidapu Mahesh, DoEE, SVNIT Surat",
@@ -215,7 +215,7 @@ export default function OrganizingCommitteePage() {
                   {[
                     "Dr. Brij N. Singh, IEEE Fellow, John Deere Fellow, Electrification R&D Manager in John Deere USA",
                     "Prof. Victor Veliadis, IEEE Fellow, CTO of PowerAmerica and Professor at NC State University",
-                    "Prof. Akshay Rathore, Singapore Institute of Technology",
+                    "Prof. Akshay Rathore, National University of Singapore",
                     "Prof. Sanjib Kumar Panda, Department of Electrical Engineering, NUS",
                     "Jiaxing Lei, School of Electrical Engineering, Southeast University, China",
                     "Prof. Akhtar Kalam, Victoria University, Melbourne, Victoria 8001 Australia",
