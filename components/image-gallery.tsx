@@ -51,7 +51,7 @@ export function ImageGallery() {
         muted
         playsInline
         className="fixed top-0 left-0 w-full h-full object-cover -z-10"
-        src="/images/video.mp4"
+        src="/images/Video.mp4"
       />
       
       {/* 🔹 Optional dark overlay for readability */}
