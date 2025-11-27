@@ -125,6 +125,7 @@ export default function HomePage() {
       <main className="flex-1">
         {/* Welcome Section with Announcements */}
         {/* Announcement Marquee with Pause on Hover */}
+ {/*      
         <div
           className="w-full bg-gradient-to-r from-green-200 to-white dark:from-blue-800 dark:to-black py-4"
           style={{ animationDelay: '0s' }}
@@ -161,12 +162,11 @@ export default function HomePage() {
           </div>
         </div>
  
+ */}
         {/* Sponsor/Organizer strip matching gradient theme */}
         
-{/*
-  Full-bleed 16:9 video (public/images/video.mp4)
-  Disabled because the video is not playing after push.
 
+{/*}
   <div className="w-full py-6">
     <div className="relative -mx-4 md:-mx-6">
       <div className="w-screen max-w-none">
@@ -187,6 +187,7 @@ export default function HomePage() {
 */}
 
         <ImageGallery />
+        {/*}
         <div className="w-full bg-gradient-to-r from-green-200 to-white dark:from-blue-800 dark:to-black py-4 animate-pulse" style={{ animationDelay: '0s' }}>
           <div className="container mx-auto">
             <div className="text-xl font-semibold text-gray-800 dark:text-gray-200 overflow-hidden whitespace-nowrap">
@@ -196,14 +197,17 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-        <section className="w-full py-4 md:py-4 lg:py-4 bg-gradient-to-r from-green-200 to-white dark:from-blue-800 dark:to-black">
+
+        */}
+      
+        <section className="w-full py-4 md:py-4 lg:py-4 bg-black/40 backdrop-blur-[2px] -z-10">
           <div className="container px-4 md:px-6">
             <div className="grid gap-8 md:grid-cols-2">
               <div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none mb-4">
+                <h2 className="text-3xl text-white font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none mb-4">
                   Welcome to IEEE-SPERT 2025
                 </h2>
-                <p className="max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400 mb-8 text-justify">
+                <p className="max-w-[700px] text-white md:text-xl dark:text-gray-400 mb-8 text-justify">
                   The IEEE International Conference on Smart Power, Energy, Renewables, and Transportation (IEEE-SPERT) aims to bring together experts and researchers to discuss advancements in these critical fields. This conference will explore innovative solutions and technologies that drive the future of energy and transportation, fostering collaboration and knowledge sharing among participants.
                 </p>
                 <div className="flex flex-col gap-4 min-[400px]:flex-row">
@@ -314,7 +318,7 @@ export default function HomePage() {
 
         {/* Removed Upcoming Speakers Section as per request */}
 
-<section className="w-full py-4 md:py-8 lg:py-12 bg-gradient-to-r from-green-200 to-white dark:from-blue-800 dark:to-black">
+<section className="w-full py-4 md:py-4 lg:py-4 bg-black/40 backdrop-blur-[2px] -z-10">
   <div className="container px-4 md:px-6">
     <div className="grid grid-cols-1 gap-4">
       
@@ -361,7 +365,7 @@ export default function HomePage() {
 
 
         {/* Countdown Section */}
-        <section className="w-full py-4 md:py-8 lg:py-12 bg-gradient-to-r from-green-200 to-white dark:from-blue-800 dark:to-black">
+        <section className="w-full py-4 md:py-4 lg:py-4 bg-black/40 backdrop-blur-[2px] -z-10">
           <div className="container px-4 md:px-6">
             <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl mb-8 text-center">
               Conference Starts In
