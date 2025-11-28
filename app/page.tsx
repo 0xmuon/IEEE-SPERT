@@ -488,6 +488,20 @@ export default function HomePage() {
                 </div>
               </div>
 
+
+                <div className="flex justify-center">
+                <div className="max-w-sm w-full h-full">
+                  <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-4 md:p-6 hover:shadow-xl transition-shadow duration-300 h-full">
+                    <Image 
+                      src="/images/REM.png"
+                      alt="sponsi2"
+                      width={800}
+                      height={600}
+                      className="rounded-lg object-contain w-full h-48"
+                    />
+                  </div>
+                </div>
+              </div>
                 <div className="flex justify-center">
                 <div className="max-w-sm w-full h-full">
                   <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-4 md:p-6 hover:shadow-xl transition-shadow duration-300 h-full">
