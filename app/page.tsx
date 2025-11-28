@@ -343,61 +343,7 @@ export default function HomePage() {
 
         
 
-        <section className="w-full py-4 md:py-4 lg:py-4 bg-black/10 backdrop-blur-[2px] -z-10">
-          <div className="container px-4 md:px-6">
-            <div className="grid grid-cols-1 gap-4">
-              {/* Regular Tracks */}
-              <Card className="bg-white dark:bg-gray-800 shadow-md">
-                <CardContent className="p-6">
-                  <h2 className="text-2xl font-bold mb-2 text-primary">Regular Tracks</h2>
-                  <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
-                    {regularTracks.map((track, index) => (
-                      <li key={index}>{track}</li>
-                    ))}
-                  </ul>
-                </CardContent>
-              </Card>
-
-              {/* Special Sessions */}
-              <Card className="bg-white dark:bg-gray-800 shadow-md">
-                <CardContent className="p-6">
-                  <h2 className="text-2xl font-bold mb-2 text-primary">Special Sessions</h2>
-                  <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
-                    <li><strong>SS1:</strong> Advanced Control and Optimization of DC-DC Converters for Smart and Sustainable Energy Systems</li>
-                    <li><strong>SS2:</strong> Solar Energy Solutions for Renewable Integration and Electric Mobility</li>
-                    <li><strong>SS3:</strong> Intelligent Forecasting Techniques for Smart Energy and Transportation Systems using Machine Learning and Hybrid Deep Learning Models</li>
-                    <li><strong>SS4:</strong> Smart Mobility: Integration of AI, Batteries and Charging Systems for EVs</li>
-                    <li><strong>SS5:</strong> Advanced Power Converters and Control Techniques for Renewable Energy Systems</li>
-                    <li><strong>SS6:</strong> Applications of Machine-Learning in Energy Systems</li>
-                    <li><strong>SS7:</strong> Integration of Smart Agriculture and Energy for Empowering Rural India</li>
-                    <li><strong>SS8:</strong> Innovation in Renewable and Power Converters: Quest for a more sustainable energy and e-mobility</li>
-                    <li><strong>SS9:</strong> Wide Band Gap devices-based converters for renewable and transportation applications</li>
-                    <li><strong>SS10:</strong> Multilevel Inverters: Advanced Topologies, Modulation Strategies for medium and high-power Applications</li>
-                    <li><strong>SS11:</strong> Thermal Runaway Characterization, Management Strategies and Safety Mechanisms in EV Battery Packs</li>
-                    <li><strong>SS12:</strong> Flexible and Self-Powered Nanogenerator-Integrated Systems for Smart Energy and Sustainable Electronics</li>
-                    <li><strong>SS13:</strong> Green Intelligence: Advanced Materials and AI-Driven Approaches for Smart and Resilient Energy Infrastructure</li>
-                    <li><strong>SS14:</strong> Cybersecurity and Resilience of Smart Power and Renewable Energy Systems</li>
-                    <li><strong>SS15:</strong> AI-Driven Predictive Maintenance and Fault Detection in Power and EV Systems</li>
-                  </ul>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </section>
-
-
-
-
-        {/* Countdown Section */}
-        <section className="w-full py-4 md:py-4 lg:py-4 bg-black/40 backdrop-blur-[2px] -z-10">
-          <div className="container px-4 md:px-6">
-            <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl mb-8 text-center">
-              Conference Starts In
-            </h2>
-            <CountdownTimer targetDate="2025-12-21T00:00:00" />
-          </div>
-        </section>
-
+        
         {/* Sponsors Section */}
         <section className="w-full py-4 md:py-8 lg:py-12">
           <div className="container px-4 md:px-6">
@@ -518,6 +464,62 @@ export default function HomePage() {
             </div>
           </div>
         </section>
+
+        <section className="w-full py-4 md:py-4 lg:py-4 bg-black/10 backdrop-blur-[2px] -z-10">
+          <div className="container px-4 md:px-6">
+            <div className="grid grid-cols-1 gap-4">
+              {/* Regular Tracks */}
+              <Card className="bg-white dark:bg-gray-800 shadow-md">
+                <CardContent className="p-6">
+                  <h2 className="text-2xl font-bold mb-2 text-primary">Regular Tracks</h2>
+                  <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
+                    {regularTracks.map((track, index) => (
+                      <li key={index}>{track}</li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
+
+              {/* Special Sessions */}
+              <Card className="bg-white dark:bg-gray-800 shadow-md">
+                <CardContent className="p-6">
+                  <h2 className="text-2xl font-bold mb-2 text-primary">Special Sessions</h2>
+                  <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
+                    <li><strong>SS1:</strong> Advanced Control and Optimization of DC-DC Converters for Smart and Sustainable Energy Systems</li>
+                    <li><strong>SS2:</strong> Solar Energy Solutions for Renewable Integration and Electric Mobility</li>
+                    <li><strong>SS3:</strong> Intelligent Forecasting Techniques for Smart Energy and Transportation Systems using Machine Learning and Hybrid Deep Learning Models</li>
+                    <li><strong>SS4:</strong> Smart Mobility: Integration of AI, Batteries and Charging Systems for EVs</li>
+                    <li><strong>SS5:</strong> Advanced Power Converters and Control Techniques for Renewable Energy Systems</li>
+                    <li><strong>SS6:</strong> Applications of Machine-Learning in Energy Systems</li>
+                    <li><strong>SS7:</strong> Integration of Smart Agriculture and Energy for Empowering Rural India</li>
+                    <li><strong>SS8:</strong> Innovation in Renewable and Power Converters: Quest for a more sustainable energy and e-mobility</li>
+                    <li><strong>SS9:</strong> Wide Band Gap devices-based converters for renewable and transportation applications</li>
+                    <li><strong>SS10:</strong> Multilevel Inverters: Advanced Topologies, Modulation Strategies for medium and high-power Applications</li>
+                    <li><strong>SS11:</strong> Thermal Runaway Characterization, Management Strategies and Safety Mechanisms in EV Battery Packs</li>
+                    <li><strong>SS12:</strong> Flexible and Self-Powered Nanogenerator-Integrated Systems for Smart Energy and Sustainable Electronics</li>
+                    <li><strong>SS13:</strong> Green Intelligence: Advanced Materials and AI-Driven Approaches for Smart and Resilient Energy Infrastructure</li>
+                    <li><strong>SS14:</strong> Cybersecurity and Resilience of Smart Power and Renewable Energy Systems</li>
+                    <li><strong>SS15:</strong> AI-Driven Predictive Maintenance and Fault Detection in Power and EV Systems</li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
+
+
+
+
+        {/* Countdown Section */}
+        <section className="w-full py-4 md:py-4 lg:py-4 bg-black/40 backdrop-blur-[2px] -z-10">
+          <div className="container px-4 md:px-6">
+            <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl mb-8 text-center">
+              Conference Starts In
+            </h2>
+            <CountdownTimer targetDate="2025-12-21T00:00:00" />
+          </div>
+        </section>
+
 
         {/* Organizers Section */}
         <section className="w-full py-12 md:py-24 lg:py-32">
