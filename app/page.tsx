@@ -127,7 +127,7 @@ export default function HomePage() {
   ]
 
   return (
-    <div className="flex min-h-[100dvh] flex-col">
+    <div className="flex min-h-[10dvh] flex-col">
       <Navbar />
       <main className="flex-1">
         {/* Welcome Section with Announcements */}
@@ -249,7 +249,7 @@ export default function HomePage() {
                     </div>
                   </div>
               <ImageGallery />
-              <div className="flex flex-col gap-6">
+              <div className="flex flex-col gap-2">
                 <div className="px-4 md:px-6 flex flex-col">
                   <div className="md:w-full mt-8 md:mt-0">
                     <div className="relative bg-black/15 dark:bg-black-900/40 backdrop-blur-sm rounded-xl p-6 border border-white/10 overflow-hidden">
