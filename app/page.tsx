@@ -106,17 +106,24 @@ export default function HomePage() {
   const announcements = [
     
     <Link 
-      href="/program/call-for-special-session" 
-      className="text-primary hover:underline"
+      href="https://forms.gle/G7zt3YeGx2FEGKv89" 
+      className="text-black hover:underline"
     >
-      Special Sessions
+      Author Registration Form
     </Link>,
     <Link
-      href="/registration"
-      className="text-primary hover:underline"
+      href="https://forms.gle/rgjdrgnGHGNtX6G19"
+      className="text-black hover:underline"
     >
-      Acceptance has been conveyed, Early Bird Registration started (Upto 31 Oct, 2025)
+      Attendee Registration Form
+    </Link>,
+    <Link
+      href="/travel/hotel-booking"
+      className="text-black hover:underline"
+    >
+      Guest House and Hotel Booking Details
     </Link>
+
   ]
 
   return (
@@ -186,7 +193,7 @@ export default function HomePage() {
   </div>
 */}
 
-        <ImageGallery />
+        
         {/*}
         <div className="w-full bg-gradient-to-r from-green-200 to-white dark:from-blue-800 dark:to-black py-4 animate-pulse" style={{ animationDelay: '0s' }}>
           <div className="container mx-auto">
@@ -200,166 +207,183 @@ export default function HomePage() {
 
         */}
       
-        <section className="w-full py-4 md:py-4 lg:py-4 bg-black/40 backdrop-blur-[2px] -z-10">
+        <section className="w-full py-4 md:py-4 lg:py-4 bg-black/10 backdrop-blur-[1px] -z-10">
           <div className="container px-4 md:px-6">
             <div className="grid gap-8 md:grid-cols-2">
+              {/* Left: Welcome + CTA */}
               <div>
-                <h2 className="text-3xl text-white font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none mb-4">
+                <h2 className="text-3xl text-white font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl mb-4">
                   Welcome to IEEE-SPERT 2025
                 </h2>
                 <p className="max-w-[700px] text-white md:text-xl dark:text-gray-400 mb-8 text-justify">
-                  The IEEE International Conference on Smart Power, Energy, Renewables, and Transportation (IEEE-SPERT) aims to bring together experts and researchers to discuss advancements in these critical fields. This conference will explore innovative solutions and technologies that drive the future of energy and transportation, fostering collaboration and knowledge sharing among participants.
+                  The IEEE International Conference on Smart Power, Energy, Renewables, and Transportation (IEEE-SPERT)
+                  aims to bring together experts and researchers to discuss advancements in these critical fields. This
+                  conference will explore innovative solutions and technologies that drive the future of energy and
+                  transportation, fostering collaboration and knowledge sharing among participants.
                 </p>
+
                 <div className="flex flex-col gap-4 min-[400px]:flex-row">
                   <Button size="lg" asChild>
-                    <Link href="/">Register Now</Link>
+                    <Link href="/registration">Register Now</Link>
                   </Button>
-                  <Button size="lg" variant="outline" asChild>
-                    <Link href="/authors/call-for-papers">Submit Paper</Link>
-                  </Button>
+                  {/*
+                    <Button size="lg" variant="outline" asChild>
+                      <Link href="/authors/call-for-papers">Submit Paper</Link>
+                    </Button>
+                  */}
                 </div>
               </div>
-              {/* Important Dates Section */}
-              <div className="container px-4 md:px-6 flex flex-col md:flex-row justify-between">
-                <div className="md:w-full mt-8 md:mt-0">
-                  <div className="bg-primary/10 rounded-xl p-6 shadow-lg">
-                    <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl mb-6 text-primary">
-                      Important Dates
-                    </h2>
-                    <div className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden">
-                      <table className="min-w-full">
-                        <thead>
-                          <tr className="bg-primary/20 dark:bg-gray-700">
-                            <th className="py-3 px-4 text-left font-semibold text-primary dark:text-white">Date</th>
-                            <th className="py-3 px-4 text-left font-semibold text-primary dark:text-white">Event</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                       <tr className="bg-primary/5 hover:bg-primary/10 dark:hover:bg-gray-700">
-                          <td className="py-3 px-4 font-bold text-gray-800 dark:text-gray-200">
-                            <span className="text-red-600 line-through">31st July 2025</span><br />
-                            <span className="text-red-600 line-through">17th August 2025</span><br />
-                            <span className="text-red-600 line-through">31 August 2025</span><br />
-                          </td>
-                          <td className="py-3 px-4 text-blue-600 dark:text-blue-400">
-                            Paper Submission Closed
-                          </td>
-                        </tr>
-                          <tr className="bg-primary/5 hover:bg-primary/10 dark:hover:bg-gray-700">
-                            <td className="py-3 px-4 font-bold text-gray-800 dark:text-gray-200">
-                              <span className="text-red-600 line-through">30th Sept 2025</span>
-                            </td>
-                            <td className="py-3 px-4 text-yellow-600 dark:text-yellow-400">Acceptance emails Sent</td>
-                          </tr>
-                          <tr className="bg-primary/5 hover:bg-primary/10 dark:hover:bg-gray-700">
-                            <td className="py-3 px-4 font-bold text-gray-800 dark:text-gray-200">
-                              <span className="text-red-600 line-through">1st October 2025</span>
-                            </td>
-                            <td className="py-3 px-4 text-yellow-600 dark:text-yellow-400">Early Bird Registration Started</td>
-                          </tr>
-                          <tr className="bg-primary/5 hover:bg-primary/10 dark:hover:bg-gray-700">
-                            <td className="py-3 px-4 font-bold text-gray-800 dark:text-gray-200">
-                              <span className="text-red-600 line-through">15th October 2025</span>
-                            </td>
-                            <td className="py-3 px-4 text-yellow-600 dark:text-yellow-400">Camera Ready Paper Submission Deadline </td>
-                          </tr>
-                          <tr className="bg-primary/5 hover:bg-primary/10 dark:hover:bg-gray-700">
-                           <td className="py-3 px-4 font-bold text-gray-800 dark:text-gray-200">15 Nov 2025</td>
-                            <td className="py-3 px-4">
-                              <span className="font-medium color-cycle">Early Bird Registration Extended</span>
-                              <style jsx>{`
-                                .color-cycle {
-                                  animation: colorCycle 3s linear infinite;
-                                  -webkit-animation: colorCycle 3s linear infinite;
-                                }
-                                @keyframes colorCycle {
-                                  0% { color: #ef4444; }   /* red */
-                                  25% { color: #f59e0b; }  /* amber */
-                                  50% { color: #10b981; }  /* green */
-                                  75% { color: #3b82f6; }  /* blue */
-                                  100% { color: #a78bfa; } /* purple */
-                                }
-                              `}</style>
-                            </td>
-                          </tr>
-                          <tr className="bg-primary/5 hover:bg-primary/10 dark:hover:bg-gray-700">
-                            <td className="py-3 px-4 font-bold text-gray-800 dark:text-gray-200">16th Nov 2025</td>
-                            <td className="py-3 px-4 text-yellow-600 dark:text-yellow-400">Standard Registration Started</td>
-                          </tr>
-                          <tr className="bg-white dark:bg-gray-800 hover:bg-primary/10 dark:hover:bg-gray-700">
-                            <td className="py-3 px-4 font-bold text-gray-800 dark:text-gray-200">22nd December 2025</td>
-                            <td className="py-3 px-4 text-purple-600 dark:text-purple-400">Conference Begins</td>
-                          </tr>
-                          <tr className="bg-primary/5 hover:bg-primary/10 dark:hover:bg-gray-700">
-                            <td className="py-3 px-4 font-bold text-gray-800 dark:text-gray-200">24th December 2025</td>
-                            <td className="py-3 px-4 text-red-600 dark:text-red-400">Conference Ends</td>
-                          </tr>
-                        </tbody>
-                      </table>
+
+              {/* Important Dates + Announcements Column */}
+
+              <div className="mt-4">
+                    <h3 className="text-2xl font-bold mb-4">Announcements</h3>
+                    <div className="space-y-4">
+                      {announcements.map((announcement, index) => (
+                        <Card key={index} className="bg-primary/10">
+                          <CardContent className="p-4">
+                            <p className="text-primary font-medium">{announcement}</p>
+                          </CardContent>
+                        </Card>
+                      ))}
                     </div>
                   </div>
-                </div>
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold mb-4">Announcements</h3>
-                <div className="space-y-4">
-                  {announcements.map((announcement, index) => (
-                    <Card key={index} className="bg-primary/10">
-                      <CardContent className="p-4">
-                        <p className="text-primary font-medium">{announcement}</p>
-                      </CardContent>
-                    </Card>
-                  ))}
+              <ImageGallery />
+              <div className="flex flex-col gap-6">
+                <div className="px-4 md:px-6 flex flex-col">
+                  <div className="md:w-full mt-8 md:mt-0">
+                    <div className="relative bg-black/15 dark:bg-black-900/40 backdrop-blur-sm rounded-xl p-6 border border-white/10 overflow-hidden">
+                      {/* frosted base */}
+                      <div className="absolute inset-0 -z-10 bg-white/5 dark:bg-black/30 backdrop-blur-lg" />
+                      {/* subtle tint gradient */}
+                      <div className="absolute inset-0 -z-20 bg-gradient-to-r from-white/10 via-transparent to-white/5 dark:from-transparent dark:via-black/10 dark:to-transparent" />
+                      {/* glossy sheen */}
+                      <div
+                        className="absolute -top-10 -left-20 w-72 h-36 opacity-30 pointer-events-none transform rotate-12"
+                        style={{
+                          background: "radial-gradient(ellipse at center, rgba(255,255,255,0.9), rgba(255,255,255,0) 40%)",
+                          filter: "blur(12px)",
+                        }}
+                      />
+                      <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl mb-6 text-yellow-300">
+                        Important Dates
+                      </h2>
+                      <div className="rounded-lg overflow-hidden">
+                        <table className="min-w-full">
+                          <thead>
+                            <tr>
+                              <th className="py-3 px-4 text-left font-semibold text-yellow-200">Date</th>
+                              <th className="py-3 px-4 text-left font-semibold text-yellow-200">Event</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr className="bg-transparent hover:bg-white/10 dark:hover:bg-white/10">
+                              <td className="py-3 px-4 font-bold text-yellow-200">
+                                <span className="line-through text-yellow-300">31 August 2025</span><br />
+                              </td>
+                              <td className="py-3 px-4 text-yellow-200">Paper Submission Closed</td>
+                            </tr>
+
+                            {/*
+                                          <tr className="bg-transparent hover:bg-white/10 dark:hover:bg-white/10">
+                                            <td className="py-3 px-4 font-bold text-teal-200">
+                                            <span className="line-through text-slate-300">30th Sept 2025</span>
+                                            </td>
+                                            <td className="py-3 px-4 text-teal-200">Acceptance emails Sent</td>
+                                          </tr>
+
+                                          <tr className="bg-transparent hover:bg-white/10 dark:hover:bg-white/10">
+                                            <td className="py-3 px-4 font-bold text-teal-200">
+                                            <span className="line-through text-slate-300">1st October 2025</span>
+                                            </td>
+                                            <td className="py-3 px-4 text-teal-200">Early Bird Registration Started</td>
+                                          </tr>
+
+                                          <tr className="bg-transparent hover:bg-white/10 dark:hover:bg-white/10">
+                                            <td className="py-3 px-4 font-bold text-teal-200">
+                                            <span className="line-through text-slate-300">15th October 2025</span>
+                                            </td>
+                                            <td className="py-3 px-4 text-teal-200">Camera Ready Paper Submission Deadline</td>
+                                          </tr>
+                            */}
+
+                            <tr className="bg-transparent hover:bg-white/10 dark:hover:bg-white/10">
+                              <td className="py-3 px-4 font-bold text-yellow-200">
+                                <span className="line-through text-yellow-300">15 Nov 2025</span>
+                              </td>
+                              <td className="py-3 px-4 text-yellow-200">Early Bird Registration Closed</td>
+                            </tr>
+
+                            <tr className="bg-transparent hover:bg-white/10 dark:hover:bg-white/10">
+                              <td className="py-3 px-4 font-bold text-yellow-300">16th Nov 2025</td>
+                              <td className="py-3 px-4 text-yellow-200">Standard Registration Started</td>
+                            </tr>
+
+                            <tr className="bg-transparent hover:bg-white/10 dark:hover:bg-white/10">
+                              <td className="py-3 px-4 font-bold text-yellow-300">22nd December 2025</td>
+                              <td className="py-3 px-4 text-yellow-200">Conference Begins</td>
+                            </tr>
+
+                            <tr className="bg-transparent hover:bg-white/10 dark:hover:bg-white/10">
+                              <td className="py-3 px-4 font-bold text-yellow-300">24th December 2025</td>
+                              <td className="py-3 px-4 text-yellow-200">Conference Ends</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+
+                
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Removed Upcoming Speakers Section as per request */}
+        
 
-<section className="w-full py-4 md:py-4 lg:py-4 bg-black/40 backdrop-blur-[2px] -z-10">
-  <div className="container px-4 md:px-6">
-    <div className="grid grid-cols-1 gap-4">
-      
-      {/* Regular Tracks */}
-      <Card className="bg-white dark:bg-gray-800 shadow-md">
-        <CardContent className="p-6">
-          <h2 className="text-2xl font-bold mb-2 text-primary">Regular Tracks</h2> {/* reduced mb */}
-          <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
-            {regularTracks.map((track, index) => (
-              <li key={index}>{track}</li>
-            ))}
-          </ul>
-        </CardContent>
-      </Card>
+        <section className="w-full py-4 md:py-4 lg:py-4 bg-black/10 backdrop-blur-[2px] -z-10">
+          <div className="container px-4 md:px-6">
+            <div className="grid grid-cols-1 gap-4">
+              {/* Regular Tracks */}
+              <Card className="bg-white dark:bg-gray-800 shadow-md">
+                <CardContent className="p-6">
+                  <h2 className="text-2xl font-bold mb-2 text-primary">Regular Tracks</h2>
+                  <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
+                    {regularTracks.map((track, index) => (
+                      <li key={index}>{track}</li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
 
-      {/* Special Sessions */}
-      <Card className="bg-white dark:bg-gray-800 shadow-md">
-        <CardContent className="p-6">
-          <h2 className="text-2xl font-bold mb-2 text-primary">Special Sessions</h2> {/* reduced mb */}
-          <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
-            <li><strong>SS1:</strong> Advanced Control and Optimization of DC-DC Converters for Smart and Sustainable Energy Systems</li>
-            <li><strong>SS2:</strong> Solar Energy Solutions for Renewable Integration and Electric Mobility</li>
-            <li><strong>SS3:</strong> Intelligent Forecasting Techniques for Smart Energy and Transportation Systems using Machine Learning and Hybrid Deep Learning Models</li>
-            <li><strong>SS4:</strong> Smart Mobility: Integration of AI, Batteries and Charging Systems for EVs</li>
-            <li><strong>SS5:</strong> Advanced Power Converters and Control Techniques for Renewable Energy Systems</li>
-            <li><strong>SS6:</strong> Applications of Machine-Learning in Energy Systems</li>
-            <li><strong>SS7:</strong> Integration of Smart Agriculture and Energy for Empowering Rural India</li>
-            <li><strong>SS8:</strong> Innovation in Renewable and Power Converters: Quest for a more sustainable energy and e-mobility</li>
-            <li><strong>SS9:</strong> Wide Band Gap devices-based converters for renewable and transportation applications</li>
-            <li><strong>SS10:</strong> Multilevel Inverters: Advanced Topologies, Modulation Strategies for medium and high-power Applications</li>
-            <li><strong>SS11:</strong> Thermal Runaway Characterization, Management Strategies and Safety Mechanisms in EV Battery Packs</li>
-            <li><strong>SS12:</strong> Flexible and Self-Powered Nanogenerator-Integrated Systems for Smart Energy and Sustainable Electronics</li>
-            <li><strong>SS13:</strong> Green Intelligence: Advanced Materials and AI-Driven Approaches for Smart and Resilient Energy Infrastructure</li>
-            <li><strong>SS14:</strong> Cybersecurity and Resilience of Smart Power and Renewable Energy Systems</li>
-            <li><strong>SS15:</strong> AI-Driven Predictive Maintenance and Fault Detection in Power and EV Systems</li>
-          </ul>
-        </CardContent>
-      </Card>
-    </div>
-  </div>
-</section>
+              {/* Special Sessions */}
+              <Card className="bg-white dark:bg-gray-800 shadow-md">
+                <CardContent className="p-6">
+                  <h2 className="text-2xl font-bold mb-2 text-primary">Special Sessions</h2>
+                  <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
+                    <li><strong>SS1:</strong> Advanced Control and Optimization of DC-DC Converters for Smart and Sustainable Energy Systems</li>
+                    <li><strong>SS2:</strong> Solar Energy Solutions for Renewable Integration and Electric Mobility</li>
+                    <li><strong>SS3:</strong> Intelligent Forecasting Techniques for Smart Energy and Transportation Systems using Machine Learning and Hybrid Deep Learning Models</li>
+                    <li><strong>SS4:</strong> Smart Mobility: Integration of AI, Batteries and Charging Systems for EVs</li>
+                    <li><strong>SS5:</strong> Advanced Power Converters and Control Techniques for Renewable Energy Systems</li>
+                    <li><strong>SS6:</strong> Applications of Machine-Learning in Energy Systems</li>
+                    <li><strong>SS7:</strong> Integration of Smart Agriculture and Energy for Empowering Rural India</li>
+                    <li><strong>SS8:</strong> Innovation in Renewable and Power Converters: Quest for a more sustainable energy and e-mobility</li>
+                    <li><strong>SS9:</strong> Wide Band Gap devices-based converters for renewable and transportation applications</li>
+                    <li><strong>SS10:</strong> Multilevel Inverters: Advanced Topologies, Modulation Strategies for medium and high-power Applications</li>
+                    <li><strong>SS11:</strong> Thermal Runaway Characterization, Management Strategies and Safety Mechanisms in EV Battery Packs</li>
+                    <li><strong>SS12:</strong> Flexible and Self-Powered Nanogenerator-Integrated Systems for Smart Energy and Sustainable Electronics</li>
+                    <li><strong>SS13:</strong> Green Intelligence: Advanced Materials and AI-Driven Approaches for Smart and Resilient Energy Infrastructure</li>
+                    <li><strong>SS14:</strong> Cybersecurity and Resilience of Smart Power and Renewable Energy Systems</li>
+                    <li><strong>SS15:</strong> AI-Driven Predictive Maintenance and Fault Detection in Power and EV Systems</li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
 
 
 
@@ -370,7 +394,7 @@ export default function HomePage() {
             <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl mb-8 text-center">
               Conference Starts In
             </h2>
-            <CountdownTimer targetDate="2025-12-19T00:00:00" />
+            <CountdownTimer targetDate="2025-12-21T00:00:00" />
           </div>
         </section>
 
