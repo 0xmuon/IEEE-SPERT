@@ -9,16 +9,16 @@ export default function TourPage() {
       <Navbar />
       <section className="w-full py-12 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6">
-          <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none mb-4">
+          <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none mb-4 text-white">
             Tour Information
           </h1>
-          <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+          <p className="text-lg  dark:text-gray-300 mb-8 text-white">
             Explore the beautiful city of Surat and discover exciting places to visit during your stay for IEEE-SPERT 2025.
           </p>
           
           {/* Google Maps Embed */}
           <div className="w-full mb-8">
-            <h2 className="text-2xl font-bold mb-4">Points of Interest</h2>
+            <h2 className="text-2xl font-bold mb-4 text-white">Points of Interest</h2>
           </div>
 
           {/* Tour Information */}

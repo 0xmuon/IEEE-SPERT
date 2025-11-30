@@ -207,7 +207,7 @@ export default function HomePage() {
 
         */}
       
-        <section className="w-full py-4 md:py-4 lg:py-4 bg-black/10 backdrop-blur-[1px] -z-10">
+        <section className="w-full pt-4 pb-2 md:pt-4 md:pb-2 lg:pt-4 lg:pb-2 bg-black/10 backdrop-blur-[1px] -z-10">
           <div className="container px-4 md:px-6">
             <div className="grid gap-8 md:grid-cols-2">
               {/* Left: Welcome + CTA */}

@@ -9,14 +9,14 @@ export default function LocationPage() {
       <Navbar />
       <section className="w-full py-12 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6">
-          <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none mb-4">
+          <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none mb-4 text-white">
             Location Information
           </h1>
-          <p className="text-gray-500 md:text-xl dark:text-gray-400 mb-8">
+          <p className="md:text-xl mb-8 text-white">
             Surat is a major port city in Gujarat, India, known for its diamond and textile industries. It is one of the fastest-growing cities and a hub for trade and commerce. The city is famous for its delicious street food and vibrant culture. Surat also has a rich history, with influences from Mughal, Dutch, and British eras.
           </p>
-          <h2 className="text-2xl font-bold mb-4">Venue Location</h2>
-          <p className="text-gray-500 md:text-xl dark:text-gray-400 mb-8">
+          <h2 className="text-2xl font-bold mb-4 text-white">Venue Location</h2>
+          <p className="md:text-xl mb-8 text-white">
             Sardar Vallabhbhai National Institute of Technology, Surat: Located in Athwa, Surat, Gujarat 395007, India.
           </p>
           <iframe
