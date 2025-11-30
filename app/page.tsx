@@ -55,7 +55,7 @@ function CountdownTimer({ targetDate }: { targetDate: string }) {
     }
 
     timerComponents.push(
-      <span key={interval} className="text-4xl font-bold">
+      <span key={interval} className="text-4xl font-bold text-white">
         {timeLeft[interval]} {interval}{" "}
       </span>,
     );
@@ -63,7 +63,7 @@ function CountdownTimer({ targetDate }: { targetDate: string }) {
 
   return (
     <div className="text-center">
-      {timerComponents.length ? timerComponents : <span>Conference has started!</span>}
+      {timerComponents.length ? timerComponents : <span className="text-white">Conference has started!</span>}
     </div>
   );
 }
@@ -107,19 +107,19 @@ export default function HomePage() {
     
     <Link 
       href="https://forms.gle/G7zt3YeGx2FEGKv89" 
-      className="text-black hover:underline"
+      className="text-white hover:underline"
     >
       Author Registration Form
     </Link>,
     <Link
       href="https://forms.gle/rgjdrgnGHGNtX6G19"
-      className="text-black hover:underline"
+      className="text-white hover:underline"
     >
       Attendee Registration Form
     </Link>,
     <Link
       href="/travel/hotel-booking"
-      className="text-black hover:underline"
+      className="text-white hover:underline"
     >
       Guest House and Hotel Booking Details
     </Link>
@@ -215,7 +215,7 @@ export default function HomePage() {
                 <h2 className="text-3xl text-white font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl mb-4">
                   Welcome to IEEE-SPERT 2025
                 </h2>
-                <p className="max-w-[700px] text-white md:text-xl dark:text-gray-400 mb-8 text-justify">
+                <p className="max-w-[700px] text-white md:text-xl mb-8 text-justify">
                   The IEEE International Conference on Smart Power, Energy, Renewables, and Transportation (IEEE-SPERT)
                   aims to bring together experts and researchers to discuss advancements in these critical fields. This
                   conference will explore innovative solutions and technologies that drive the future of energy and
@@ -237,12 +237,12 @@ export default function HomePage() {
               {/* Important Dates + Announcements Column */}
 
               <div className="mt-4">
-                    <h3 className="text-2xl font-bold mb-4">Announcements</h3>
+                    <h3 className="text-2xl font-bold mb-4 text-white">Announcements</h3>
                     <div className="space-y-4">
                       {announcements.map((announcement, index) => (
                         <Card key={index} className="bg-primary/10">
                           <CardContent className="p-4">
-                            <p className="text-primary font-medium">{announcement}</p>
+                            <p className="text-white font-medium">{announcement}</p>
                           </CardContent>
                         </Card>
                       ))}
@@ -347,7 +347,7 @@ export default function HomePage() {
         {/* Sponsors Section */}
         <section className="w-full py-4 md:py-8 lg:py-12">
           <div className="container px-4 md:px-6">
-            <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl mb-12 text-center">
+            <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl mb-12 text-center text-white">
               Our Valued Sponsors
             </h2>
             
@@ -365,7 +365,7 @@ export default function HomePage() {
                         className="rounded-lg mb-4 hover:scale-105 transition-transform duration-200"
                       />
                       <h4 className="font-bold text-2xl mb-2"></h4>
-                      <p className="text-gray-600 dark:text-gray-300 text-lg"></p>
+                      <p className="text-white text-lg"></p>
                     </div>
                   </div>
                 </div>
@@ -384,7 +384,7 @@ export default function HomePage() {
                         className="object-contain w-full h-40"
                       />
                       <h4 className="font-bold text-2xl mb-2 text-center"></h4>
-                      <p className="text-gray-600 dark:text-gray-300 text-lg"></p>
+                      <p className="text-white text-lg"></p>
                     </div>
                   </div>
                 </div>
@@ -513,7 +513,7 @@ export default function HomePage() {
         {/* Countdown Section */}
         <section className="w-full py-4 md:py-4 lg:py-4 bg-black/40 backdrop-blur-[2px] -z-10">
           <div className="container px-4 md:px-6">
-            <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl mb-8 text-center">
+            <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl mb-8 text-center text-white">
               Conference Starts In
             </h2>
             <CountdownTimer targetDate="2025-12-21T00:00:00" />
@@ -524,8 +524,8 @@ export default function HomePage() {
         {/* Organizers Section */}
         <section className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
-            <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl mb-8">Organizers</h2>
-            <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+            <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl mb-8 text-white">Organizers</h2>
+            <p className="text-lg text-white mb-8">
               The following organizations are financially supporting the IEEE-SPERT 2025 conference:
             </p>
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">

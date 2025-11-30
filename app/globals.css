@@ -58,6 +58,30 @@
   }
 }
 
+/* Force all text to pure white in both light and dark modes */
+@layer base {
+  :root {
+    --foreground: 0 0% 100%;
+  }
+  .dark {
+    --foreground: 0 0% 100%;
+  }
+
+  html, body, p, span, a, li, h1, h2, h3, h4, h5, h6, th, td, button, label, small, strong, em, div {
+    color: #ffffff !important;
+  }
+}
+
+/* Absolute fallback: ensure any remaining text is white */
+@layer base {
+  * {
+    color: #ffffff !important;
+  }
+  h2 {
+    color: #ffffff !important;
+  }
+}
+
 /* Custom animations for speakers carousel */
 @keyframes scroll {
   0% {

@@ -81,11 +81,11 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-50 w-full bg-background transition-all duration-300">
+    <nav className="sticky top-0 z-50 w-full backdrop-blur-2xl transition-all duration-300 text-white">
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center gap-2 font-bold">
           <img
-            src="https://i.ibb.co/cX34H3Fd/Spert-final-logo.jpg"
+            src="https://i.ibb.co/zHXKYVRC/ieee-spert-logo-removebg-preview.png"
             alt="IEEE-SPERT Logo"
             className="h-14"
           />
@@ -103,7 +103,7 @@ const Navbar = () => {
                     <button className={`flex items-center gap-1 text-base font-medium transition-colors ${
                       item.name === "Registration"
                         ? "text-white bg-red-600 hover:bg-red-700 dark:bg-red-600 dark:hover:bg-red-700 border border-red-600 rounded-md px-3 py-1"
-                        : "text-muted-foreground hover:text-foreground"
+                        : "text-white hover:text-white"
                     }`}>
                       {item.name}
                       <ChevronDown className="size-4" />
@@ -123,7 +123,7 @@ const Navbar = () => {
                   className={`text-base font-medium transition-colors ${
                     item.isHot && item.isImportant
                       ? "text-red-600 dark:text-red-400 font-bold bg-gradient-to-r from-red-500/10 to-orange-500/10 px-3 py-2 rounded-lg border-2 border-red-500/30 hover:border-red-500/60 hover:from-red-500/20 hover:to-orange-500/20 hover:text-red-700 dark:hover:text-red-300"
-                      : "text-muted-foreground hover:text-foreground"
+                      : "text-white hover:text-white"
                   }`}
                 >
                   {item.name}
@@ -145,7 +145,7 @@ const Navbar = () => {
                     <button className={`flex items-center gap-1 text-lg font-medium transition-colors ${
                       item.name === "Registration"
                         ? "text-white bg-red-600 hover:bg-red-700 dark:bg-red-600 dark:hover:bg-red-700 border border-red-600 rounded-md px-3 py-1"
-                        : "text-muted-foreground hover:text-foreground"
+                        : "text-white hover:text-white"
                     }`}>
                       {item.name}
                       <ChevronDown className="size-4" />
@@ -165,7 +165,7 @@ const Navbar = () => {
                   className={`block text-base font-medium transition-colors ${
                     item.isHot && item.isImportant
                       ? "text-red-600 dark:text-red-400 font-bold bg-gradient-to-r from-red-500/10 to-orange-500/10 px-3 py-2 rounded-lg border-2 border-red-500/30 hover:border-red-500/60 hover:from-red-500/20 hover:to-orange-500/20 hover:text-red-700 dark:hover:text-red-300"
-                      : "text-muted-foreground hover:text-foreground"
+                      : "text-white hover:text-white"
                   }`}
                 >
                   {item.name}
