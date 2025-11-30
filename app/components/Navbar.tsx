@@ -81,7 +81,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-50 w-full backdrop-blur-lg transition-all duration-300">
+    <nav className="sticky top-0 z-50 w-full bg-background transition-all duration-300">
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center gap-2 font-bold">
           <img
@@ -91,10 +91,10 @@ const Navbar = () => {
           />
           <span>SPERT 2025</span>
         </Link>
-        <button onClick={toggleMenu} className="md:hidden">
+        <button onClick={toggleMenu} className="lg:hidden">
           <span className="text-2xl">☰</span>
         </button>
-        <div className={`hidden lg:flex gap-6 md:block ${isOpen ? 'flex' : 'hidden'} flex-col md:flex-row`}>
+        <div className={`hidden lg:flex gap-6`}>
           {navItems.map((item, index) => (
             <div key={index} className="relative group">
               {item.children ? (
@@ -136,7 +136,7 @@ const Navbar = () => {
           ))}
         </div>
         {/* Mobile Menu */}
-        <div className={`absolute top-16 left-0 w-full bg-white dark:bg-gray-800 shadow-md ${isOpen ? 'block' : 'hidden'} md:hidden`}>
+        <div className={`absolute top-16 left-0 w-full bg-white dark:bg-gray-800 shadow-md ${isOpen ? 'block' : 'hidden'} lg:hidden`}>
           {navItems.map((item, index) => (
             <div key={index} className="p-2">
               {item.children ? (
