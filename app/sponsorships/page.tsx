@@ -10,7 +10,7 @@ export default function SponsorshipsPage() {
       <Navbar />
       <section className="w-full py-12 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6">
-          <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none mb-8 text-center">
+          <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none mb-8 text-center text-white">
             Sponsorship Opportunities
           </h1>
 
@@ -78,7 +78,7 @@ export default function SponsorshipsPage() {
 
           {/* Current Sponsors Section */}
           <div className="mb-16">
-            <h2 className="text-2xl font-bold mb-8 text-center">Our Current Sponsors</h2>
+            <h2 className="text-2xl font-bold mb-8 text-center text-white">Our Current Sponsors</h2>
             <div className="grid gap-8 md:grid-cols-2">
               {/* Platinum Sponsors */}
               <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">

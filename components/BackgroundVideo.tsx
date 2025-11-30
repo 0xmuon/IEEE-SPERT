@@ -14,7 +14,7 @@ export function BackgroundVideo() {
       />
 
       {/* Optional overlay for readability */}
-      <div className="fixed inset-0 bg-black/20 backdrop-blur-[2px] -z-10" />
+      <div className="fixed inset-0 bg-black/35 backdrop-blur-[2px] -z-10" />
     </>
   )
 }
