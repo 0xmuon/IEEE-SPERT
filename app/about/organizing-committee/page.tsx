@@ -77,6 +77,7 @@ export default function OrganizingCommitteePage() {
                   "Prof. Pranav B. Darji, DoEE, SVNIT Surat",
                   "Dr. Sanjay Tolani, DoEE, SVNIT Surat",
                   "Dr. K. V. Praveen Kumar, DoEE, SVNIT Surat",
+                  "Dr Rajashekhar Reddy Chilipi, DoEE, SVNIT Surat",
                   
                 ].map((chair, index) => (
                   <li key={index} className="text-lg">{chair}</li>
