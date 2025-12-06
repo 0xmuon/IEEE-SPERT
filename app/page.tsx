@@ -112,8 +112,8 @@ export default function HomePage() {
       Author Registration Form
     </Link>,
 
-    // MODIFICATION 1: ADDED PRESENTATION TEMPLATE LINK
-    <Link 
+    // MODIFICATION 1: ADDED PRESENTATION TEMPLATE LINK
+    <Link 
       href="https://docs.google.com/presentation/d/1FnK-f59fl9Xpb2be5kWJKz_JctpVE-e7/edit?usp=sharing&ouid=100703894760504861483&rtpof=true&sd=true"
       className="text-white hover:underline"
     >
@@ -133,25 +133,25 @@ export default function HomePage() {
       Guest House and Hotel Booking Details
     </Link>,
 
-    // MODIFICATION 2: ADDED QR CODE CARD LOGIC AS AN ANNOUNCEMENT ITEM
-    <div className="group relative w-full h-full">
-        <span className="text-white font-medium block">
-            <Lightbulb className="inline-block h-5 w-5 mr-2 text-yellow-400" />
-            Join our WhatsApp Group: **Hover here to scan!**
-        </span>
-        {/* The QR code image that appears on hover. */}
-        {/* Uses WhatsappQR.png from public/images */}
-        <div className="absolute top-1/2 left-full transform -translate-y-1/2 ml-4 p-2 z-20 hidden group-hover:block bg-white rounded-xl shadow-2xl border-4 border-yellow-500 transition-opacity duration-300">
-            <Image
-                src="/images/WhatsappQR.png" 
-                alt="WhatsApp Group QR Code"
-                width={150}
-                height={150}
-                priority
-            />
-        </div>
-    </div>
-]
+    // MODIFICATION 2: ADDED QR CODE CARD LOGIC AS AN ANNOUNCEMENT ITEM
+    <div className="group relative w-full h-full">
+        <span className="text-white font-medium block">
+            <Lightbulb className="inline-block h-5 w-5 mr-2 text-yellow-400" />
+            Join our WhatsApp Group: **Hover here to scan!**
+        </span>
+        {/* The QR code image that appears on hover. */}
+        {/* Uses WhatsappQR.png from public/images */}
+        <div className="absolute top-1/2 left-full transform -translate-y-1/2 ml-4 p-2 z-20 hidden group-hover:block bg-white rounded-xl shadow-2xl border-4 border-yellow-500 transition-opacity duration-300">
+            <Image
+                src="/images/WhatsappQR.png" 
+                alt="WhatsApp Group QR Code"
+                width={150}
+                height={150}
+                priority
+            />
+        </div>
+    </div>
+  ] // The closing bracket and lack of semicolon are correct for this context
 
   return (
     <div className="flex min-h-[10dvh] flex-col">
@@ -259,7 +259,7 @@ export default function HomePage() {
                     </Button>
                   */}
                 </div>
-              </div>
+                  </div>
 
               {/* Important Dates + Announcements Column */}
 
@@ -268,14 +268,14 @@ export default function HomePage() {
                     <div className="space-y-4">
                       {announcements.map((announcement, index) => (
                         <Card 
-                            key={index} 
-                            // ADDED: group class for hover effect on the QR code item
-                            className={`bg-primary/10 ${index === announcements.length - 1 ? 'group relative overflow-visible' : ''}`}
-                        >
+                            key={index} 
+                            // ADDED: group class for hover effect on the QR code item
+                            className={`bg-primary/10 ${index === announcements.length - 1 ? 'group relative overflow-visible' : ''}`}
+                        >
                           <CardContent className="p-4">
                             <p className={`text-white font-medium ${index === announcements.length -1 ? 'group-hover:text-yellow-400' : ''}`}>
-                                    {announcement}
-                                </p>
+                                    {announcement}
+                                </p>
                           </CardContent>
                         </Card>
                       ))}
@@ -495,13 +495,7 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            </div>
-            </div>
-            </div>
+          </div>
         </section>
 
         <section className="w-full py-4 md:py-4 lg:py-4 bg-black/10 backdrop-blur-[2px] -z-10">
@@ -616,7 +610,13 @@ export default function HomePage() {
                 </CardContent>
               </Card>
             </div>
-          </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+            </div>
+            </div>
         </section>
       </main>
       <VisitorCounter />
