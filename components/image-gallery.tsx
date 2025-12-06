@@ -50,8 +50,11 @@ export function ImageGallery() {
         >
           {/* Slide Container */}
           <div
-            className="flex h-full transition-transform duration-700 ease-[cubic-bezier(0.22,0.61,0.36,1)]"
-            style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+            className="flex h-full transition-transform duration-700"
+            style={{ 
+              transform: `translateX(-${currentIndex * 100}%)`,
+              transitionTimingFunction: 'cubic-bezier(0.22,0.61,0.36,1)'
+            }}
           >
             {images.map((src, index) => (
               <div
