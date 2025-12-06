@@ -14,574 +14,613 @@ import VisitorCounter from "@/app/components/VisitorCounter"
 
 // Add JSX namespace declaration
 declare namespace JSX {
-  interface IntrinsicElements {
-    [elemName: string]: any;
-  }
+  interface IntrinsicElements {
+    [elemName: string]: any;
+  }
 }
 
 // Add this function before the ConferencePage component
 function CountdownTimer({ targetDate }: { targetDate: string }) {
-  const [timeLeft, setTimeLeft] = useState<{ [key: string]: number }>({});
+  const [timeLeft, setTimeLeft] = useState<{ [key: string]: number }>({});
 
-  function calculateTimeLeft() {
-    const difference = +new Date(targetDate) - +new Date();
-    let timeLeft: { [key: string]: number } = {};
+  function calculateTimeLeft() {
+    const difference = +new Date(targetDate) - +new Date();
+    let timeLeft: { [key: string]: number } = {};
 
-    if (difference > 0) {
-      timeLeft = {
-        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-        minutes: Math.floor((difference / 1000 / 60) % 60),
-        seconds: Math.floor((difference / 1000) % 60),
-      };
-    }
+    if (difference > 0) {
+      timeLeft = {
+        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+        minutes: Math.floor((difference / 1000 / 60) % 60),
+        seconds: Math.floor((difference / 1000) % 60),
+      };
+    }
 
-    return timeLeft;
-  }
+    return timeLeft;
+  }
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setTimeLeft(calculateTimeLeft());
-    }, 1000);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setTimeLeft(calculateTimeLeft());
+    }, 1000);
 
-    return () => clearTimeout(timer);
-  });
+    return () => clearTimeout(timer);
+  });
 
-  const timerComponents: React.ReactNode[] = [];
+  const timerComponents: React.ReactNode[] = [];
 
-  Object.keys(timeLeft).forEach((interval) => {
-    if (!timeLeft[interval]) {
-      return;
-    }
+  Object.keys(timeLeft).forEach((interval) => {
+    if (!timeLeft[interval]) {
+      return;
+    }
 
-    timerComponents.push(
-      <span key={interval} className="text-4xl font-bold text-white">
-        {timeLeft[interval]} {interval}{" "}
-      </span>,
-    );
-  });
+    timerComponents.push(
+      <span key={interval} className="text-4xl font-bold text-white">
+        {timeLeft[interval]} {interval}{" "}
+      </span>,
+    );
+  });
 
-  return (
-    <div className="text-center">
-      {timerComponents.length ? timerComponents : <span className="text-white">Conference has started!</span>}
-    </div>
-  );
+  return (
+    <div className="text-center">
+      {timerComponents.length ? timerComponents : <span className="text-white">Conference has started!</span>}
+    </div>
+  );
 }
 
 export default function HomePage() {
-  const [isScrolled, setIsScrolled] = useState(false)
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const { theme, setTheme } = useTheme()
-  const [mounted, setMounted] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const { theme, setTheme } = useTheme()
+  const [mounted, setMounted] = useState(false)
 
-  useEffect(() => {
-    setMounted(true)
-    const handleScroll = () => {
-      if (window.scrollY > 10) {
-        setIsScrolled(true)
-      } else {
-        setIsScrolled(false)
-      }
-    }
+  useEffect(() => {
+    setMounted(true)
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        setIsScrolled(true)
+      } else {
+        setIsScrolled(false)
+      }
+    }
 
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+    window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
 
-  const toggleTheme = () => {
-    setTheme(theme === "dark" ? "light" : "dark")
-  }
+  const toggleTheme = () => {
+    setTheme(theme === "dark" ? "light" : "dark")
+  }
 
-  const regularTracks = [
-    "Power converters for Integration of Renewable Energy into the grid, its control and management",
-    "Energy Management and Storage Technologies",
-    "Charging Systems and Infrastructure for Electrical transportation",
-    "Power Converters and Drive systems for Electric Vehicles",
-    "Control and Automation",
-    "Grid resiliency and flexibility",
-    "AI, Big data and Cybersecurity for power, energy and transportation",
-    "Electricity market and regulatory framework",
-  ]
+  const regularTracks = [
+    "Power converters for Integration of Renewable Energy into the grid, its control and management",
+    "Energy Management and Storage Technologies",
+    "Charging Systems and Infrastructure for Electrical transportation",
+    "Power Converters and Drive systems for Electric Vehicles",
+    "Control and Automation",
+    "Grid resiliency and flexibility",
+    "AI, Big data and Cybersecurity for power, energy and transportation",
+    "Electricity market and regulatory framework",
+  ]
 
-  const announcements = [
-    
-    <Link 
-      href="https://forms.gle/G7zt3YeGx2FEGKv89" 
-      className="text-white hover:underline"
-    >
-      Author Registration Form
-    </Link>,
-    <Link
-      href="https://forms.gle/rgjdrgnGHGNtX6G19"
-      className="text-white hover:underline"
-    >
-      Attendee Registration Form
-    </Link>,
-    <Link
-      href="/travel/hotel-booking"
-      className="text-white hover:underline"
-    >
-      Guest House and Hotel Booking Details
-    </Link>
+  const announcements = [
+    
+    <Link 
+      href="https://forms.gle/G7zt3YeGx2FEGKv89" 
+      className="text-white hover:underline"
+    >
+      Author Registration Form
+    </Link>,
 
-  ]
+    // MODIFICATION 1: ADDED PRESENTATION TEMPLATE LINK
+    <Link 
+      href="https://docs.google.com/presentation/d/1FnK-f59fl9Xpb2be5kWJKz_JctpVE-e7/edit?usp=sharing&ouid=100703894760504861483&rtpof=true&sd=true"
+      className="text-white hover:underline"
+    >
+      Presentation Template (For Authors)
+    </Link>,
 
-  return (
-    <div className="flex min-h-[10dvh] flex-col">
-      <Navbar />
-      <main className="flex-1">
-        {/* Welcome Section with Announcements */}
-        {/* Announcement Marquee with Pause on Hover */}
- {/*      
-        <div
-          className="w-full bg-gradient-to-r from-green-200 to-white dark:from-blue-800 dark:to-black py-4"
-          style={{ animationDelay: '0s' }}
-        >
-          <div className="container mx-auto">
-            <div className="text-xl font-semibold text-gray-800 dark:text-gray-200 flex items-center gap-4">
-              <span className="shrink-0 text-primary font-extrabold">Announcement:</span>
-              <div className="relative flex-1 overflow-hidden min-w-0">
-                <style jsx>{`
-                  .marquee {
-                    display: inline-block;
-                    white-space: nowrap;
-                    animation: marquee 18s linear infinite;
-                  }
-                  .marquee-paused {
-                    animation-play-state: paused !important;
-                  }
-                  @keyframes marquee {
-                    0% { transform: translateX(100%); }
-                    100% { transform: translateX(-100%); }
-                  }
-                `}</style>
-                <div
-                  className="marquee"
-                  tabIndex={0}
-                  onMouseEnter={e => e.currentTarget.classList.add('marquee-paused')}
-                  onMouseLeave={e => e.currentTarget.classList.remove('marquee-paused')}
-                >
-               
-                  {" | "}The conference will be held fully in offline (physical) mode only{" | "}
-                </div>
-              </div>
-            </div>
-          </div>
+    <Link
+      href="https://forms.gle/rgjdrgnGHGNtX6G19"
+      className="text-white hover:underline"
+    >
+      Attendee Registration Form
+    </Link>,
+    <Link
+      href="/travel/hotel-booking"
+      className="text-white hover:underline"
+    >
+      Guest House and Hotel Booking Details
+    </Link>,
+
+    // MODIFICATION 2: ADDED QR CODE CARD LOGIC AS AN ANNOUNCEMENT ITEM
+    <div className="group relative w-full h-full">
+        <span className="text-white font-medium block">
+            <Lightbulb className="inline-block h-5 w-5 mr-2 text-yellow-400" />
+            Join our WhatsApp Group: **Hover here to scan!**
+        </span>
+        {/* The QR code image that appears on hover. */}
+        {/* Uses WhatsappQR.png from public/images */}
+        <div className="absolute top-1/2 left-full transform -translate-y-1/2 ml-4 p-2 z-20 hidden group-hover:block bg-white rounded-xl shadow-2xl border-4 border-yellow-500 transition-opacity duration-300">
+            <Image
+                src="/images/WhatsappQR.png" 
+                alt="WhatsApp Group QR Code"
+                width={150}
+                height={150}
+                priority
+            />
         </div>
- 
- */}
-        {/* Sponsor/Organizer strip matching gradient theme */}
-        
+    </div>
+]
+
+  return (
+    <div className="flex min-h-[10dvh] flex-col">
+      <Navbar />
+      <main className="flex-1">
+        {/* Welcome Section with Announcements */}
+        {/* Announcement Marquee with Pause on Hover */}
+ {/*      
+        <div
+          className="w-full bg-gradient-to-r from-green-200 to-white dark:from-blue-800 dark:to-black py-4"
+          style={{ animationDelay: '0s' }}
+        >
+          <div className="container mx-auto">
+            <div className="text-xl font-semibold text-gray-800 dark:text-gray-200 flex items-center gap-4">
+              <span className="shrink-0 text-primary font-extrabold">Announcement:</span>
+              <div className="relative flex-1 overflow-hidden min-w-0">
+                <style jsx>{`
+                  .marquee {
+                    display: inline-block;
+                    white-space: nowrap;
+                    animation: marquee 18s linear infinite;
+                  }
+                  .marquee-paused {
+                    animation-play-state: paused !important;
+                  }
+                  @keyframes marquee {
+                    0% { transform: translateX(100%); }
+                    100% { transform: translateX(-100%); }
+                  }
+                `}</style>
+                <div
+                  className="marquee"
+                  tabIndex={0}
+                  onMouseEnter={e => e.currentTarget.classList.add('marquee-paused')}
+                  onMouseLeave={e => e.currentTarget.classList.remove('marquee-paused')}
+                >
+               
+                  {" | "}The conference will be held fully in offline (physical) mode only{" | "}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+ 
+ */}
+        {/* Sponsor/Organizer strip matching gradient theme */}
+        
 
 {/*}
-  <div className="w-full py-6">
-    <div className="relative -mx-4 md:-mx-6">
-      <div className="w-screen max-w-none">
-        <div className="relative w-full aspect-video overflow-hidden">
-          <video
-            src="/images/video.mp4"
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="auto"
-            className="absolute inset-0 w-full h-full object-cover"
-          />
-        </div>
-      </div>
-    </div>
-  </div>
+  <div className="w-full py-6">
+    <div className="relative -mx-4 md:-mx-6">
+      <div className="w-screen max-w-none">
+        <div className="relative w-full aspect-video overflow-hidden">
+          <video
+            src="/images/video.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="auto"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
 */}
 
-        
-        {/*}
-        <div className="w-full bg-gradient-to-r from-green-200 to-white dark:from-blue-800 dark:to-black py-4 animate-pulse" style={{ animationDelay: '0s' }}>
-          <div className="container mx-auto">
-            <div className="text-xl font-semibold text-gray-800 dark:text-gray-200 overflow-hidden whitespace-nowrap">
-              <div className="animate-marquee inline-block" style={{ marginLeft: '0px' }}>
-                Our Current Sponsors | Platinum Sponsors: Raj Vijtech Private Limited, Surat | Silver Sponsors: TechSunBio Private Limited, Surat | Revine Technologies | Royal Electronics Sales & Services | Entuple Technologies | GB Solar Technologies Pvt Ltd | Quntek Technologies
-              </div>
-            </div>
-          </div>
-        </div>
+        
+        {/*}
+        <div className="w-full bg-gradient-to-r from-green-200 to-white dark:from-blue-800 dark:to-black py-4 animate-pulse" style={{ animationDelay: '0s' }}>
+          <div className="container mx-auto">
+            <div className="text-xl font-semibold text-gray-800 dark:text-gray-200 overflow-hidden whitespace-nowrap">
+              <div className="animate-marquee inline-block" style={{ marginLeft: '0px' }}>
+                Our Current Sponsors | Platinum Sponsors: Raj Vijtech Private Limited, Surat | Silver Sponsors: TechSunBio Private Limited, Surat | Revine Technologies | Royal Electronics Sales & Services | Entuple Technologies | GB Solar Technologies Pvt Ltd | Quntek Technologies
+              </div>
+            </div>
+          </div>
+        </div>
 
-        */}
-      
-        <section className="w-full pt-4 pb-2 md:pt-4 md:pb-2 lg:pt-4 lg:pb-2 bg-black/10 backdrop-blur-[1px] -z-10">
-          <div className="container px-4 md:px-6">
-            <div className="grid gap-8 md:grid-cols-2">
-              {/* Left: Welcome + CTA */}
-              <div>
-                <h2 className="text-3xl text-white font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl mb-4">
-                  Welcome to IEEE-SPERT 2025
-                </h2>
-                <p className="max-w-[700px] text-white md:text-xl mb-8 text-justify">
-                  The IEEE International Conference on Smart Power, Energy, Renewables, and Transportation (IEEE-SPERT)
-                  aims to bring together experts and researchers to discuss advancements in these critical fields. This
-                  conference will explore innovative solutions and technologies that drive the future of energy and
-                  transportation, fostering collaboration and knowledge sharing among participants.
-                </p>
+        */}
+      
+        <section className="w-full pt-4 pb-2 md:pt-4 md:pb-2 lg:pt-4 lg:pb-2 bg-black/10 backdrop-blur-[1px] -z-10">
+          <div className="container px-4 md:px-6">
+            <div className="grid gap-8 md:grid-cols-2">
+              {/* Left: Welcome + CTA */}
+              <div>
+                <h2 className="text-3xl text-white font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl mb-4">
+                  Welcome to IEEE-SPERT 2025
+                </h2>
+                <p className="max-w-[700px] text-white md:text-xl mb-8 text-justify">
+                  The IEEE International Conference on Smart Power, Energy, Renewables, and Transportation (IEEE-SPERT)
+                  aims to bring together experts and researchers to discuss advancements in these critical fields. This
+                  conference will explore innovative solutions and technologies that drive the future of energy and
+                  transportation, fostering collaboration and knowledge sharing among participants.
+                </p>
 
-                <div className="flex flex-col gap-4 min-[400px]:flex-row">
-                  <Button size="lg" asChild>
-                    <Link href="/registration">Register Now</Link>
-                  </Button>
-                  {/*
-                    <Button size="lg" variant="outline" asChild>
-                      <Link href="/authors/call-for-papers">Submit Paper</Link>
-                    </Button>
-                  */}
-                </div>
-              </div>
+                <div className="flex flex-col gap-4 min-[400px]:flex-row">
+                  <Button size="lg" asChild>
+                    <Link href="/registration">Register Now</Link>
+                  </Button>
+                  {/*
+                    <Button size="lg" variant="outline" asChild>
+                      <Link href="/authors/call-for-papers">Submit Paper</Link>
+                    </Button>
+                  */}
+                </div>
+              </div>
 
-              {/* Important Dates + Announcements Column */}
+              {/* Important Dates + Announcements Column */}
 
-              <div className="mt-4">
-                    <h3 className="text-2xl font-bold mb-4 text-white">Announcements</h3>
-                    <div className="space-y-4">
-                      {announcements.map((announcement, index) => (
-                        <Card key={index} className="bg-primary/10">
-                          <CardContent className="p-4">
-                            <p className="text-white font-medium">{announcement}</p>
-                          </CardContent>
-                        </Card>
-                      ))}
-                    </div>
-                  </div>
-              <ImageGallery />
-              <div className="flex flex-col gap-2">
-                <div className="px-4 md:px-6 flex flex-col">
-                  <div className="md:w-full mt-8 md:mt-0">
-                    <div className="relative bg-black/15 dark:bg-black-900/40 backdrop-blur-sm rounded-xl p-6 border border-white/10 overflow-hidden">
-                      {/* frosted base */}
-                      <div className="absolute inset-0 -z-10 bg-white/5 dark:bg-black/30 backdrop-blur-lg" />
-                      {/* subtle tint gradient */}
-                      <div className="absolute inset-0 -z-20 bg-gradient-to-r from-white/10 via-transparent to-white/5 dark:from-transparent dark:via-black/10 dark:to-transparent" />
-                      {/* glossy sheen */}
-                      <div
-                        className="absolute -top-10 -left-20 w-72 h-36 opacity-30 pointer-events-none transform rotate-12"
-                        style={{
-                          background: "radial-gradient(ellipse at center, rgba(255,255,255,0.9), rgba(255,255,255,0) 40%)",
-                          filter: "blur(12px)",
-                        }}
-                      />
-                      <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl mb-6 text-yellow-300">
-                        Important Dates
-                      </h2>
-                      <div className="rounded-lg overflow-hidden">
-                        <table className="min-w-full">
-                          <thead>
-                            <tr>
-                              <th className="py-3 px-4 text-left font-semibold text-yellow-200">Date</th>
-                              <th className="py-3 px-4 text-left font-semibold text-yellow-200">Event</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr className="bg-transparent hover:bg-white/10 dark:hover:bg-white/10">
-                              <td className="py-3 px-4 font-bold text-yellow-200">
-                                <span className="line-through text-yellow-300">31 August 2025</span><br />
-                              </td>
-                              <td className="py-3 px-4 text-yellow-200">Paper Submission Closed</td>
-                            </tr>
+              <div className="mt-4">
+                    <h3 className="text-2xl font-bold mb-4 text-white">Announcements</h3>
+                    <div className="space-y-4">
+                      {announcements.map((announcement, index) => (
+                        <Card 
+                            key={index} 
+                            // ADDED: group class for hover effect on the QR code item
+                            className={`bg-primary/10 ${index === announcements.length - 1 ? 'group relative overflow-visible' : ''}`}
+                        >
+                          <CardContent className="p-4">
+                            <p className={`text-white font-medium ${index === announcements.length -1 ? 'group-hover:text-yellow-400' : ''}`}>
+                                    {announcement}
+                                </p>
+                          </CardContent>
+                        </Card>
+                      ))}
+                    </div>
+                  </div>
+              <ImageGallery />
+              <div className="flex flex-col gap-2">
+                <div className="px-4 md:px-6 flex flex-col">
+                  <div className="md:w-full mt-8 md:mt-0">
+                    <div className="relative bg-black/15 dark:bg-black-900/40 backdrop-blur-sm rounded-xl p-6 border border-white/10 overflow-hidden">
+                      {/* frosted base */}
+                      <div className="absolute inset-0 -z-10 bg-white/5 dark:bg-black/30 backdrop-blur-lg" />
+                      {/* subtle tint gradient */}
+                      <div className="absolute inset-0 -z-20 bg-gradient-to-r from-white/10 via-transparent to-white/5 dark:from-transparent dark:via-black/10 dark:to-transparent" />
+                      {/* glossy sheen */}
+                      <div
+                        className="absolute -top-10 -left-20 w-72 h-36 opacity-30 pointer-events-none transform rotate-12"
+                        style={{
+                          background: "radial-gradient(ellipse at center, rgba(255,255,255,0.9), rgba(255,255,255,0) 40%)",
+                          filter: "blur(12px)",
+                        }}
+                      />
+                      <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl mb-6 text-yellow-300">
+                        Important Dates
+                      </h2>
+                      <div className="rounded-lg overflow-hidden">
+                        <table className="min-w-full">
+                          <thead>
+                            <tr>
+                              <th className="py-3 px-4 text-left font-semibold text-yellow-200">Date</th>
+                              <th className="py-3 px-4 text-left font-semibold text-yellow-200">Event</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr className="bg-transparent hover:bg-white/10 dark:hover:bg-white/10">
+                              <td className="py-3 px-4 font-bold text-yellow-200">
+                                <span className="line-through text-yellow-300">31 August 2025</span><br />
+                              </td>
+                              <td className="py-3 px-4 text-yellow-200">Paper Submission Closed</td>
+                            </tr>
 
-                            {/*
-                                          <tr className="bg-transparent hover:bg-white/10 dark:hover:bg-white/10">
-                                            <td className="py-3 px-4 font-bold text-teal-200">
-                                            <span className="line-through text-slate-300">30th Sept 2025</span>
-                                            </td>
-                                            <td className="py-3 px-4 text-teal-200">Acceptance emails Sent</td>
-                                          </tr>
+                            {/*
+                                          <tr className="bg-transparent hover:bg-white/10 dark:hover:bg-white/10">
+                                            <td className="py-3 px-4 font-bold text-teal-200">
+                                            <span className="line-through text-slate-300">30th Sept 2025</span>
+                                            </td>
+                                            <td className="py-3 px-4 text-teal-200">Acceptance emails Sent</td>
+                                          </tr>
 
-                                          <tr className="bg-transparent hover:bg-white/10 dark:hover:bg-white/10">
-                                            <td className="py-3 px-4 font-bold text-teal-200">
-                                            <span className="line-through text-slate-300">1st October 2025</span>
-                                            </td>
-                                            <td className="py-3 px-4 text-teal-200">Early Bird Registration Started</td>
-                                          </tr>
+                                          <tr className="bg-transparent hover:bg-white/10 dark:hover:bg-white/10">
+                                            <td className="py-3 px-4 font-bold text-teal-200">
+                                            <span className="line-through text-slate-300">1st October 2025</span>
+                                            </td>
+                                            <td className="py-3 px-4 text-teal-200">Early Bird Registration Started</td>
+                                          </tr>
 
-                                          <tr className="bg-transparent hover:bg-white/10 dark:hover:bg-white/10">
-                                            <td className="py-3 px-4 font-bold text-teal-200">
-                                            <span className="line-through text-slate-300">15th October 2025</span>
-                                            </td>
-                                            <td className="py-3 px-4 text-teal-200">Camera Ready Paper Submission Deadline</td>
-                                          </tr>
-                            */}
+                                          <tr className="bg-transparent hover:bg-white/10 dark:hover:bg-white/10">
+                                            <td className="py-3 px-4 font-bold text-teal-200">
+                                            <span className="line-through text-slate-300">15th October 2025</span>
+                                            </td>
+                                            <td className="py-3 px-4 text-teal-200">Camera Ready Paper Submission Deadline</td>
+                                          </tr>
+                            */}
 
-                            <tr className="bg-transparent hover:bg-white/10 dark:hover:bg-white/10">
-                              <td className="py-3 px-4 font-bold text-yellow-200">
-                                <span className="line-through text-yellow-300">15 Nov 2025</span>
-                              </td>
-                              <td className="py-3 px-4 text-yellow-200">Early Bird Registration Closed</td>
-                            </tr>
+                            <tr className="bg-transparent hover:bg-white/10 dark:hover:bg-white/10">
+                              <td className="py-3 px-4 font-bold text-yellow-200">
+                                <span className="line-through text-yellow-300">15 Nov 2025</span>
+                              </td>
+                              <td className="py-3 px-4 text-yellow-200">Early Bird Registration Closed</td>
+                            </tr>
 
-                            <tr className="bg-transparent hover:bg-white/10 dark:hover:bg-white/10">
-                              <td className="py-3 px-4 font-bold text-yellow-300">16th Nov 2025</td>
-                              <td className="py-3 px-4 text-yellow-200">Standard Registration Started</td>
-                            </tr>
+                            <tr className="bg-transparent hover:bg-white/10 dark:hover:bg-white/10">
+                              <td className="py-3 px-4 font-bold text-yellow-300">16th Nov 2025</td>
+                              <td className="py-3 px-4 text-yellow-200">Standard Registration Started</td>
+                            </tr>
 
-                            <tr className="bg-transparent hover:bg-white/10 dark:hover:bg-white/10">
-                              <td className="py-3 px-4 font-bold text-yellow-300">22nd December 2025</td>
-                              <td className="py-3 px-4 text-yellow-200">Conference Begins</td>
-                            </tr>
+                            <tr className="bg-transparent hover:bg-white/10 dark:hover:bg-white/10">
+                              <td className="py-3 px-4 font-bold text-yellow-300">22nd December 2025</td>
+                              <td className="py-3 px-4 text-yellow-200">Conference Begins</td>
+                            </tr>
 
-                            <tr className="bg-transparent hover:bg-white/10 dark:hover:bg-white/10">
-                              <td className="py-3 px-4 font-bold text-yellow-300">24th December 2025</td>
-                              <td className="py-3 px-4 text-yellow-200">Conference Ends</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
+                            <tr className="bg-transparent hover:bg-white/10 dark:hover:bg-white/10">
+                              <td className="py-3 px-4 font-bold text-yellow-300">24th December 2025</td>
+                              <td className="py-3 px-4 text-yellow-200">Conference Ends</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
 
-                
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+                
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-        
+        
 
-        
-        {/* Sponsors Section */}
-        <section className="w-full py-4 md:py-8 lg:py-12">
-          <div className="container px-4 md:px-6">
-            <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl mb-12 text-center text-white">
-              Our Valued Sponsors
-            </h2>
-            
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-              {/* Raj Vijtech Private Limited */}
-              <div className="flex justify-center">
-                <div className="max-w-sm w-full">
-                  <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
-                    <div className="flex flex-col items-center">
-                      <Image 
-                        src="https://i.ibb.co/27zWC9Ht/rvpl1.jpg"
-                        alt="Raj Vijtech Private Limited"
-                        width={150}
-                        height={150}
-                        className="rounded-lg mb-4 hover:scale-105 transition-transform duration-200"
-                      />
-                      <h4 className="font-bold text-2xl mb-2"></h4>
-                      <p className="text-white text-lg"></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        
+        {/* Sponsors Section */}
+        <section className="w-full py-4 md:py-8 lg:py-12">
+          <div className="container px-4 md:px-6">
+            <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl mb-12 text-center text-white">
+              Our Valued Sponsors
+            </h2>
+            
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+              {/* Raj Vijtech Private Limited */}
+              <div className="flex justify-center">
+                <div className="max-w-sm w-full">
+                  <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+                    <div className="flex flex-col items-center">
+                      <Image 
+                        src="https://i.ibb.co/27zWC9Ht/rvpl1.jpg"
+                        alt="Raj Vijtech Private Limited"
+                        width={150}
+                        height={150}
+                        className="rounded-lg mb-4 hover:scale-105 transition-transform duration-200"
+                      />
+                      <h4 className="font-bold text-2xl mb-2"></h4>
+                      <p className="text-white text-lg"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-              {/* TechSunBio Private Limited */}
-              <div className="flex justify-center">
-                <div className="max-w-sm w-full h-full">
-                  <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300 h-full">
-                    <div className="flex flex-col items-center h-full">
-                      <Image 
-                        src="https://i.ibb.co/fVmFVZTv/tsb.jpg"
-                        alt="TechSunBio Private Limited"
-                        width={240}
-                        height={240}
-                        className="object-contain w-full h-40"
-                      />
-                      <h4 className="font-bold text-2xl mb-2 text-center"></h4>
-                      <p className="text-white text-lg"></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              {/* TechSunBio Private Limited */}
+              <div className="flex justify-center">
+                <div className="max-w-sm w-full h-full">
+                  <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300 h-full">
+                    <div className="flex flex-col items-center h-full">
+                      <Image 
+                        src="https://i.ibb.co/fVmFVZTv/tsb.jpg"
+                        alt="TechSunBio Private Limited"
+                        width={240}
+                        height={240}
+                        className="object-contain w-full h-40"
+                      />
+                      <h4 className="font-bold text-2xl mb-2 text-center"></h4>
+                      <p className="text-white text-lg"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-              {/* Sponsor image 1 */}
-              <div className="flex justify-center">
-                <div className="max-w-sm w-full h-full">
-                  <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-4 md:p-6 hover:shadow-xl transition-shadow duration-300 h-full">
-                    <Image 
-                      src="https://i.ibb.co/ywwzwDp/sponsi1.jpg"
-                      alt="sponsi1"
-                      width={800}
-                      height={600}
-                      className="rounded-lg object-contain w-full h-48"
-                    />
-                  </div>
-                </div>
-              </div>
+              {/* Sponsor image 1 */}
+              <div className="flex justify-center">
+                <div className="max-w-sm w-full h-full">
+                  <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-4 md:p-6 hover:shadow-xl transition-shadow duration-300 h-full">
+                    <Image 
+                      src="https://i.ibb.co/ywwzwDp/sponsi1.jpg"
+                      alt="sponsi1"
+                      width={800}
+                      height={600}
+                      className="rounded-lg object-contain w-full h-48"
+                    />
+                  </div>
+                </div>
+              </div>
 
-              {/* Sponsor image 2 */}
-              <div className="flex justify-center">
-                <div className="max-w-sm w-full h-full">
-                  <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-4 md:p-6 hover:shadow-xl transition-shadow duration-300 h-full">
-                    <Image 
-                      src="https://i.ibb.co/CK1yG47Y/sponsi2.jpg"
-                      alt="sponsi2"
-                      width={800}
-                      height={600}
-                      className="rounded-lg object-contain w-full h-48"
-                    />
-                  </div>
-                </div>
-              </div>
+              {/* Sponsor image 2 */}
+              <div className="flex justify-center">
+                <div className="max-w-sm w-full h-full">
+                  <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-4 md:p-6 hover:shadow-xl transition-shadow duration-300 h-full">
+                    <Image 
+                      src="https://i.ibb.co/CK1yG47Y/sponsi2.jpg"
+                      alt="sponsi2"
+                      width={800}
+                      height={600}
+                      className="rounded-lg object-contain w-full h-48"
+                    />
+                  </div>
+                </div>
+              </div>
 
-                <div className="flex justify-center">
-                <div className="max-w-sm w-full h-full">
-                  <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-4 md:p-6 hover:shadow-xl transition-shadow duration-300 h-full">
-                    <Image 
-                      src="/images/RESS.jpg"
-                      alt="sponsi2"
-                      width={800}
-                      height={600}
-                      className="rounded-lg object-contain w-full h-48"
-                    />
-                  </div>
-                </div>
-              </div>
-
-
-                <div className="flex justify-center">
-                <div className="max-w-sm w-full h-full">
-                  <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-4 md:p-6 hover:shadow-xl transition-shadow duration-300 h-full">
-                    <Image 
-                      src="/images/REM.png"
-                      alt="sponsi2"
-                      width={800}
-                      height={600}
-                      className="rounded-lg object-contain w-full h-48"
-                    />
-                  </div>
-                </div>
-              </div>
-                <div className="flex justify-center">
-                <div className="max-w-sm w-full h-full">
-                  <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-4 md:p-6 hover:shadow-xl transition-shadow duration-300 h-full">
-                    <Image 
-                      src="/images/GBSolar.png"
-                      alt="sponsi2"
-                      width={800}
-                      height={600}
-                      className="rounded-lg object-contain w-full h-48"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="w-full py-4 md:py-4 lg:py-4 bg-black/10 backdrop-blur-[2px] -z-10">
-          <div className="container px-4 md:px-6">
-            <div className="grid grid-cols-1 gap-4">
-              {/* Regular Tracks */}
-              <Card className="bg-white dark:bg-gray-800 shadow-md">
-                <CardContent className="p-6">
-                  <h2 className="text-2xl font-bold mb-2 text-primary">Regular Tracks</h2>
-                  <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
-                    {regularTracks.map((track, index) => (
-                      <li key={index}>{track}</li>
-                    ))}
-                  </ul>
-                </CardContent>
-              </Card>
-
-              {/* Special Sessions */}
-              <Card className="bg-white dark:bg-gray-800 shadow-md">
-                <CardContent className="p-6">
-                  <h2 className="text-2xl font-bold mb-2 text-primary">Special Sessions</h2>
-                  <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
-                    <li><strong>SS1:</strong> Advanced Control and Optimization of DC-DC Converters for Smart and Sustainable Energy Systems</li>
-                    <li><strong>SS2:</strong> Solar Energy Solutions for Renewable Integration and Electric Mobility</li>
-                    <li><strong>SS3:</strong> Intelligent Forecasting Techniques for Smart Energy and Transportation Systems using Machine Learning and Hybrid Deep Learning Models</li>
-                    <li><strong>SS4:</strong> Smart Mobility: Integration of AI, Batteries and Charging Systems for EVs</li>
-                    <li><strong>SS5:</strong> Advanced Power Converters and Control Techniques for Renewable Energy Systems</li>
-                    <li><strong>SS6:</strong> Applications of Machine-Learning in Energy Systems</li>
-                    <li><strong>SS7:</strong> Integration of Smart Agriculture and Energy for Empowering Rural India</li>
-                    <li><strong>SS8:</strong> Innovation in Renewable and Power Converters: Quest for a more sustainable energy and e-mobility</li>
-                    <li><strong>SS9:</strong> Wide Band Gap devices-based converters for renewable and transportation applications</li>
-                    <li><strong>SS10:</strong> Multilevel Inverters: Advanced Topologies, Modulation Strategies for medium and high-power Applications</li>
-                    <li><strong>SS11:</strong> Thermal Runaway Characterization, Management Strategies and Safety Mechanisms in EV Battery Packs</li>
-                    <li><strong>SS12:</strong> Flexible and Self-Powered Nanogenerator-Integrated Systems for Smart Energy and Sustainable Electronics</li>
-                    <li><strong>SS13:</strong> Green Intelligence: Advanced Materials and AI-Driven Approaches for Smart and Resilient Energy Infrastructure</li>
-                    <li><strong>SS14:</strong> Cybersecurity and Resilience of Smart Power and Renewable Energy Systems</li>
-                    <li><strong>SS15:</strong> AI-Driven Predictive Maintenance and Fault Detection in Power and EV Systems</li>
-                  </ul>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </section>
+                <div className="flex justify-center">
+                <div className="max-w-sm w-full h-full">
+                  <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-4 md:p-6 hover:shadow-xl transition-shadow duration-300 h-full">
+                    <Image 
+                      src="/images/RESS.jpg"
+                      alt="sponsi2"
+                      width={800}
+                      height={600}
+                      className="rounded-lg object-contain w-full h-48"
+                    />
+                  </div>
+                </div>
+              </div>
 
 
+                <div className="flex justify-center">
+                <div className="max-w-sm w-full h-full">
+                  <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-4 md:p-6 hover:shadow-xl transition-shadow duration-300 h-full">
+                    <Image 
+                      src="/images/REM.png"
+                      alt="sponsi2"
+                      width={800}
+                      height={600}
+                      className="rounded-lg object-contain w-full h-48"
+                    />
+                  </div>
+                </div>
+              </div>
+                <div className="flex justify-center">
+                <div className="max-w-sm w-full h-full">
+                  <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-4 md:p-6 hover:shadow-xl transition-shadow duration-300 h-full">
+                    <Image 
+                      src="/images/GBSolar.png"
+                      alt="sponsi2"
+                      width={800}
+                      height={600}
+                      className="rounded-lg object-contain w-full h-48"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+            </div>
+            </div>
+        </section>
+
+        <section className="w-full py-4 md:py-4 lg:py-4 bg-black/10 backdrop-blur-[2px] -z-10">
+          <div className="container px-4 md:px-6">
+            <div className="grid grid-cols-1 gap-4">
+              {/* Regular Tracks */}
+              <Card className="bg-white dark:bg-gray-800 shadow-md">
+                <CardContent className="p-6">
+                  <h2 className="text-2xl font-bold mb-2 text-primary">Regular Tracks</h2>
+                  <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
+                    {regularTracks.map((track, index) => (
+                      <li key={index}>{track}</li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
+
+              {/* Special Sessions */}
+              <Card className="bg-white dark:bg-gray-800 shadow-md">
+                <CardContent className="p-6">
+                  <h2 className="text-2xl font-bold mb-2 text-primary">Special Sessions</h2>
+                  <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
+                    <li><strong>SS1:</strong> Advanced Control and Optimization of DC-DC Converters for Smart and Sustainable Energy Systems</li>
+                    <li><strong>SS2:</strong> Solar Energy Solutions for Renewable Integration and Electric Mobility</li>
+                    <li><strong>SS3:</strong> Intelligent Forecasting Techniques for Smart Energy and Transportation Systems using Machine Learning and Hybrid Deep Learning Models</li>
+                    <li><strong>SS4:</strong> Smart Mobility: Integration of AI, Batteries and Charging Systems for EVs</li>
+                    <li><strong>SS5:</strong> Advanced Power Converters and Control Techniques for Renewable Energy Systems</li>
+                    <li><strong>SS6:</strong> Applications of Machine-Learning in Energy Systems</li>
+                    <li><strong>SS7:</strong> Integration of Smart Agriculture and Energy for Empowering Rural India</li>
+                    <li><strong>SS8:</strong> Innovation in Renewable and Power Converters: Quest for a more sustainable energy and e-mobility</li>
+                    <li><strong>SS9:</strong> Wide Band Gap devices-based converters for renewable and transportation applications</li>
+                    <li><strong>SS10:</strong> Multilevel Inverters: Advanced Topologies, Modulation Strategies for medium and high-power Applications</li>
+                    <li><strong>SS11:</strong> Thermal Runaway Characterization, Management Strategies and Safety Mechanisms in EV Battery Packs</li>
+                    <li><strong>SS12:</strong> Flexible and Self-Powered Nanogenerator-Integrated Systems for Smart Energy and Sustainable Electronics</li>
+                    <li><strong>SS13:</strong> Green Intelligence: Advanced Materials and AI-Driven Approaches for Smart and Resilient Energy Infrastructure</li>
+                    <li><strong>SS14:</strong> Cybersecurity and Resilience of Smart Power and Renewable Energy Systems</li>
+                    <li><strong>SS15:</strong> AI-Driven Predictive Maintenance and Fault Detection in Power and EV Systems</li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
 
 
-        {/* Countdown Section */}
-        <section className="w-full py-4 md:py-4 lg:py-4 bg-black/40 backdrop-blur-[2px] -z-10">
-          <div className="container px-4 md:px-6">
-            <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl mb-8 text-center text-white">
-              Conference Starts In
-            </h2>
-            <CountdownTimer targetDate="2025-12-21T00:00:00" />
-          </div>
-        </section>
 
 
-        {/* Organizers Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
-            <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl mb-8 text-white">Organizers</h2>
-            <p className="text-lg text-white mb-8">
-              The following organizations are financially supporting the IEEE-SPERT 2025 conference:
-            </p>
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-              {/* <Card className="bg-card">
-                <CardContent className="p-6 flex items-center justify-center h-40">
-                  <Image src="https://i.ibb.co/rRDfdZv7/PELS-logo.png" alt="PELS Logo" width={100} height={100} />
-                </CardContent>
-              </Card> */}
-              <Card className="bg-card">
-                <CardContent className="p-6 flex items-center justify-center h-40">
-                  <Image src="https://i.ibb.co/mrdb1b5s/ieee-logo.png" alt="IEEE Logo" width={100} height={100} />
-                </CardContent>
-              </Card>
-              {/* <Card className="bg-card">
-                <CardContent className="p-6 flex items-center justify-center h-40">
-                  <Image src="https://i.ibb.co/4gjF501z/IEEE-IES-Logo.png" alt="IEEE IES Logo" width={100} height={100} />
-                </CardContent>
-              </Card> */}
-              {/* <Card className="bg-card">
-                <CardContent className="p-6 flex items-center justify-center h-40">
-                  <Image src="https://i.ibb.co/tpxKrPdZ/IAS-logo.webp" alt="IAS Logo" width={100} height={100} />
-                </CardContent>
-              </Card> */}
-              <Card className="bg-card">
-                <CardContent className="p-6 flex items-center justify-center h-40">
-                  <Image src="https://i.ibb.co/ks9mhG84/guj-section-logo.png" alt="Gujarat Section Logo" width={100} height={100} />
-                </CardContent>
-              </Card>
-              <Card className="bg-card">
-                <CardContent className="p-6 flex items-center justify-center h-40">
-                  <Image 
-                    src="https://imgs.search.brave.com/WFSCJ_QtSA6WBJR7nTNYbUyHylRSHAaK-XBDbUO7FZc/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/c3ZuaXQuYWMuaW4v/aW1hZ2VzL2xvZ28u/cG5n"
-                    alt="SVNIT Logo" 
-                    width={100} 
-                    height={100}
-                    className="object-contain"
-                  />
-                </CardContent>
-              </Card>
-              <Card className="bg-card">
-                <CardContent className="p-6 flex items-center justify-center h-40">
-                  <Image 
-                    src="https://i.ibb.co/fYQ9ZvB3/Jt-Chapter-Logo.png"
-                    alt="IEEE IES/PELS Joint Chapter Logo" 
-                    width={100} 
-                    height={100}
-                    className="object-contain"
-                  />
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </section>
-      </main>
-      <VisitorCounter />
-      <Footer />
-    </div>
-  )
+        {/* Countdown Section */}
+        <section className="w-full py-4 md:py-4 lg:py-4 bg-black/40 backdrop-blur-[2px] -z-10">
+          <div className="container px-4 md:px-6">
+            <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl mb-8 text-center text-white">
+              Conference Starts In
+            </h2>
+            <CountdownTimer targetDate="2025-12-21T00:00:00" />
+          </div>
+        </section>
+
+
+        {/* Organizers Section */}
+        <section className="w-full py-12 md:py-24 lg:py-32">
+          <div className="container px-4 md:px-6">
+            <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl mb-8 text-white">Organizers</h2>
+            <p className="text-lg text-white mb-8">
+              The following organizations are financially supporting the IEEE-SPERT 2025 conference:
+            </p>
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+              {/* <Card className="bg-card">
+                <CardContent className="p-6 flex items-center justify-center h-40">
+                  <Image src="https://i.ibb.co/rRDfdZv7/PELS-logo.png" alt="PELS Logo" width={100} height={100} />
+                </CardContent>
+              </Card> */}
+              <Card className="bg-card">
+                <CardContent className="p-6 flex items-center justify-center h-40">
+                  <Image src="https://i.ibb.co/mrdb1b5s/ieee-logo.png" alt="IEEE Logo" width={100} height={100} />
+                </CardContent>
+              </Card>
+              {/* <Card className="bg-card">
+                <CardContent className="p-6 flex items-center justify-center h-40">
+                  <Image src="https://i.ibb.co/4gjF501z/IEEE-IES-Logo.png" alt="IEEE IES Logo" width={100} height={100} />
+                </CardContent>
+              </Card> */}
+              {/* <Card className="bg-card">
+                <CardContent className="p-6 flex items-center justify-center h-40">
+                  <Image src="https://i.ibb.co/tpxKrPdZ/IAS-logo.webp" alt="IAS Logo" width={100} height={100} />
+                </CardContent>
+              </Card> */}
+              <Card className="bg-card">
+                <CardContent className="p-6 flex items-center justify-center h-40">
+                  <Image src="https://i.ibb.co/ks9mhG84/guj-section-logo.png" alt="Gujarat Section Logo" width={100} height={100} />
+                </CardContent>
+              </Card>
+              <Card className="bg-card">
+                <CardContent className="p-6 flex items-center justify-center h-40">
+                  <Image 
+                    src="https://imgs.search.brave.com/WFSCJ_QtSA6WBJR7nTNYbUyHylRSHAaK-XBDbUO7FZc/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/c3ZuaXQuYWMuaW4v/aW1hZ2VzL2xvZ28u/cG5n"
+                    alt="SVNIT Logo" 
+                    width={100} 
+                    height={100}
+                    className="object-contain"
+                  />
+                </CardContent>
+              </Card>
+              <Card className="bg-card">
+                <CardContent className="p-6 flex items-center justify-center h-40">
+                  <Image 
+                    src="https://i.ibb.co/fYQ9ZvB3/Jt-Chapter-Logo.png"
+                    alt="IEEE IES/PELS Joint Chapter Logo" 
+                    width={100} 
+                    height={100}
+                    className="object-contain"
+                  />
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
+      </main>
+      <VisitorCounter />
+      <Footer />
+    </div>
+  )
 }
