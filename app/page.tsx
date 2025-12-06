@@ -133,8 +133,7 @@ export default function HomePage() {
       Guest House and Hotel Booking Details
     </Link>,
 
-    // MODIFICATION: ADDED QR CODE CARD LOGIC
-    // Note: This complex JSX element MUST be the last one in the array for the index logic below to work.
+    // MODIFICATION: ADDED QR CODE CARD LOGIC (MUST BE THE LAST ELEMENT)
     <div className="group relative w-full h-full">
         <span className="text-white font-medium block">
             <Lightbulb className="inline-block h-5 w-5 mr-2 text-yellow-400" />
@@ -274,9 +273,13 @@ export default function HomePage() {
                             className={`bg-primary/10 ${index === announcements.length - 1 ? 'group relative overflow-visible' : ''}`}
                         >
                           <CardContent className="p-4">
-                            <p className={`text-white font-medium ${index === announcements.length -1 ? 'group-hover:text-yellow-400' : ''}`}>
-                                    {announcement}
-                                </p>
+                                {index === announcements.length - 1 ? (
+                                    // Last item: QR code DIV structure (render directly)
+                                    announcement
+                                ) : (
+                                    // Other items: Link structures (wrap in <p>)
+                                    <p className="text-white font-medium">{announcement}</p>
+                                )}
                           </CardContent>
                         </Card>
                       ))}
@@ -522,7 +525,7 @@ export default function HomePage() {
                     <li><strong>SS1:</strong> Advanced Control and Optimization of DC-DC Converters for Smart and Sustainable Energy Systems</li>
                     <li><strong>SS2:</strong> Solar Energy Solutions for Renewable Integration and Electric Mobility</li>
                     <li><strong>SS3:</strong> Intelligent Forecasting Techniques for Smart Energy and Transportation Systems using Machine Learning and Hybrid Deep Learning Models</li>
-                    <li><strong>SS4:</strong> Smart Mobility: Integration of AI, Batteries and Charging Systems for EVs</li>
+                    <li><strong>SS4:</b> Smart Mobility: Integration of AI, Batteries and Charging Systems for EVs</li>
                     <li><strong>SS5:</strong> Advanced Power Converters and Control Techniques for Renewable Energy Systems</li>
                     <li><strong>SS6:</strong> Applications of Machine-Learning in Energy Systems</li>
                     <li><strong>SS7:</strong> Integration of Smart Agriculture and Energy for Empowering Rural India</li>
