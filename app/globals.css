@@ -100,3 +100,13 @@
   animation-play-state: paused;
 }
 
+/* Blink animation for NEW labels */
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0.3; }
+}
+
+.blink {
+  animation: blink 1s linear infinite;
+}
+
