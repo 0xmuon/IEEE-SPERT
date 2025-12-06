@@ -17,7 +17,7 @@ const NeonIsometricMaze: React.FC = () => {
     let animationFrameId: number
 
     const r = () => {
-      if (!canvas) return
+      if (!canvas || typeof window === 'undefined') return
       canvas.width = window.innerWidth
       canvas.height = window.innerHeight
       d()
@@ -79,13 +79,19 @@ const NeonIsometricMaze: React.FC = () => {
       animationFrameId = requestAnimationFrame(a)
     }
 
-    window.addEventListener("resize", r)
-    r()
-    a()
+    if (typeof window !== 'undefined') {
+      window.addEventListener("resize", r)
+      r()
+      a()
+    }
 
     return () => {
-      window.removeEventListener("resize", r)
-      cancelAnimationFrame(animationFrameId)
+      if (typeof window !== 'undefined') {
+        window.removeEventListener("resize", r)
+      }
+      if (animationFrameId) {
+        cancelAnimationFrame(animationFrameId)
+      }
     }
   }, [])
 
