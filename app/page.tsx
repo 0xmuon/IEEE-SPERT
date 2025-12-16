@@ -138,8 +138,18 @@ export default function HomePage() {
       rel="noopener noreferrer"
       className="text-white hover:underline"
     >
-      <span className="blink text-yellow-400 font-bold">NEW</span> Final Schedule
+      <span className="blink text-yellow-400 font-bold">NEW</span> Confernce Schedule
+    </Link>,
+
+      <Link
+      href="https://drive.google.com/file/d/1b4XFxm8qCOHRbrzAJsTn0ZF6gnFxcgol/view?usp=sharing"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-white hover:underline"
+    >
+      <span className="blink text-yellow-400 font-bold">NEW</span> Final Presentation Sessions Schedule
     </Link>
+
 
   ]
 
