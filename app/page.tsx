@@ -130,6 +130,15 @@ export default function HomePage() {
       className="text-white hover:underline"
     >
       <span className="blink text-yellow-400 font-bold">NEW</span> Template for presentation
+    </Link>,
+
+      <Link
+      href="https://drive.google.com/file/d/1sFEEScWtp6UkqCYQ-FCnvU84LGgriCJB/view?usp=sharing"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-white hover:underline"
+    >
+      <span className="blink text-yellow-400 font-bold">NEW</span> Final Schedule
     </Link>
 
   ]
@@ -234,12 +243,14 @@ export default function HomePage() {
                   <Button size="lg" asChild>
                     <Link href="/registration">Register Now</Link>
                   </Button>
+                  
                   {/*
                     <Button size="lg" variant="outline" asChild>
                       <Link href="/authors/call-for-papers">Submit Paper</Link>
                     </Button>
                   */}
                 </div>
+                <ImageGallery />
               </div>
 
               {/* Important Dates + Announcements Column */}
@@ -273,7 +284,7 @@ export default function HomePage() {
                       </Card>
                     </div>
                   </div>
-              <ImageGallery />
+              
               <div className="flex flex-col gap-2">
                 <div className="px-4 md:px-6 flex flex-col">
                   <div className="md:w-full mt-8 md:mt-0">
