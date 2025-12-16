@@ -562,7 +562,7 @@ export default function HomePage() {
             <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl mb-8 text-center text-white">
               Conference Starts In
             </h2>
-            <CountdownTimer targetDate="2025-12-21T00:00:00" />
+            <CountdownTimer targetDate="2025-12-22T00:00:00" />
           </div>
         </section>
 
